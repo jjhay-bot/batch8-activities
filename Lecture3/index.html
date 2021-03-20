@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div id="SurveyForm">
+    <main >
+        <h3 id="title">Website Survey Questionnaire</h3>
+        <p>Thank you for taking the time to answer these questions. The following questions are about to know how well known and successful is <q><b>Shope Here!</b></q></p>
+    </main>
+    <div id="Form">
+        <form action="result.html" method="post" enctype="multipart/form-data" target="_blank"></form>
+        <div >
+            <div >
+                <label for="name" id="name-label"> Name(optional):  </label>
+                <input type="text" name="name" id="name" required placeholder="Name" id="name-label">
+            </div>
+            <div>
+                <label for="email" id="email-label"> Email:  </label><br>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required @>
+            </div>
+            <div>
+                <label for="age:" id="number-label"> Age:  </label><br>
+                <input type="number" name="age" id="age" min="18" max="59" placeholder="18" required>                
+            </div>
+            <div>
+                <label for="dropdown" >How did you learn about Shope Here:  </label> <br>
+                <select id="dropdown" >
+                    <option value=""></option>
+                    <option value="Friends&relative">Friends and relative</option>
+                    <option value="Websearch">Web search</option>
+                    <option value="Pop-upAds">Pop-up ads</option>
+                    <option value="Banner">Banner</option>
+                <select>
+            <div class="gender-att" >
+            <div>
+                <span >Gender:  </span>
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="male">
+                </div>
+            </div>
+            <div>
+                <span >What color did you like?:  </span>
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="35px" height="12px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEUAV9na18308u3p7fsAR9fp5+H+//8ANNSZJcY4AAABH0lEQVR4nO3PCQ2EABAAMX78Oz4IORGzaR10Wadb1nOb7HyG27XPdW3vcL+Pqe79Gx7LVIdhnmGfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYd9/eB9T3d/w2ue63uG5TXY+w+l+h1EihcbqknUAAAAASUVORK5CYII=" alt="">
+                    <label for="blue">blue</label>
+                    <input type="checkbox" name="blue" aria-selected>
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="35px" height="12px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gZ5Yo1MsxoZ1XefDKb1XbuDPzd2gXejKRtF2m9_i9lReqK-oYNe_C1J7EXRPX3DVBh0&usqp=CAU" alt="">
+                    <label for="red">red</label>
+                    <input type="checkbox" name="red">
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <img width="35px" height="12px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBOjib6GquIxeLjno5XILIw5xxrk7tQQl-vb_6kEJj2jL0mYvkpqeAVBdj2G7pSsb5FH4&usqp=CAU" alt="">
+                    <label for="green">green</label>
+                    <input type="checkbox" name="green">
+                </div>
+                <div >
+                    <label for="comments">What particular aspect(s) of our website do you like?:  </label> <br>
+                    <textarea style="width: 100%;" id="comments" name="comments" placeholder="what things do you like?"></textarea>
+                </div>
+   
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    </div>
+
+</body>
+</html>
