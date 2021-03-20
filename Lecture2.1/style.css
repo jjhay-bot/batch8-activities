@@ -1,0 +1,39 @@
+body {
+  font-family:Times New Roman;
+  padding:  20px;
+  background-image: url(https://cdn-vz-info.ecomparemo.com/wordpress-media/2018/02/Banner-One-Month-After-TRAIN-Implementation-Where-Are-The-Revenues-Going-min.jpg); 
+  background-size: cover;
+  box-sizing: inherit;
+  background-position: right;
+  margin: 0;
+  border: 0;
+  box-shadow: inherit;
+  display: block;
+}
+#main {
+  width: 100%;
+  text-align: center;
+  line-height: 0.5;  
+}
+#Title {
+  font-family:Copperplate;
+  text-shadow:  rgba(14, 14, 248, 0.644) 2.5px 1.5px;
+  color: maroon;
+  font-size: 3vw;  
+}
+#image {
+  padding: 0px 20px 0px 20px;
+  opacity:  0.9;
+}
+#img-div {
+  width: 100%;
+}
+
+.Article {
+  line-height: 1.5;  
+}
+.img-article2 {
+  text-align:center;
+  padding: 20px;
+  height: 320px;
+}
