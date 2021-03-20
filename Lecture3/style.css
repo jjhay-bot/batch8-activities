@@ -1,13 +1,14 @@
 body {
-    width: 320px;
+    width: 300px;
     background-color:thistle ;
     background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg?size=626&ext=jpg);
-    line-height: 20px;
+    line-height: 15px;
     color: rgb(238, 224, 198);
     border: brown 1px;
-    padding: 2px;
+    padding: 5px;
     background-size: 100vw;
-    font-size:16px;
+    font-size:15px;
+    
 }
 #SurveyForm{
     background-color:rgba(33, 150, 150, 0.829);
@@ -21,4 +22,8 @@ body {
         padding: 10px;
         border-radius: 2%;
         box-shadow: rgb(141, 205, 235) 2px 2px;
+        line-height: 22px;
     }
+.spacing {
+    line-height: 20px;
+}
