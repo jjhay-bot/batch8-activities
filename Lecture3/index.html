@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body >
     <div id="SurveyForm">
-    <main >
-        <h3 id="title">Website Survey Questionnaire</h3><hr>
-        <p>Thank you for taking the time to answer these questions. The following questions are about to know how well known and successful is <q><b>Shope Here!</b></q></p>
+    <main  >
+        <h2 id="title"> Website Survey Questionnaire </h2>
+        <span>Thank you for taking the time to answer these questions. The following questions are about to know how well known and successful is <q><b>Shope Here!</b></q></span>
+        <br><br>
     </main>
     <div id="Form">
-        <form action="pages/result.html" method="get" id="data"></form>
-        <form action="pages/results.html" id="survey-form" method="get">
-        <div >
+        <form action="result.html" method="post" id="data">
             <div >
                 <label for="name" id="name-label"> Name(optional):  </label>
-                <input type="text" name="name" id="name" required placeholder="Name" id="name-label">
+                <input class="texbox" type="text" name="name" id="name" required placeholder="Name" id="name-label">
             </div>
             <div>
                 <label for="email" id="email-label">Email Address:</label><br />
@@ -30,23 +30,13 @@
                 <input type="number" name="age" id="age" min="18" max="59" placeholder="18-59" required>                
             </div>
             <div>
-                <label for="dropdown" >How did you learn about Shope Here:  </label> <br>
-                <select id="dropdown" required>
-                    <option value="" ></option>
-                    <option value="Friends&relative">Friends and relative</option>
-                    <option value="Websearch">Web search</option>
-                    <option value="Pop-upAds">Pop-up ads</option>
-                    <option value="Banner">Banner</option>
-                <select>
-            <div class="gender-att" >
-            <div>
                 <span >Gender:  </span>
-                <div >
+                <div  >
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <label for="male">Male</label>
-                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label  for="male" class="hover-select">Male</label>
+                    <input  type="radio" name="gender" id="male" value="male" required>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <label for="female">Female</label>
+                    <label  for="female" class="hover-select">Female</label>
                     <input type="radio" name="gender" id="female" value="male">
                 </div>
             </div>
@@ -54,27 +44,57 @@
                 <span >What color did you like?:  </span>
                 <div class="spacing">
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <img width="35px" height="12px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEUAV9na18308u3p7fsAR9fp5+H+//8ANNSZJcY4AAABH0lEQVR4nO3PCQ2EABAAMX78Oz4IORGzaR10Wadb1nOb7HyG27XPdW3vcL+Pqe79Gx7LVIdhnmGfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYd9/eB9T3d/w2ue63uG5TXY+w+l+h1EihcbqknUAAAAASUVORK5CYII=" alt="">
+                    <img class="color-select" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAGFBMVEUAV9na18308u3p7fsAR9fp5+H+//8ANNSZJcY4AAABH0lEQVR4nO3PCQ2EABAAMX78Oz4IORGzaR10Wadb1nOb7HyG27XPdW3vcL+Pqe79Gx7LVIdhnmGfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYZ9hn2GfYd9/eB9T3d/w2ue63uG5TXY+w+l+h1EihcbqknUAAAAASUVORK5CYII=" alt="">
                     <label for="blue">blue</label>
                     <input type="checkbox" name="blue" >
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <img width="35px" height="12px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gZ5Yo1MsxoZ1XefDKb1XbuDPzd2gXejKRtF2m9_i9lReqK-oYNe_C1J7EXRPX3DVBh0&usqp=CAU" alt="">
+                    <img class="color-select" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0gZ5Yo1MsxoZ1XefDKb1XbuDPzd2gXejKRtF2m9_i9lReqK-oYNe_C1J7EXRPX3DVBh0&usqp=CAU" alt="">
                     <label for="red">red</label>
                     <input type="checkbox" name="red" >
                     <br> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <img width="35px" height="12px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBOjib6GquIxeLjno5XILIw5xxrk7tQQl-vb_6kEJj2jL0mYvkpqeAVBdj2G7pSsb5FH4&usqp=CAU" alt="">
+                    <img class="color-select" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBOjib6GquIxeLjno5XILIw5xxrk7tQQl-vb_6kEJj2jL0mYvkpqeAVBdj2G7pSsb5FH4&usqp=CAU" alt="">
                     <label for="green">green</label>
                     <input type="checkbox" name="green" >
                 </div>
+            <div>
+                <label for="learn" >How did you learn about Shope Here:  </label> <br>
+                <select class="dropdown" required>
+                    <option value="" ></option>
+                    <option value="Friends&relative">Friends and relative</option>
+                    <option value="Websearch">Web search</option>
+                    <option value="Pop-upAds">Pop-up ads</option>
+                    <option value="Banner">Banner</option>
+                <select>
+            </div>
+
+            <div> 
+                <label for="visit" >How often do you visit our website?  </label> <br>
+                <select class="dropdown" required>
+                    <option value="" ></option>
+                    <option value="Daily">Daily</option>
+                    <option value="once-week">Once a week</option>
+                    <option value="once-month">Once a month</option>
+                <select>
+            </div>
                 <div >
                     <label for="comments">What particular aspect(s) of our website do you like?:  </label> <br>
-                    <textarea style="width: 100%;" id="comments" name="comments" placeholder="what things do you like?"></textarea>
+                    <textarea id="comments"; name="comments" placeholder="what things do you like?"></textarea>
                 </div>
             </div>
-        </div>
-        <button type="submit">Submit</button>
-        <button type="reset"> Clear</button>
-    </form>
+            <fieldset class="hover-rateUs">
+                <legend >Rate us!</legend>
+                <select name="rate" class="dropdown" style="color: red;">
+                    <option value="5">❤❤❤❤❤</option>
+                    <option value="4">❤❤❤❤</option>
+                    <option value="3">❤❤❤</option>
+                    <option value="2">❤❤</option>
+                    <option value="1">❤</option>
+                </select>
+            </fieldset>
+            </div>
+            <button type="submit" class="submit">Submit</button> &nbsp;
+            <button type="reset" class="submit"> Clear</button>
+        </form>
     </div>
 </body>
 </html>
