@@ -1,62 +1,59 @@
 body {
-    background-color: rgb(49, 228, 228);
-    padding-right: 20px;
+    background-color: rgb(208, 240, 240);
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-items:flex-end ;
             align-items: center;
-    width: 100%;
+            justify-content: center;
+            width: 100vw;
 }
 #board {
-        background-color:  white;
+        background-color: whitesmoke;
         width: 800px;
-        max-width: 100%;
         height: 800px;
-        padding:  40px;
         display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
+            justify-items:center ;
+            outline: solid rgba(12, 95, 12, 0.849);
 }
-.row-1 {
+#mainX {
+    margin: 0;
+    flex-wrap: wrap;
+        outline: 25px solid rgba(12, 95, 12, 0.849);
+        padding: 30px;
+        background-color: white;
+
 }
-.row-2 {
-}
-.black {
-    background-color: black;
+.green {
+    background-color: rgba(12, 95, 12, 0.849);
     width: 100px;
     height: 100px;
     margin: 0px;
     padding: 0px;
-    outline-style: solid;
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 .white {
-    background-color: wheat;
+    background-color: rgb(241, 234, 234);
     width: 100px;
     height: 100px;
     margin: 0px;
     padding: 0px;
-    outline-style:solid ;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .chess-piece {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    color: red;
     width: 75%;
     height: 75%;
     display: flex;
         align-items: center;
         justify-content: center;
+        filter:grayscale() ;
 }
 .chess-piece:hover {
 width: 100px;
