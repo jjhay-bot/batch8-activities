@@ -5,7 +5,13 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 100vw;
+            background-image: url(https://cdn.dribbble.com/users/51395/screenshots/11144698/media/17cfb553d9e2c5ca35f91f1608e43357.jpg?compress=1&resize=1000x750);
+            background-size: cover ;
+            background-position-x: center;
+            margin: 0 auto;
+            padding: 0 auto;
+            border: hidden;
+            overflow: hidden;
 }
 #board {
         background-color: whitesmoke;
@@ -19,10 +25,8 @@ body {
 #mainX {
     margin: 0;
     flex-wrap: wrap;
-        outline: 25px solid rgba(12, 95, 12, 0.849);
         padding: 30px;
         background-color: white;
-
 }
 .green {
     background-color: rgba(12, 95, 12, 0.849);
@@ -31,8 +35,8 @@ body {
     margin: 0px;
     padding: 0px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
 }
 .white {
     background-color: rgb(241, 234, 234);
