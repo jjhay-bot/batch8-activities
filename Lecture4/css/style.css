@@ -1,17 +1,18 @@
 body {
-    background-color: rgb(208, 240, 240);
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-image: url(https://cdn.dribbble.com/users/51395/screenshots/11144698/media/17cfb553d9e2c5ca35f91f1608e43357.jpg?compress=1&resize=1000x750);
-            background-size: cover ;
-            background-position-x: center;
-            margin: 0 auto;
-            padding: 0 auto;
-            border: hidden;
-            overflow: hidden;
+    background-color: rgba(76, 204, 204, 0.836);
+    display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    background-image: url(https://cdn.dribbble.com/users/51395/screenshots/11144698/media/17cfb553d9e2c5ca35f91f1608e43357.jpg?compress=1&resize=1000x750);
+    background-size: cover ;
+    background-position-x: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    border: hidden;
+    overflow: hidden;
+    background-blend-mode:hard-light ;
 }
 #board {
         background-color: whitesmoke;
@@ -26,7 +27,7 @@ body {
     margin: 0;
     flex-wrap: wrap;
         padding: 30px;
-        background-color: white;
+        background-color: whitesmoke;
 }
 .green {
     background-color: rgba(12, 95, 12, 0.849);
