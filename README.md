@@ -1,6 +1,6 @@
 ## Avion School batch8-activities Compilation
 
-### Created to you by: Engr.Jhay Jhay D Alcorcon
+### Created by: Engr.Jhay Jhay D Alcorcon
 
 Task list:
 
