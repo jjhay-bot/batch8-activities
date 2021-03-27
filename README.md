@@ -1,14 +1,10 @@
-## Hello I'm Jhay 
-<img src="https://i.pinimg.com/originals/6d/cd/94/6dcd94c7c4bf4800648ef7cbe0113c33.gif" width="100px" alt="Hi">
-
+## Hello I'm Jhay!    <img src="https://i.pinimg.com/originals/6d/cd/94/6dcd94c7c4bf4800648ef7cbe0113c33.gif" width="100px" alt="Hi">
 ##### I am currently a student at Avion School, soon to be Civil Software Engineer
-
 
 
 ## Welcome to my landing page!
 
 Reach me out!
-
 
   <img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter-logo.png.twimg.768.png" width="15px" alt="">[ Twitter](https://twitter.com/cjjdalcorcon)
   <img src="https://indianewengland.com/wp-content/uploads/2019/04/linkedin.png" width="15px" alt="">[ LinkedIn](https://www.linkedin.com/in/jhay-jhay-alcorcon-7b28a1141/)
