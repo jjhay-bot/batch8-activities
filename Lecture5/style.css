@@ -39,7 +39,7 @@ body {
     color: rgb(85, 13, 69);
 }
 .title:hover {
-    color: lawnspringgreen;
+    color: lawngreen;
     zoom: 105%;
 }
 .column {
@@ -67,30 +67,30 @@ body {
     font-size:  130%;
 }
 .black:hover {
-    color: tomato;
+    color: lawngreen;
 }
 .white:hover {
-    color: tomato;
+    color: lawngreen;
 }
 .black2 {
     background-color:  rgb(26, 27, 26);
-    color:  springgreen;
+    color:  tomato;
     width: 8.75vh;
     height: 8.75vh;
     font-size:  130%;
 }
 .white2 {
     background-color: white;
-    color:  springgreen;
+    color:  tomato;
     width: 8.75vh;
     height: 8.75vh;
     font-size:  130%;
 }
 .black2:hover {
-    color: tomato;
+    color: lawngreen;
 }
 .white2:hover {
-    color: tomato;
+    color: lawngreen;
 }
 button {
     color: tomato;
@@ -99,5 +99,6 @@ button {
     font-family: cursive;
 }
 button:hover {
-    zoom: 115%;
+    zoom: 105%;
+    background-color: lawngreen;
 }
