@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Fredoka+One&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://cdn.dribbble.com/users/1700393/screenshots/14905445/media/7c86f07dac4b07e6546d31935b7841c6.png?compress=1&resize=800x600);
+    background-size: 40%;
+    background-position-x: center;
+    background-blend-mode:overlay ;
+    background-color: rgba(108, 184, 93, 0.65);
+    display: grid;
+    align-content: flex-start;
+    justify-tracks: center;
+    font-family: Chango;
+    text-align: center;
+    padding-top: 2.5vh;
+    overflow: hidden;
+}
+#container {
+    background-color: blanchedalmond;
+    width: 70vh;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    color: blueviolet;
+    margin: 0px;
+    border: 1px black solid;
+    padding: 0;
+}
+.board {
+    border: 2vh  rgba(235, 221, 194, 0.9) solid;
+    margin: 1.25vh;
+    display: grid;
+    justify-self: center; 
+}
+.title {
+    line-height: 1.25vh;
+    font-size: 2.5vh;
+    color: rgb(85, 13, 69);
+}
+.title:hover {
+    color: lawnspringgreen;
+    zoom: 105%;
+}
+.column {
+    display: grid;
+    grid-template-columns: repeat(8);
+    color: blueviolet;
+    font-size: 4vh;
+    justify-self: center;
+}
+.row {
+    display: grid;
+    grid-template-rows: repeat(8);
+    color: blueviolet;
+}
+.black {
+    background-color:  rgb(26, 27, 26);
+    width: 8.75vh;
+    height: 8.75vh;
+    font-size:  130%;
+}
+.white {
+    background-color: white;
+    width: 8.75vh;
+    height: 8.75vh;
+    font-size:  130%;
+}
+.black:hover {
+    color: tomato;
+}
+.white:hover {
+    color: tomato;
+}
+.black2 {
+    background-color:  rgb(26, 27, 26);
+    color:  springgreen;
+    width: 8.75vh;
+    height: 8.75vh;
+    font-size:  130%;
+}
+.white2 {
+    background-color: white;
+    color:  springgreen;
+    width: 8.75vh;
+    height: 8.75vh;
+    font-size:  130%;
+}
+.black2:hover {
+    color: tomato;
+}
+.white2:hover {
+    color: tomato;
+}
+button {
+    color: tomato;
+    padding: 0.5ch;
+    font-size: 2.5vh;
+    font-family: cursive;
+}
+button:hover {
+    zoom: 115%;
+}
