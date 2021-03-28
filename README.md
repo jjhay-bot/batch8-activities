@@ -8,7 +8,8 @@ Task list:
 2. [HTML Email Project](/Lecture2/index.html)
 3. [Tribute Page Project](/Lecture2.1/index.html)
 4. [Survey Form Project](/Lecture3/index.html)
-5. [Chessboard Project](/Lecture4/index.html)
+5. [Chessboard Project (Flex)](/Lecture4/index.html)
+6. [Chessboard Project (Grid)](/Lecture5/index.html)
 
 
 
