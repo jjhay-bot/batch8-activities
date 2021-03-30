@@ -13,8 +13,30 @@ body {
     justify-tracks: center;
     font-family: Chango;
     text-align: center;
-    padding-top: 2.5vh;
+    padding-top: 0vmin;
     overflow: hidden;
+    margin: 0vmin;
+}
+.btn {
+    min-width: fit-content;
+    background-color: whitesmoke;
+    margin-top: 1.5vmin;
+    margin-bottom: 1.5vmin;
+    font-size: 2.75vmin;
+    padding: 1vmin;
+    grid-row: 2fr 1fr;
+    text-decoration: none;
+}
+.click-here {
+    margin-top: 2.5vmin;
+    padding: 1.25vmin;
+    font-size: 2vmin;
+    width: 50vmin;
+    justify-self: center;    
+}
+.btn:hover {
+    zoom: 105%;
+    background-color: lawngreen;
 }
 #container {
     background-color: blanchedalmond;
@@ -23,24 +45,26 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     color: blueviolet;
-    margin: 0px;
-    border: 1px black solid;
+    margin: 0vmin;
+    border: 0.1vmin black solid;
     padding: 0;
+    
 }
 .board {
-    border: 2vh  rgba(235, 221, 194, 0.9) solid;
-    margin: 1.25vh;
+    border: 2.5vh  rgba(235, 221, 194, 0.9) solid;
     display: grid;
     justify-self: center; 
+    margin: 2vmin;
+
 }
 .title {
-    line-height: 1.25vh;
     font-size: 2.5vh;
     color: rgb(85, 13, 69);
+    margin-top: 5vmin;
+
 }
 .title:hover {
     color: lawngreen;
-    zoom: 105%;
 }
 .column {
     display: grid;
@@ -92,19 +116,26 @@ body {
 .white2:hover {
     color: lawngreen;
 }
-button {
-    color: tomato;
-    padding: 0.5ch;
-    font-size: 2.5vh;
-    font-family: cursive;
+
+.bishop {
+    animation: bishop1-move 0.75s ease-out forwards 0.5s alternate;
+
 }
-button:hover {
-    zoom: 105%;
-    background-color: lawngreen;
+@keyframes bishop1-move {
+    0% {
+        transform: translateX(200%) translateY(-250%);
+        color: lawngreen;
+    }
+    99% {
+        color: lawngreen;
+    }
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
 }
 
 .bishop:hover {
-    animation: bishop-move 0.5s ease-out forwards alternate;
+    animation: bishop-move 0.5s ease-out forwards 0.5s alternate;
 }
 @keyframes bishop-move {
     0% {
@@ -116,7 +147,7 @@ button:hover {
 }
 
 .horse:hover {
-    animation: horse-move 0.3s ease-in-out forwards alternate;
+    animation: horse-move 0.5s ease-in-out forwards 0.5s alternate;
 }
 @keyframes horse-move {
     0% {
@@ -132,7 +163,7 @@ button:hover {
 }
 
 .pawn:hover {
-    animation: pawn-move 0.15s ease-in-out forwards;
+    animation: pawn-move 0.15s ease-in-out 0.5s forwards;
 }
 @keyframes pawn-move {
     0% {
@@ -142,10 +173,8 @@ button:hover {
         transform: translateY(125%);
     }
 }
-
-
 .pawn2:hover {
-    animation: pawn2-move 0.25s ease-in-out forwards;
+    animation: pawn2-move 0.25s ease-in-out forwards 0.5s alternate;
 }
 @keyframes pawn2-move {
     0% {
@@ -157,7 +186,7 @@ button:hover {
 }
 
 .king:hover {
-    animation: king-move 0.25s ease-in-out forwards 1 alternate ;
+    animation: king-move 0.25s ease-in-out forwards 0.25s alternate ;
 }
 @keyframes king-move {
     0% {
@@ -173,7 +202,7 @@ button:hover {
 }
 
 .pawn2a {
-    animation: pawn2a-move .75s ease-in-out .8s forwards;
+    animation: pawn2a-move 1s ease-in-out 2.5s forwards;
 }
 @keyframes pawn2a-move {
     0% {
@@ -189,22 +218,24 @@ button:hover {
 }
 
 .pawn3 {
-    animation: pawn3-move .75s ease-in-out forwards;
+    animation: pawn3-move 1s ease-in-out 1.4s  forwards;
 }
 @keyframes pawn3-move {
     0% {
         transform: translateX(0%) ;
+        animation-delay: 0s;
     }
     95% {
         color: lawngreen;
     }
     100% {
         transform: translateY(-250%);
+
     }
 }
 
 .pawn3a {
-    animation: pawn3a-move .75s ease-in-out 1.75s forwards;
+    animation: pawn3a-move .75s ease-in-out 3.75s forwards;
 }
 @keyframes pawn3a-move {
     0% {
@@ -219,3 +250,68 @@ button:hover {
         transform: translateY(-125%);
     }
 }
+
+.pawn-a:hover {
+    animation: pawn-a-move .5s ease-in-out forwards;
+}
+@keyframes pawn-a-move {
+    0% {
+        transform: translateX(0%) ;
+        color: lawngreen;
+    }
+    95% {
+        color: lawngreen;
+    }
+
+    100% {
+        transform: translateY(-125%);
+    }
+}
+.pawn-a2:hover {
+    animation: pawn-a2-move .5s ease-in-out forwards;
+}
+@keyframes pawn-a2-move {
+    0% {
+        transform: translateX(0%) ;
+        color: lawngreen;
+    }
+    95% {
+        color: lawngreen;
+    }
+
+    100% {
+        transform: translateY(-250%);
+    }
+}
+
+.horse-a:hover {
+    animation: horse-a-move 0.5s ease-in-out forwards 0.5s alternate;
+}
+@keyframes horse-a-move {
+    0% {
+        transform: translateX(0%) ;
+    }
+    50% {
+        transform: translateX(0%) translateY(-250%);
+    }
+
+    100% {
+        transform: translateX(-100%) translateY(-250%);
+
+    }
+}
+.horse-a2:hover {
+    animation: horse-a-move 0.5s ease-in-out forwards 0.5s alternate;
+}
+@keyframes horse-a-move {
+    0% {
+        transform: translateX(0%) ;
+    }
+    50% {
+        transform: translateX(0%) translateY(-250%);
+    }
+
+    100% {
+        transform: translateX(100%) translateY(-250%);
+}
+
