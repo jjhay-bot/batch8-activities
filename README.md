@@ -19,6 +19,8 @@ Task list:
 4. [Survey Form Project](/Lecture3/index.html)
 5. [Chessboard Project (Flex)](/Lecture4/index.html)
 6. [Chessboard Project (Grid)](/Lecture5/index.html)
+7. [Product Landing Page](/Lecture 6/index.html)
+
 
 
 
