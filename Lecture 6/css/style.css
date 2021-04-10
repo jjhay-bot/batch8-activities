@@ -25,7 +25,6 @@ body {
     width: 100vw;
     padding: 0;
     margin: 0;
-
 }
 
 .container h2 {
@@ -119,27 +118,28 @@ body {
 }
 
 .text-wrapper {
-    animation: text-wrapper-move 5s ease forwards 2s alternate infinite;
+    animation: text-wrapper-move 8s ease forwards 2s alternate infinite;
+    width: 100;
 }
 
 @keyframes text-wrapper-move {
     0% {
-        color:#333;
-
+        color:whitesmoke;
+        background-color:none;
     }
-    40% {
-        background-color: rgba(245, 245, 245, 0.55);
-        color:#333;
-
-
+    53.5% {
+        background-color:none;
     }
-    50% {
-        background-color: rgba(245, 245, 245, 0.55);
-        color:#333;
-
+    53.5% {
+        background-color: rgba(18, 134, 134, 0.5);
+    }
+    53% {
+        background-color:none;
     }
     100% {
-        color:#333;
+        color:whitesmoke;
+        background-color:none;
+
     }
 }
 
@@ -198,8 +198,6 @@ body {
     width: auto;
     list-style: none;
     line-height: 2rem;
-
-
 }
 
 #video {
@@ -304,6 +302,181 @@ body {
     font-size: 1rem;
     margin: 0 1rem;
     padding: 0.5rem;
-
-
 }
+
+
+.toggle-button {
+    position: absolute;
+    top: 25%;
+    right: 3vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 6vw;
+    height: fit-content;
+}
+
+.burger {
+    height: .5vw;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1.25vw 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+@media (max-width: 1000px), (orientation:portrait)  {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        background-color: #333;
+        height: 12vw;
+        align-items: center;
+        position:fixed ;
+        top: 0;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .container h2 {
+        
+        color: white;
+        padding: 0;
+        margin: 0;
+        min-width: 400px;
+        font-size: 3.5vw;
+     }
+     #nav-bar a {
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: end;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        width: fit-content;
+
+    }
+    
+    #header-img {
+        width: 9vw;
+        border-radius: 50%;
+        padding: 0;
+        margin: 0 2vw 0  2vw;
+        
+    }
+
+    .img-wrapper {
+        display: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        position: top;
+        height: fit-content;
+    }
+    .img-wrapper img {
+        padding-top: 0;
+        margin-top: 12vw;
+        width: 100vw;
+        height:90vw ;
+        opacity: .95;
+        z-index: -1;
+        position: relative;
+        bottom: 0;
+
+    }
+    .toggle-button {
+        display: flex;
+        
+    }
+    #nav-bar {
+        display: none;
+        width: 100%;
+    }
+    .home-wrapper .text-wrapper {
+        position:relative;
+        top: -58vh;
+        width: 100%;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .home-img {
+        display: flex;
+    }
+
+    #home-img2 {
+        margin-top: 0;
+    }
+
+    .home-wrapper {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        background-blend-mode:hard-light ;
+        background-color: rgba(110, 212, 212, 0.2);
+
+    }
+    
+    .wrapper {
+        padding: 0;
+        margin: 0;
+        align-content: center;
+    }
+    
+    .wrapper h2 {
+        text-align: center;
+        padding-top:5vw ;
+        font-size: 3.5vw;
+    }
+    .service {
+        line-height: 5vw;
+        font-size: 3.5vw;
+
+    }
+
+    #video {
+        width: 90vw;
+        height: 50vw;
+        border-radius: 1.5%;
+
+    }
+    
+    .project-container {
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-around;
+    }
+    
+    .video-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 60vw;
+        margin: 0;
+    }
+    
+    .video-container h4{
+        margin: 2.5vw;
+        text-align: center;
+        font-size: 3vw;
+    }
+    
+    
+
+     /*
+    .wrapper h4 {
+        text-align: center;
+        align-content: center;
+        padding: 0;
+        margin: 7.5vh;
+        font-size: 3vw;
+
+    } */
+    
+    
+
+    
