@@ -7,8 +7,7 @@
     <meta name="description" content="Architectural Design | Engineering Design">
     <link rel="stylesheet" href="css/style.css">
     <title>A+M Design Collab</title>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript"> </script>
+    <script  src="script.js" defer></script>
 
 </head>
 <body>
@@ -19,18 +18,18 @@
             <img id="header-img" src="images/A+M Design Collab.png" alt="">
         </div>
         <a href="#" class="toggle-button">
-            <div>
-                <span class="burger"></span>
-                <span class="burger"></span>
-                <span class="burger"></span>
-            </div>
-        <nav id="nav-bar">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+        </a>
+        <nav class="navbar-links">
             <ul >
                 <li class="nav-link"><a href="#Home">Home</a></li>
                 <li class="nav-link"><a href="#About">About Us</a></li>
                 <li class="nav-link"><a href="#Service">Service</a></li>
                 <li class="nav-link"><a href="#Projects">Projects</a></li>
                 <li class="nav-link"><a href="#Contact-us">Contact Us</a></li>
+
             </ul>
         </nav>
     </div>
@@ -58,11 +57,9 @@
                     <li>Architectural Design</li>
                     <li>Structural Engineering Analysis and Design</li>
                 </ul>
-            </div>
-            <div class="wrapper">
                 <h2 >Other Architectural, Construction, Engineering Services </h2>
                 <ol class="service">
-                    <li>Interior Design | Furniture Design </li>
+                    <li>Architectural Interiors | Furniture Design </li>
                     <li>Building Information Modelling (Architectural, Structural, MEPS)</li>
                     <li>Shop and Fabrication Drawing</li>
                     <li>Material Take-offs | Cuttings List and Bar bending Schedules </li>
@@ -79,7 +76,7 @@
             <br><hr>
             <div class="project-container">
                 <div class="video-container" >
-                    <br><br>
+                    <br>
                     <iframe id="video" src="https://www.youtube.com/embed/N3AQ2Mxy3wg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h4>Sample Project Presentation</h4>
                 </div>
@@ -118,7 +115,7 @@
             <div>
                 <h4 >
                     A+M Design Collab is an Architectural and Structural Engineering firm that specializes in Commercial and Residential Projects.
-                </h4>
+                </h4><br>
                 <h1 class="mission">Our Mission</h1>
                 <div class="content">
                     <span >We are committed to providing quality services and building long-term relationships to our clients based on excellence, trust, ethics & compliance. 
@@ -137,7 +134,6 @@
             <div id="form-container">
                 <div id="form">
                     <form action="#" method="post" id="data">
-                        <br> <br>
                         <div >
                             <input  type="text" name="name" id="name" class="input-box" placeholder="Full Name" required>
                         </div>
@@ -154,11 +150,11 @@
                             <textarea type="text" name="message" id="message" class="text-box" placeholder="Message" required></textarea>       
                         </div>
                     </form>
+                    <br>
                     <div id="submit-button">
                         <input type="submit" id="submit" value="Send Message" class="submit-button">
                         <input type="reset" id="reset" value="Clear Form" class="submit-button">
                     </div>
-                    <br><br><br><br>
                 </div>
             </div>
         </div>
