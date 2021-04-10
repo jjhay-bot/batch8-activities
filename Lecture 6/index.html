@@ -82,28 +82,65 @@
                 </div>
                 <div class="img-container">
                     <div >
-                        <h4><a href="#">Architectural Design Projects</a></h4> 
-                        <img class="sample-img" src="" alt="">
-                        <img class="sample-img" src="" alt="">
-                        <img class="sample-img" src="" alt="">
+                        <h4><a href="#Architectural">Architectural Design Projects</a></h4> 
+                        <img class="sample-img" src="images/image.jpg" alt="">
+                        <img class="sample-img" src="images/image2.jpg" alt="">
+                        <img class="sample-img" src="images/image6.jpg" alt="">
                     </div>
                     <div>
-                        <h4><a href="#">Interior Design Projects</a></h4> 
-                        <img class="sample-img" src="" alt="">
-                        <img class="sample-img" src="" alt="">
-                        <img class="sample-img" src="" alt="">
+                        <h4><a href="#Interior">Architectural Interior Projects</a></h4> 
+                        <img class="sample-img" src="images/interior1.jpg" alt="">
+                        <img class="sample-img" src="images/interior2.jpg" alt="">
+                        <img class="sample-img" src="images/interior3.jpg" alt="">
                     </div>
                     <div>
-                        <h4><a href="">Structural Engineering Design Projects</a></h4> 
-                        <img class="sample-img" src="" alt="">
-                        <img class="sample-img" src="" alt="">
-                        <img class="sample-img" src="" alt="">
+                        <h4><a href="#Structural">Structural Engineering Design Projects</a></h4> 
+                        <img class="sample-img" src="images/analysis3.png" alt="">
+                        <img class="sample-img" src="images/analysis2.png" alt="">
+                        <img class="sample-img" src="images/analysis1.png" alt="">
                     </div>
                     <br>
                 </div>
             </div>
         </div>
     </article>
+
+    <article class="project-section" > 
+        <br><br><br><br>
+        <div  id="Architectural">
+            <div class="project-content">
+                <img class="proj-img" src="images/image.jpg" alt="">
+                <img class="proj-img" src="images/image2.jpg" alt="">
+                <img class="proj-img" src="images/image6.jpg" alt="">
+            </div>
+            <h3 class="project-title">Architectural Design Projects </h3>
+        </div>
+    </article>
+    <article class="project-section" > 
+        <br><br><br><br>
+        <div  id="Interior">
+            <div class="project-content">
+                <img class="proj-img" src="images/interior1.jpg" alt="">
+                <img class="proj-img" src="images/interior2.jpg" alt="">
+                <img class="proj-img" src="images/interior3.jpg" alt="">
+            </div>
+            <h3 class="project-title">Architectural Interior Projects </h3>
+        </div>
+    </article>
+    <article class="project-section" > 
+        <br><br><br><br>
+        <div  id="Structural">
+            <div class="project-content">
+                <img class="proj-img" src="images/analysis3.png" alt="">
+                <img class="proj-img" src="images/analysis2.png" alt="">
+                <img class="proj-img" src="images/analysis1.png" alt="">
+            </div>
+            <h3 class="project-title">Structural Engineering Design Projects </h3>
+        </div>
+
+
+    </article>
+
 
     <!-- About -->
     <article id="About" class="section-wrapper">
@@ -133,28 +170,32 @@
             <br><hr>
             <div id="form-container">
                 <div id="form">
-                    <form action="#" method="post" id="data">
-                        <div >
-                            <input  type="text" name="name" id="name" class="input-box" placeholder="Full Name" required>
+                    <form action="#" method="post" >
+                        <div id="data">
+                            <div >
+                                <input  type="text" name="name" id="name" class="input-box" placeholder="Full Name" required>
+                            </div>
+                            <div >
+                                <input type="email" name="email"  id="email" class="input-box" placeholder="Email" required /><br />
+                            </div>
+                            <div >
+                                <input type="number" name="contact" id="contact" class="input-box" placeholder="Contact" required>
+                            </div>
+                            <div >
+                                <input type="text" name="country" id="country" class="input-box" placeholder="Country" required>
+                            </div>
+                            <div >
+                                <textarea type="text" name="message" id="message" class="text-box" placeholder="Message" required></textarea>       
+                            </div>
+    
                         </div>
-                        <div >
-                            <input type="email" name="email"  id="email" class="input-box" placeholder="Email" required /><br />
-                        </div>
-                        <div >
-                            <input type="number" name="contact" id="contact" class="input-box" placeholder="Contact" required>
-                        </div>
-                        <div >
-                            <input type="text" name="country" id="country" class="input-box" placeholder="Country" required>
-                        </div>
-                        <div >
-                            <textarea type="text" name="message" id="message" class="text-box" placeholder="Message" required></textarea>       
+                        <br>
+                        <div id="submit-button">
+                            <input type="submit" id="submit" value="Send Message" class="submit-button">
+                            <input type="reset" id="reset" value="Clear Form" class="submit-button">
                         </div>
                     </form>
-                    <br>
-                    <div id="submit-button">
-                        <input type="submit" id="submit" value="Send Message" class="submit-button">
-                        <input type="reset" id="reset" value="Clear Form" class="submit-button">
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -162,7 +203,7 @@
 
 
     <footer>
-        Footer
+
     </footer>
 </body>
 </html>
