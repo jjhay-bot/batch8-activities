@@ -56,8 +56,8 @@ body {
     width: 10vh;
 }
 .navbar-links a {
-    color: white;  
-    display: block; 
+    color: white;
+    display: block;
     text-decoration: none;
 }
 
@@ -86,8 +86,8 @@ body {
     width: 100%;
     height: 100vh;
     opacity: 1;
-    background-blend-mode:hard-light ;
-    background-color: rgba(110, 212, 212, 0.2);
+    background-blend-mode:lighten ;
+    background-color: rgba(3, 198, 233, 0.15);
 }
 
 .img-wrapper {
@@ -104,7 +104,7 @@ body {
     position:sticky ;
     bottom: 0;
 }
-    
+
 .text-wrapper {
     position:relative;
     top: -50vh;
@@ -115,12 +115,7 @@ body {
     font-size: 6vh;
     width: 200%;
     text-shadow: #333 0.5vh 0.5vh;
-
-}
-
-.text-wrapper {
     animation: text-wrapper-move 8s ease forwards 2s alternate infinite;
-    width: 100;
     font-family:'Courier New', Courier, monospace ;
 }
 
@@ -176,7 +171,7 @@ body {
     text-align: center;
     padding:2.5vh  0 2.5vh 0;
     background-color:#333;
-    bottom: 0; 
+    bottom: 0;
     text-shadow: teal 2px 2px;
     color:whitesmoke;
 
@@ -266,13 +261,13 @@ body {
 }
 
 .footer {
-    color:#333;
     padding: 0;
     /* height: 15vh; */
-    width: 88vw;
+    width: 100vw;
     display: flex;
     flex-direction:column;
     font-size: 2.25vh;
+    background-color: rgba(51, 51, 51, 0.55);
 }
 
 #form-container {
@@ -316,7 +311,7 @@ body {
     align-self: center;
     font-size: 1.25rem;
     margin: 0.5rem;
-    padding: 0.5rem; 
+    padding: 0.5rem;
     width: 80%;
 }
 
@@ -365,20 +360,6 @@ body {
 }
 
 
-}
-.project-section {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    align-self: center;
-    background-image: url(https://www.usm.edu/undergraduate-programs/_images/feature-program-architectural-et.jpg);
-    background-blend-mode:hard-light ;   
-    background-color: rgba(240, 248, 255, 0.5);     
-    background-size:cover;  
-
-}
-
 .project-content {
     display: flex;
     width: 100vw;
@@ -391,13 +372,13 @@ body {
     padding: 0;
     margin: 0;
 }
-
 .project-content img {
     border-radius: 5%;
     align-self: center;
     width:30vw;
     height: 20vw;
 }
+
 .project-content img:hover {
     zoom: 110%;
 }
@@ -410,9 +391,6 @@ body {
     text-align: center;
     text-shadow: rgba(0, 128, 128, 0.562) 0.05em 0.05em;
 }
-
-
-
 
 @media (max-width: 1000px), (orientation:portrait)  {
     .container {
@@ -428,7 +406,7 @@ body {
         margin: 0;
     }
     .container h2 {
-        
+
         color: white;
         padding: 0;
         margin: 0;
@@ -469,7 +447,7 @@ body {
         bottom: 0;
     }
     .toggle-button {
-        display: flex; 
+        display: flex;
     }
 
     .navbar-links.active {
@@ -478,7 +456,7 @@ body {
         top: 12vw;
         background-color: rgba(51, 51, 51, 0.5);
     }
-    
+
     .nav-link {
         width: 100vw;
         padding:2vw;
@@ -499,7 +477,7 @@ body {
         font-size: 3.5vw;
 
     }
- 
+
     .home-wrapper .text-wrapper {
         position:relative;
         top: -58vh;
@@ -534,7 +512,7 @@ body {
         align-content: center;
         height: 88vh;
     }
-    
+
     .wrapper h2 {
         text-align: center;
         padding-top:5vw ;
@@ -543,7 +521,7 @@ body {
     .text-wrapper {
         text-shadow: rgba(51, 51, 51, 0.75) 0.5vw 0.5vw;
     }
-    
+
     .service {
         line-height: 5vw;
         font-size: 3.5vw;
@@ -555,13 +533,13 @@ body {
         border-radius: 1.5%;
 
     }
-    
+
     .project-container {
         display: flex;
         flex-direction:column ;
         justify-content: space-between;
     }
-    
+
     .video-container {
         display: flex;
         flex-direction: column;
@@ -569,14 +547,14 @@ body {
         height: fit-content;
         margin: 0;
     }
-    
+
     .video-container h4{
         margin: 0 0 2.5vw 0;
         text-align: center;
         font-size: 3vw;
 
     }
-    
+
     .wrapper h4 {
         text-align: center;
         align-content: center;
@@ -584,7 +562,7 @@ body {
         margin: 0;
         font-size: 3vw;
         width: 90vw;
-    } 
+    }
 
     .img-container {
         display: flex;
@@ -619,7 +597,7 @@ body {
         text-align: center;
         padding:3vw  0 3vw 0;
         background-color:#333;
-        bottom: 0; 
+        bottom: 0;
         text-shadow: teal 0.3vw 0.3vw;
         color:whitesmoke;
         font-size: 5vw;
@@ -631,7 +609,7 @@ body {
         margin:0;
         padding: 0.5vw;
     }
-    
+
     .input-box {
         font-size: 3.25vw;
         margin:1.75vw;
@@ -643,13 +621,13 @@ body {
         padding: 0;
         width: 100vw;
     }
-            
+
     .text-box {
         height: 5rem;
         align-self: center;
         font-size: 3.25vw;
         margin:1.75vw;
-        padding: 0; 
+        padding: 0;
         width: 70%;
     }
 
@@ -659,14 +637,14 @@ body {
         border-radius: 10% 10% 10%  10% / 50% 50% 50% 50%;
         background-color: rgba(51, 51, 51, 0.55);
     }
-    
+
     #submit-button {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
         margin:0;
         padding: 0;
-    }    
+    }
     .project-content {
         display: flex;
         flex-direction: column;
@@ -701,31 +679,19 @@ body {
     .project-section {
         border: rgba(110, 212, 212, 0.2) 1px solid;
         background-image: url(https://www.usm.edu/undergraduate-programs/_images/feature-program-architectural-et.jpg);
-        background-blend-mode:hard-light ;   
-        background-color: rgba(240, 248, 255, 0.5);     
-        background-size:cover;  
+        background-blend-mode:hard-light ;
+        background-color: rgba(240, 248, 255, 0.5);
+        background-size:cover;
     }
 
     .footer {
         font-size: 3vw;
         line-height: 5vw;
-        padding-bottom: 5vw;
+        margin-bottom: 5vw;
 
     }
-    
+
     #form-container {
         height: 82vh;
-    }   
+    }
 }
-    
-
-
-
-
-    
-
-
-    
-    
-
-    
