@@ -211,7 +211,7 @@ body {
 .project-tag {
     display: flex;
     position: relative;
-    top: -10vh;
+    top: -12vh;
     width: 80vw;
     padding-left: 10vw;
 }
