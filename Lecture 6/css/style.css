@@ -206,7 +206,14 @@ body {
 .project-container {
     display: flex;
     justify-content: space-around;
+}
 
+.project-tag {
+    display: flex;
+    position: relative;
+    top: -10vh;
+    width: 80vw;
+    padding-left: 10vw;
 }
 
 .video-container {
@@ -359,7 +366,6 @@ body {
     align-content: center;
 }
 
-
 .project-content {
     display: flex;
     width: 100vw;
@@ -449,7 +455,6 @@ body {
     .toggle-button {
         display: flex;
     }
-
     .navbar-links.active {
         display: flex;
         position: absolute;
@@ -538,6 +543,16 @@ body {
         display: flex;
         flex-direction:column ;
         justify-content: space-between;
+    }
+    
+    .project-tag {
+        font-size: 2.25vw;
+        position: relative;
+        top: -7vh;
+        width: 95vw;
+        padding-left: 2.55vw;
+        text-align: center;
+        align-items: center;
     }
 
     .video-container {
@@ -693,5 +708,5 @@ body {
 
     #form-container {
         height: 82vh;
-    }
+    }    
 }
