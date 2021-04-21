@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum App</title>
+</head>
+
+<body>    
+    <div class="container-username">
+    <div id="todo">
+        <ul class="todo-list"></ul>
+        <form class="add-todo">
+          <input type="text" placeholder="Don't Forget to..." name="item" required>
+          <input type="submit" value="+">
+        </form>
+      </div>
+      <div class="remove-List">Remove All</div>
+    </div>
+ 
+
+
+
+
+
+
+    
+    <div class="container-username">
+        <span class="focus">What is your main focus today?</span>
+        <br>
+        <ul class="focusList"> </ul>
+
+        <!-- empty state -->
+        <div>
+            <h2 class="emptyTitle">Add your first todo</h2>
+            <p class="emptyDescription">What are you going todo today</p>
+        </div>
+
+          <!-- to input data, we need a form an input(text holder) -->
+            <input autofocus type="text" id="inputFocus" placeholder="Write a task you gotta do?" class="textbox" >
+            <br>
+        <div class="underlines"></div>
+        <br>
+        <button type="submit" class="submit" id=addTodoList>Add</button>
+        <br>
+    </div>
+
+        
+
+
+
+
+
+
+
+
+    <div class="background"> </div>
+<!-- Username -->          
+    <div class="container-username" >
+        <h2>Hello, what's your name?</h2>
+        <input id="username" type="text" autofocus required class="textbox" autocomplete="off">
+        <div class="underlines"></div>
+        <br>
+        <button type="submit" class="submit">Submit</button>
+    </div>
+
+<!-- User Email -->    
+                                                   
+    <div class="container-email" >
+        <h2 id="gmail">Hi user, what's your gmail?</h2>
+        <input type="email" id="userEmail" autofocus required class="textbox" >
+        <div class="underlines"></div>
+        <br>
+        <button type="submit" class="submit" id=submit2>Submit</button>
+    </div>
+
+
+<!-- Home page -->     
+
+    <div class="container-home">
+        <div class="mainContent">
+            <div class="clockHolder">
+                <strong id="displayClock" class="time" onload="showTime()"></strong>
+                <br>
+                <span id="displayDay" class="day" onload="showDay()"></span>
+            </div>
+            <div class="greetings" >
+                <h2>
+                    <span id="displayGreeting" onload="showGreeting()"> </span>
+                    <span id="displayGreeting2" onload="showUser()"> </span>
+                </h2>
+                <span class="focus">What is your main focus today?</span>
+                <p id="focusList"></p>
+                <input type="text" id="task" class="textbox" >
+                <div class="underlines"></div>
+                <button type="submit" class="submit" id=addTodoList>Add task</button>
+            </div>    
+        </div>
+    
+        <div class="quotes" >
+            <!-- "See things as you would have them be instead of as they are" -->
+            “If you're not making mistakes, then you're not making decisions.”
+            <!-- "Failing to plan is planning to fail" -->
+        </div>
+    
+        <div class="todo">
+            <span>🔔</span> 
+            <strong >2</strong>
+            <!-- add todo list  -->
+        </div>
+    
+        <div class="newQuotes">
+            
+        </div>
+
+        <div class="setting">
+            <span>⚙️</span>
+            <!-- <span>add new quotes</span>  -->
+        </div>
+    </div>                                                  
+
+
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
