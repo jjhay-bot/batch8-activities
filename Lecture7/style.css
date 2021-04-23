@@ -695,7 +695,8 @@ body {
 }
 
 #status span{
-    width:90vw;   
+    width:95vw; 
+    height: 125%;  
 }
 
 .statusBox span{
