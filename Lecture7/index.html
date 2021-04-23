@@ -9,74 +9,102 @@
 </head>
 
 <body>    
+    <div class="theme">
+        <div class="background"> </div>
 
-    <div class="background"> </div>
-<!-- Username -->          
-    <div class="container-username" >
-        <h2>Hello, what's your name?</h2>
-        <input id="username" type="text" autofocus required class="textbox" autocomplete="off">
-        <div class="underlines"></div>
-        <br>
-        <button type="submit" class="submit">Submit</button>
-    </div>
-
-<!-- User Email -->    
-                                                   
-    <div class="container-email" >
-        <h2 id="gmail">Hi user, what's your gmail?</h2>
-        <input type="email" id="userEmail" autofocus required class="textbox" >
-        <div class="underlines"></div>
-        <br>
-        <button type="submit" class="submit" id=submit2>Submit</button>
-    </div>
-
-
-<!-- Home page -->     
-
-    <div class="container-home">
-        <div class="mainContent">
-            <div class="clockHolder">
-                <strong id="displayClock" class="time" onload="showTime()"></strong>
-                <br>
-                <span id="displayDay" class="day" onload="showDay()"></span>
-            </div>
-            <div class="greetings" >
-                <h2>
-                    <span id="displayGreeting" onload="showGreeting()"> </span>
-                    <span id="displayGreeting2" onload="showUser()"> </span>
-                </h2>
-                <span class="focus">What is your main focus today?</span>
-                <p id="focusList"></p>
-                <input type="text" id="task" class="textbox" >
+        <!-- Username -->          
+            <div class="container-username" >
+                <h2>Hello, what's your name?</h2>
+                <input id="username" type="text" autofocus required class="textbox" autocomplete="off">
                 <div class="underlines"></div>
-                <button type="submit" class="submit" id=addTodoList>Add task</button>
-            </div>    
-        </div>
-    
-        <div class="quotes" >
-            <!-- "See things as you would have them be instead of as they are" -->
-            “If you're not making mistakes, then you're not making decisions.”
-            <!-- "Failing to plan is planning to fail" -->
-        </div>
-    
-        <div class="todo">
-            <span>🔔</span> 
-            <strong >2</strong>
-            <!-- add todo list  -->
-        </div>
-    
-        <div class="newQuotes">
+                <br>
+                <button type="submit" class="submit">Submit</button>
+                <div class="setting">
+                    <span class="pink">⚙️</span>
+                </div>
+                <div class="setting2">
+                    <span class="pink2">⚙️</span>
+                </div>
+            </div>
+        
+        <!-- User Email -->    
+                                                        
+            <div class="container-email" >
+                <h2 id="gmail">Hi user, what's your gmail?</h2>
+                <input type="email" id="userEmail" autofocus required class="textbox" >
+                <div class="underlines"></div>
+                <br>
+                <button type="submit" class="submit" id=submit2>Submit</button>
+                <div class="setting">
+                    <span class="pink">⚙️</span>
+                </div>
+                <div class="setting2">
+                    <span class="pink2">⚙️</span>
+                </div>
+            </div>
+        
+        
+        <!-- Home page -->     
+        
+            <div class="container-home">
+                <div class="mainContent">
+                    <div class="clockHolder">
+                        <strong id="displayClock" class="time" onload="showTime()"></strong>
+                        <br>
+                        <span id="displayDay" class="day" onload="showDay()"></span>
+                    </div>
+                    <div class="greetings">
+                        <h2>
+                            <span id="displayGreeting" onload="showGreeting()"> </span>
+                            <span id="displayGreeting2" onload="showUser()" contenteditable="" > </span>
+                        </h2>
+                        <h2 class="focus">What is your main focus today?</h2>
+                        <input class="focus" type="text" id="myInput" placeholder="Add task...">
+                        <span onclick="newFocus()" class="addBtn">Add</span>
+                    </div>
+                    
+                    <div class="underlines"></div>
+                    <ul id="myUL" ondrop="drop(event)" ondragover="allowDrop(event)"></ul>
+                </div>
+        
+                <div id="quotes" onload="showQuotes()" contenteditable="" > xxxx </div>
             
-        </div>
-
-        <div class="setting">
-            <span>⚙️</span>
-            <!-- <span>add new quotes</span>  -->
-        </div>
-    </div>                                                  
-
-
-
+                <div class="todo">
+                    <strong id="notification" >0</strong>
+                    <!-- add todo list  -->
+                    <span class="todotask">🔔
+                        <ul class="todoList"  ></ul> 
+                    </span>
+                </div>
+                <div class="containerList" >
+                    <SPAn class="mainFocus"></SPAn>
+                <div id="status">
+                    <span class="outline">📝
+                        <span class="statusBox">Todo:</span>
+                        <div style="margin: 10px;">
+                            <span>1.) 
+                                <span contenteditable style="outline:none">Task 1</span>
+                            </span><br>
+                            <span>2.) 
+                                <span contenteditable style="outline:none">Task 2</span>
+                            </span>
+                        </div>
+                    </span>
+                    <!-- <span class="outline">✅
+                        <ul class="statusBox">Done:</ul>
+                    </span> -->
+                </div>
+            </div>       
+            <div class="setting">
+                <span class="pink">⚙️</span>
+            </div>
+            <div class="setting2">
+                <span class="pink2">⚙️</span>
+            </div>
+            </div>                                                  
+        
+        
+    </div>
     <script src="script.js" defer></script>
 
 </body>
