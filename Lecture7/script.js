@@ -130,7 +130,7 @@ function showTime() {
     document.getElementById("displayDay").innerText = day;
     document.getElementById("displayClock").innerText = time;
     document.getElementById("displayGreeting").innerText = greet;
-    
+    setTimeout(showTime, 1000);
 }
 
 showTime()
