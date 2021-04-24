@@ -199,37 +199,6 @@ function newFocus() {
 // Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 
-// var checked = document.getElementsByClassName("check").value;
-// checked.addEventListener('click', function() {
-//     newemail.style.textDecoration = 'line-through';
-
-// });
-
-
-
-
-// Create a "close" button and append it to each list item
-// var myNodelist = document.getElementsByTagName("LI");
-// var i;
-//     for (i = 0; i < myNodelist.length; i++) {
-//     var span = document.createElement("SPAN");
-//     var txt = document.createTextNode('x');
-//     span.className = "close";
-//     span.appendChild(txt);
-//     myNodelist[i].appendChild(span);
-//     }
-
-
-// Add a "checked" symbol when clicking on a list item
-// var list = document.querySelector('myUL');
-// list.addEventListener('click', function(ev) {
-//   if (ev.target.tagName === 'LI') {
-//     ev.target.classList.toggle('checked');
-//   }
-// }, false);
-
-
-
 function showQuotes() {
 
     var items = [ `"See things as you would have them be instead of as they are."`, `"If you're not making mistakes, then you're not making decisions."` , `"Failing to plan is planning to fail."`];
@@ -247,7 +216,6 @@ toggleButton.addEventListener('click', () =>  {
     list2 = document.getElementById("myUL").value;
 });
 
-
 const newSetting = document.getElementsByClassName('theme')[0]
 const newPink = document.getElementsByClassName('pink')[0]
 const newPink2 = document.getElementsByClassName('pink2')[0]
@@ -261,7 +229,6 @@ newPink2.addEventListener('click', () =>  {
     // theme.onclick('active');
     newSetting.classList.toggle('active2');
 });
-
 
 
 

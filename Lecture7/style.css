@@ -20,7 +20,7 @@ body {
 
 /* <!-- Background Image --> */
 .background {
-    background-image: url(images/image1.jpg);
+    background-image: url(images/image2.jpg);
     mix-blend-mode:soft-light ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +178,7 @@ body {
     top: 5vh;
     right: 5vh;
     text-align: right;
-    font-size: 3.75vh;
+    font-size: 3vh;
     margin: 0;
     padding: 0;
 }
@@ -193,7 +193,7 @@ body {
 
 .todo strong{
     color: black;
-    font-size: 2.75vh;
+    font-size: 2.25vh;
     padding: 0;
     margin: 0;
     position: fixed;
@@ -267,7 +267,7 @@ body {
     background-color: whitesmoke;
     color: #333;
     border-radius: 5%;
-    padding: 1vh;
+    padding: 0.5vh;
 }
 
 .close {
@@ -325,7 +325,8 @@ body {
 }
 
 #status span{
-    width:90vw;   
+    width:95vw; 
+    height: 125%;  
 }
 
 .statusBox span{
@@ -391,16 +392,13 @@ body {
     background-color: rgba(177, 9, 163, 0.25);
 }
 
-
-
-
 /* <!-- Background Image --> */
 .background {
-    background-image: url(images/image1.jpg);
+    background-image: url(images/image2.jpg);
     mix-blend-mode:soft-light ;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -10vw ;
+    background-position: 25% ;
     display: flex;
     width: 100vw;
     height: 100%;
@@ -408,11 +406,9 @@ body {
     margin: 0;
     z-index: -1;
     position:fixed ;
-    top: 0;
     /* opacity: 0.95; */
     opacity: 1;
-        background-color: rgba(116, 138, 17, 0.25);
-
+    background-color: rgba(116, 138, 17, 0.25);
 }
 
 /* <!-- Username --> */  
@@ -695,8 +691,8 @@ body {
 }
 
 #status span{
-    width:95vw; 
-    height: 125%;  
+    width:90vw; 
+    height: 100%;  
 }
 
 .statusBox span{
