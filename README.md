@@ -20,7 +20,7 @@ Task list:
 5. [Chessboard Project (Flex)](/Lecture4/index.html)
 6. [Chessboard Project (Grid)](/Lecture5/index.html)
 7. [Product Landing Page](/Lecture%206/index.html)
-8. [Momentum app](/Lecture5/index.html)
+8. [Momentum app](/Lecture7/index.html)
 
 
 
