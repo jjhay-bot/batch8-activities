@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ttt</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    /* border: blue 1px solid; */
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #bdd4d4;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#mainButton {
+    display: flex;
+    justify-content: flex-end;
+    width: inherit;
+    margin: 25px 0;
+    position: relative;
+    top: -5px;
+    z-index: 1;
+}
+
+#buttonContainer {
+    display: flex;
+    font-size: 30px;
+    justify-content: flex-end;
+}
+#buttonContainer span {
+    margin: 0 2px;
+
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height:100vh;
+    position: fixed;
+    top: -50px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    /* color: #333; */
+    text-shadow: rgba(137, 43, 226, 0.473) 2px 2px ;
+    font-weight: bold;
+}
+
+#TTTcontainer {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template:repeat(3,1fr)/repeat(3,1fr) ;
+    grid-gap: 6px;
+    align-content: center;
+    margin: 12.5px 0;
+    justify-content: center;
+}
+
+.box {
+    background-color:#7684bf;
+    border-radius: 5%;
+}
+.player {
+    padding: 5px;
+    margin: 12.5px 0;
+    background-color: #7685bf94;
+    border-radius: 5%;
+    box-shadow: rgba(43, 226, 171, 0.2) 2px 2px;
+    font-size: 25px;
+    color: white;
+    text-shadow: rgba(51, 51, 51, 0.70) 1px 2px;
+    position: static;
+}
+
+#containerArea {
+    background-color: rgba(43, 226, 171, 0.2);
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-weight:bolder;
+}
+
+.box:hover {
+    background-color: #78bec5;
+    /* background-color:#dc685a;
+    background-color:#ecaf4f; */    
+}
+#winner {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position:fixed ;
+    justify-content: center;
+    align-items: center;
+    top: -5px;
+}
+#playerWin {
+  height: 150px;
+  width: 100vw;
+  background-color: #7685bf93;
+  font-size: 75px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 150px 0;
+
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <section class="section">
+      <!-- component of games -->
+      <div id="mainButton">
+        <div id="buttonContainer">
+          <div id="reset" class="button">
+            <span onclick="resetButton()">  </span>
+            <!-- <span>Reset</span> -->
+          </div>
+          <div class="button">
+            <span onclick="undoButton()">◀️</span>
+            <!-- <span>Previous</span> -->
+          </div>
+          <div class="button">
+            <span onclick="redoButton()">▶️</span>
+            <!-- <span>Next</span> -->
+          </div>
+        </div>   
+      </div>  
+      <span class="player">Player X</span>
+      <div id='winner'>
+        <span id='playerWin'>Winner</span>
+      </div>
+      <header id="containerArea">
+        <div id="TTTcontainer">
+          <span id='box1' class="box" onclick="turn(this)"></span>
+          <span id='box2' class="box" onclick="turn(this)"></span>
+          <span id='box3' class="box" onclick="turn(this)"></span>
+          <span id='box4' class="box" onclick="turn(this)"></span>
+          <span id='box5' class="box" onclick="turn(this)"></span>
+          <span id='box6' class="box" onclick="turn(this)"></span>
+          <span id='box7' class="box" onclick="turn(this)"></span>
+          <span id='box8' class="box" onclick="turn(this)"></span>
+          <span id='box9' class="box" onclick="turn(this)"></span> 
+          <!-- <span id='box1'></span>
+            <span id='box2'></span>
+            <span id='box3'></span>
+            <span id='box4'></span>
+            <span id='box5'></span>
+            <span id='box6'></span>
+            <span id='box7'></span>
+            <span id='box8'></span>
+            <span id='box9'></span> -->
+        </div>
+      </header>
+      <span class="player">Player O</span>
+    </section>
+    <script>
+
+        
+        //get datas of each box
+        // let box1 = document.getElementById('box1')
+        // let box2 = document.getElementById('box2')
+        // let box3 = document.getElementById('box3')
+        // let box4 = document.getElementById('box4')
+        // let box5 = document.getElementById('box5')
+        // let box6 = document.getElementById('box6')
+        // let box7 = document.getElementById('box7')
+        // let box8 = document.getElementById('box8')
+        // let box9 = document.getElementById('box9')
+
+        let board = [
+            ['box1', 'box2', 'box'],
+            ['box4', 'box5', 'box6'],
+            ['box7', 'box8', 'box9'],
+        ]
+
+        count = 0;
+        let restore_array=[];
+        let  index = -1;
+
+        for (var i = 0; i < 5; i++) {
+
+        }
+
+        turn = function (player) {                            // playerX 1st
+          // for (let count = 0; count < array.length; count++) {
+          //   array = x + count;     
+          
+          //if box is occufied
+          if ((player.innerText === 'x') || (player.innerText === 'o') ) {
+              console.log('occupied');
+          }
+
+          //if place 'x' or 'o' base on player turns
+          else {
+            if (count % 2 ==0) {
+                count += 1;
+                player.innerText ='x';
+                player.style.backgroundColor = '#dc685a';
+                console.log(count, player.innerText)
+            }
+            else {
+              count += 1;
+                player.innerText ='o';
+                player.style.backgroundColor = '#ecaf4f';
+                console.log(count, player.innerText)
+            }
+                   
+
+
+            // if playerX win!
+            let horizontal1 = box1.innerText === 'x' && box2.innerText === 'x' && box3.innerText === 'x';
+            let horizontal2 = box4.innerText === 'x' && box5.innerText === 'x' && box6.innerText === 'x';
+            let horizontal3 = box7.innerText === 'x' && box8.innerText === 'x' && box9.innerText === 'x';
+            let vertical1 = box1.innerText === 'x' && box4.innerText === 'x' && box7.innerText === 'x';
+            let vertical2 = box2.innerText === 'x' && box5.innerText === 'x' && box8.innerText === 'x';
+            let vertical3 = box3.innerText === 'x' && box6.innerText === 'x' && box9.innerText === 'x';
+            let diagonal1 = box1.innerText === 'x' && box5.innerText === 'x' && box9.innerText === 'x';
+            let diagonal2 = box3.innerText === 'x' && box5.innerText === 'x' && box7.innerText === 'x';
+
+            // if playerO win!
+            let horizontal1o = box1.innerText === 'o' && box2.innerText === 'o' && box3.innerText === 'o';
+            let horizontal2o = box4.innerText === 'o' && box5.innerText === 'o' && box6.innerText === 'o';
+            let horizontal3o = box7.innerText === 'o' && box8.innerText === 'o' && box9.innerText === 'o';
+            let vertical1o = box1.innerText === 'o' && box4.innerText === 'o' && box7.innerText === 'o';
+            let vertical2o = box2.innerText === 'o' && box5.innerText === 'o' && box8.innerText === 'o';
+            let vertical3o = box3.innerText === 'o' && box6.innerText === 'o' && box9.innerText === 'o';
+            let diagonal1o = box1.innerText === 'o' && box5.innerText === 'o' && box9.innerText === 'o';
+            let diagonal2o = box3.innerText === 'o' && box5.innerText === 'o' && box7.innerText === 'o';
+
+            //determine the winner
+            if ((horizontal1 || horizontal2 || horizontal3 || vertical1  || vertical2  || vertical3  || diagonal1  || diagonal2)===true ) {
+              document.getElementById("winner").style.display = "flex";
+              document.getElementById("playerWin").innerText = 'PlayerX win';
+              console.log('PlayerX win');
+              return;
+            }
+
+            else if ((horizontal1o || horizontal2o || horizontal3o || vertical1o  || vertical2o  || vertical3o  || diagonal1o  || diagonal2o )===true) {
+              document.getElementById("winner").style.display = "flex";
+              document.getElementById("playerWin").innerText = 'PlayerO win';
+              console.log('PlayerO win');
+              return;
+            };   
+            restore_array.push(player.innerText);
+            index += 1;
+            console.log(restore_array)
+          }
+          if (count == 9) {
+              document.getElementById("winner").style.display = "flex";
+              document.getElementById("playerWin").innerText = 'Draw';
+              console.log('Draw');
+
+          }
+
+
+        };
+
+
+          //reset button
+
+          resetButton = (read) => {
+            // restore_array = [];
+            // index = -1;
+          }
+
+          // undo button
+          undoButton = () => {
+            if (index <= 0){
+              resetButton();
+            }
+            else {
+              index -= 1;
+              restore_array.pop();
+              (restore_array[index]);
+              console.log(restore_array[index])
+              console.log(restore_array)
+
+            }
+          }
+          redoButton = () => {
+              index += 1;
+              restore_array.push();
+              (restore_array[index]);
+              console.log(restore_array[index])
+              console.log(restore_array)
+
+            }
+
+
+
+            
+
+//            https://www.cssscript.com/demo/undo-redo-history/
+        
+        
+
+
+
+
+        // var horizontal = 'x' ;
+        //       var vertical = (console.log(box1.innerText)=== 'x') ;
+        //       var diagonal = box1 ;
+
+        //       console.log(horizontal);
+
+
+        // winner() = => [
+        //   let boxContent = 
+          
+
+
+
+        // if ()
+
+
+        // let box = document.getElementsByClassName('box');
+        // var button = document.getElementById("box1"),count = 0;
+        // turn = () => {
+        //   turn = function(player) {
+        //     for (let turn = 0; turn <8; turn++) {
+        //         button.onclick = function() {
+        //         button.innerHTML = "Click me: " + count;
+        //         console.log(count)
+        //         player.style.backgroundColor = '#dc685a';
+
+        //       }
+        // }
+        // }};
+
+
+
+        // }
+        // function turn (player) {
+        //     let player = 'X';
+
+        //     let changeColor = board.style.backgroundColor = 'red';
+        //     if (turn % 2 == 0 ){
+        //         player = 'o'
+        //         let changeColor = box.style.backgroundColor = '#dc685a';
+        //     }
+        //     console.log(player)
+
+
+
+
+        // }
+
+        
+
+        // board.addEventListener('click', turn, false);
+        
+        // function turn(event) {
+        //     board = true;
+        //     box.style.backgroundColor = '#dc685a';
+        // }
+        
+        // turn = () => {                                                     // playerO
+        //     for (let turn = 0; turn < 9; turn++) {
+        //         const element = 9
+                
+        //     }
+            
+        //     turn = function (player) {
+        //     if ((player.innerText === 'x') || (player.innerText === 'o') ) {
+        //         console.log('occupied')
+        //     }
+        //     else {
+        //         player.innerText ='o';
+        //         player.style.backgroundColor = '#dc685a';
+        //     }
+        // }};
+
+
+
+
+    </script>
+
+  
+  
+  
+  
+</body>
+</html>
