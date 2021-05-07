@@ -3,6 +3,9 @@ const cells = document.querySelectorAll('.box');
 const resetBtn = document.querySelector('#reset');
 const undoBtn = document.querySelector('#undo');
 const redoBtn = document.querySelector('#redo');
+let playerTurnX = document.querySelector('.playerX')
+let playerTurnO = document.querySelector('.playerO')
+
 
 //game variables
 move = 0;
@@ -35,13 +38,24 @@ function checkWin() {
     })        
 }
 
+function playerTurn () {
+    if (move % 2 !== 0) {
+        playerTurnO.style.color = 'springgreen';
+        playerTurnX.style.color = '#7685bf94';
+    }
+    else {
+        playerTurnX.style.color = 'springgreen';
+        playerTurnO.style.color = '#7685bf94';
+    }
+}
+
 // Event Handlers 
 // adding 'x' or 'o' moves
 const handleCellClick = (e) => {
     const classList = e.target.classList;
     const location = classList.value;
     e.preventDefault()
-
+    playerTurn ()
 
     // do nothing if cell contains 'x' or 'o'
     if (classList[2] === 'x' || classList[2] === 'o' ) {
@@ -79,17 +93,20 @@ const handleCellClick = (e) => {
 // Buttons (Reset)
 const handleReset = (e) => {
     cells.forEach(cellDiv => {
-    cellDiv.classList.remove('x');
-    cellDiv.classList.remove('o');
-    historyBox = [];
-    move = 0;
-    console. clear() 
+        cellDiv.classList.remove('x');
+        cellDiv.classList.remove('o');
+        historyBox = [];
+        move = 0;
+        console. clear() 
+        playerTurnO.style.color = 'springgreen';
     })
 };
 
 // Buttons (Undo)
 undoButton = (index) => {
-    var index = historyBox[move -1];    
+    var index = historyBox[move -1];
+    playerTurn ()
+    
     if (move <= 0) {
         handleReset();
     }

@@ -74,7 +74,7 @@ body {
    background-color:#7684bf;
    border-radius: 5%;
 }
-.player {
+.playerX, .playerO {
    padding: 5px;
    margin: 12.5px 0;
    background-color: #7685bf94;
@@ -181,3 +181,4 @@ body {
         justify-content: flex-end;
     }
 }
+
