@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+   /* border: blue 1px solid; */
+   margin: 0;
+   padding: 0;
+}
+body {
+   color: #bdd4d4;
+   font-family: 'Orbitron', sans-serif;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+#mainButton {
+   display: flex;
+   justify-content: flex-end;
+   width: inherit;
+   margin: 25px 0;
+   position: relative;
+   top: -5px;
+   z-index: 1;
+}
+
+#buttonContainer {
+   display: flex;
+   font-size: 30px;
+   justify-content: flex-end;
+}
+#buttonContainer span {
+   margin: 0 2px;
+
+}
+
+.section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-self: center;
+   align-content: center;
+   flex-direction: column;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   width: 350px;
+   height:100vh;
+   position: fixed;
+   top: -50px;
+}
+
+.box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 50px;
+   color: white;
+   text-shadow: rgba(137, 43, 226, 0.473) 2px 2px ;
+   font-weight: bold;
+}
+
+#TTTcontainer {
+   width: 350px;
+   height: 350px;
+   display: grid;
+   grid-template:repeat(3,1fr)/repeat(3,1fr) ;
+   grid-gap: 6px;
+   align-content: center;
+   margin: 12.5px 0;
+   justify-content: center;
+}
+
+.box {
+   background-color:#7684bf;
+   border-radius: 5%;
+}
+.player {
+   padding: 5px;
+   margin: 12.5px 0;
+   background-color: #7685bf94;
+   border-radius: 5%;
+   box-shadow: rgba(43, 226, 171, 0.2) 2px 2px;
+   font-size: 25px;
+   color: white;
+   text-shadow: rgba(51, 51, 51, 0.70) 1px 2px;
+   position: static;
+}
+
+#containerArea {
+   background-color: rgba(43, 226, 171, 0.2);
+   width: 100vw;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   font-weight:bolder;
+}
+
+.box:hover {
+   background-color: #78bec5;
+}
+
+#winner {
+   width: 100vw;
+   height: 100vh;
+   display: none;
+   position:fixed ;
+   justify-content: center;
+   align-items: center;
+   top: -5px;
+}
+#playerWin {
+ height: 150px;
+ width: 100vw;
+ background-color: #7685bf93;
+ font-size: 75px;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 150px 0;
+}
+
+.x::before {
+ content: 'x';
+ background-color: #dc685a;
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.o::after {
+ content: 'o';
+ background-color: #ecaf4f;
+ height: 100%;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@media (max-width: 400px) {
+    #TTTcontainer {
+        width: 300px;
+        height: 300px;
+     }
+}
+
+@media (max-width: 320px) {
+    #TTTcontainer {
+        width: 275px;
+        height: 275px;
+     }
+
+    #mainButton {
+       width: 90%;
+       margin: 25px 0;
+       position: relative;
+       top: -5px;
+       z-index: 1;
+    }
+}
+
+@media (max-width: 320px) {
+    #TTTcontainer {
+        width: 250px;
+        height: 250px;
+     }
+
+    #mainButton {
+       width: 80%;
+       margin: 25px 0;
+       position: relative;
+       top: -5px;
+       z-index: 1;
+    }
+    #buttonContainer {
+        display: flex;
+        font-size: 25px;
+        justify-content: flex-end;
+    }
+}
