@@ -21,6 +21,7 @@ Task list:
 6. [Chessboard Project (Grid)](/Lecture5/index.html)
 7. [Product Landing Page](/Lecture%206/index.html)
 8. [Momentum app](/Lecture7/index.html)
+9. [Tic Tac Toe app](/Lecture9/index.html)
 
 
 
