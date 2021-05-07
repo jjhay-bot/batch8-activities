@@ -52,12 +52,17 @@ function playerTurn () {
         playerTurnX.style.color = 'white';
         playerTurnO.style.boxShadow = 'springgreen 3px 3px';
         playerTurnX.style.boxShadow = 'none';
+        playerTurnO.style.textDecoration  = 'underline';
+        playerTurnX.style.textDecoration  = 'none';
     }
     else {
         playerTurnX.style.color = 'springgreen';
         playerTurnO.style.color = 'white';
         playerTurnX.style.boxShadow = 'springgreen 3px 3px';
         playerTurnO.style.boxShadow = 'none';
+        playerTurnX.style.textDecoration  = 'underline';
+        playerTurnO.style.textDecoration  = 'none';
+
     }
 }
 
