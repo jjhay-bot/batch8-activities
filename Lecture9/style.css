@@ -175,9 +175,8 @@ body {
 
 #welcomeImage {
    /* position: fixed; */
-   width: 50%;
+   width: 225px;
    /* z-index: -1; */
-   line-height: 200px;
    border-radius: 5%;
 }
 
