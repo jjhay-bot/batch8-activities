@@ -33,7 +33,7 @@ body {
 
 }
 
-.section {
+#section {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -47,6 +47,7 @@ body {
    height:100vh;
    position: fixed;
    top: -50px;
+   display: none;
 }
 
 .box {
@@ -159,6 +160,41 @@ body {
    position: fixed;
    bottom: 5%;
 }
+
+#welcomePage {
+   text-align: center;
+   color: blueviolet;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background-color: #78bfc5f8;
+}
+
+#welcomeImage {
+   /* position: fixed; */
+   width: 50%;
+   /* z-index: -1; */
+   line-height: 200px;
+   border-radius: 5%;
+}
+
+#play {
+   padding: 5px 15px;
+   background-color: springgreen;
+   margin: 5px 0 15px 0 ;
+   border-radius: 5%;
+}
+#play:hover {
+   zoom: 110%;
+}
+
+
+
+
+
 
 @media (max-width: 400px) {
     #TTTcontainer {

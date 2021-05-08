@@ -9,7 +9,7 @@ let playerTurnO = document.querySelector('.playerO')
 
 
 //game variables @ game start
-playerTurnX.style.color = 'springgreen';                                    // player X 1st
+playerTurnX.style.color = 'springgreen';                                                // player X 1st
 move = 0;
 let Winning_combinations = [
     [0,1,2],
@@ -26,8 +26,6 @@ let historyBox = [];
 let historyContent = [];
 let redoStorage = [];
 let redoMoveStorage = [];
-let nextMoveStorage = [];
-let previousPlayerStorage = [];
 
 // Functions
 
@@ -74,7 +72,7 @@ const handleCellClick = (e) => {
     document.getElementById('redo').style.display = 'none';
     document.getElementById('undo').style.display = 'flex';    
     if (classList[2] === 'x' || classList[2] === 'o' ) {
-        return;                                                                               // do nothing if cell contains 'x' or 'o'                            
+        return;                                                                                         // do nothing if cell contains 'x' or 'o'                            
     }
 
     if(move % 2 === 0) {
@@ -111,7 +109,7 @@ const handleCellClick = (e) => {
 
 // Buttons (Reset)
 const handleReset = (e) => {
-    cells.forEach(cellDiv => {                                                                             //clear data's
+    cells.forEach(cellDiv => {                                                                              //clear data's
         cellDiv.classList.remove('x');                                      
         cellDiv.classList.remove('o');                            
         historyBox = [];
@@ -144,9 +142,11 @@ undoButton = (index) => {
             document.getElementById('undo').style.display = 'none';
             return;
         }
+
         // Stored undo History
         redoStorage.push(targetCell);                                                                       // stored last move from historyBox  
         redoMoveStorage.push(lastmove);                                                                     // stored for 'next' state (Redo's)
+        console.log(historyBox, historyContent)
     }
 }
 
@@ -157,68 +157,27 @@ undoButton = (index) => {
         document.getElementById('undo').style.display = 'flex';
         console.log ('Move#',move, '-----> Add:',lastmove ,'@ box:', targetCell, );
 
-
-        if (redoMoveStorage <= 0) {
+        if (move >= 9) {
             return;
-
-            // targetCell.classList.add(lastPlayer)                                    //display last player in cell
-            // previousMoveStorage.push(lastMove);                                     //add last move to previousMoveStorage
-            // nextMoveStorage.pop();                                                  //remove last move from nextMoveStorage
-            // previousPlayerStorage.push(lastPlayer);                                 //add last player to previousPlayerStorage
-            // nextPlayerStorage.pop();                                                //remove last player from nextPlayerStorage
-            // move += 1;
-
         }           
         else {
             move += 1;
-            cells[targetCell -1].classList.add(lastmove);                         // update web content (remove content to targetcell) 
-            historyBox.push(targetCell);                                                                                   // remove last move from historyBox
-            historyContent.push(lastmove);                                                                               // remove last move content (historyContent)   
-            redoStorage.pop();                                                                       // stored last move from historyBox  
-            redoMoveStorage.pop();                                                                     // stored for 'next' state (Redo's)
-                         
-            // document.getElementById('redo').style.display = 'flex';
-            // document.getElementById('undo').style.display = 'flex';
+            cells[targetCell -1].classList.add(lastmove);                                               // update web content (remove content to targetcell) 
+            historyBox.push(targetCell);                                                                // remove last move from historyBox
+            historyContent.push(lastmove);                                                              // remove last move content (historyContent)   
+            redoStorage.pop();                                                                          // stored last move from historyBox  
+            redoMoveStorage.pop();                                                                      // stored for 'next' state (Redo's)
+            console.log(redoStorage, redoMoveStorage)   
     }
 }
 
-// redoButton = () => {
-//     if (nextMoveStorage.length != 0) {
-//         let lastMove = nextMoveStorage[nextMoveStorage.length - 1];
-//         let targetCell = cells[lastMove];
-//         let lastPlayer = nextPlayerStorage[nextPlayerStorage.length - 1]
-//         targetCell.classList.add(lastPlayer)                                    //display last player in cell
-//         previousMoveStorage.push(lastMove);                                     //add last move to previousMoveStorage
-//         nextMoveStorage.pop();                                                  //remove last move from nextMoveStorage
-//         previousPlayerStorage.push(lastPlayer);                                 //add last player to previousPlayerStorage
-//         nextPlayerStorage.pop();                                                //remove last player from nextPlayerStorage
-//         move += 1;
-
-//     }   
-//     else {
-//         document.getElementById('redo').style.display = 'flex';
-//         document.getElementById('undo').style.display = 'flex';
+// Button (Play)
+    playClick = () => {
+        document.getElementById('welcomePage').style.display = 'none';
+        document.getElementById('section').style.display = 'flex';
+    }
 
 
-//     }
-// }
-
-// redoButton = () => {
-//     var index = [Number(move) -1 ];
-//     var content = historyContent[index];
-//     let cellDiv = cells[index].classList;
-//     move += 1;
-//     console.log(index,content);
-
-//     if (index >= historyContent.length) {
-//         return;
-//     }
-
-//     else {
-//         cells[index].classList.add(content);
-//         console.log('Move#' + move + ' ,' + "restore" + index + cells[index].classList[2] );
-//     }
-// }
 
 // Event Listener
 resetBtn.addEventListener('click', handleReset);
@@ -231,4 +190,5 @@ undoBtn.addEventListener('click', undoButton);
 
 redoBtn.addEventListener('click', redoButton);
 
-
+const playBtn = document.getElementById('play');
+playBtn.addEventListener('click', playClick);
