@@ -177,8 +177,6 @@ undoButton = (index) => {
         document.getElementById('section').style.display = 'flex';
     }
 
-
-
 // Event Listener
 resetBtn.addEventListener('click', handleReset);
 
