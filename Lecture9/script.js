@@ -139,7 +139,6 @@ undoButton = (index) => {
         historyContent.pop();                                                                               // remove last move content (historyContent)                            
         console.log ('Move#',move, '-----> Remove:',lastmove ,'@ box:', targetCell, );
         playerTurn ()
-
         if (move === 0) {
             document.getElementById('undo').style.display = 'none';
             return;
@@ -157,9 +156,9 @@ undoButton = (index) => {
         let lastmove = redoMoveStorage[redoMoveStorage.length - 1];
         let targetCell = redoStorage[redoStorage.length - 1];
         document.getElementById('undo').style.display = 'flex';
-        console.log ('Move#',move, '-----> Add:',lastmove ,'@ box:', targetCell, );
         if (move >= 9) {
             document.getElementById('redo').style.display = 'none';
+            cells[targetCell].classList.add(lastmove);                                               // update web content (remove content to targetcell) 
             return move = 9;
         }           
         else {
@@ -169,7 +168,9 @@ undoButton = (index) => {
             historyContent.push(lastmove);                                                              // remove last move content (historyContent)   
             redoStorage.pop();                                                                          // stored last move from historyBox  
             redoMoveStorage.pop();                                                                      // stored for 'next' state (Redo's)
-            console.log(redoStorage, redoMoveStorage)   
+            playerTurn ();
+            console.log ('Move#',move, '-----> return:',lastmove ,'@ box:', targetCell, );
+            console.log('redoStorage:',redoStorage, redoMoveStorage);
     }
 }
 
