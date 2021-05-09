@@ -104,7 +104,7 @@ const handleCellClick = (e) => {
     // Save History....   :)
     historyBox.push(classList[1]);
     historyContent.push(classList[2]);
-    // console.log('----> Stored History',historyBox, historyContent) 
+    console.log('----> Stored History',historyBox, historyContent) 
 }
 
 // Buttons (Reset)
@@ -138,6 +138,8 @@ undoButton = (index) => {
         historyBox.pop();                                                                                   // remove last move from historyBox
         historyContent.pop();                                                                               // remove last move content (historyContent)                            
         console.log ('Move#',move, '-----> Remove:',lastmove ,'@ box:', targetCell, );
+        playerTurn ()
+
         if (move === 0) {
             document.getElementById('undo').style.display = 'none';
             return;
@@ -156,9 +158,9 @@ undoButton = (index) => {
         let targetCell = redoStorage[redoStorage.length - 1];
         document.getElementById('undo').style.display = 'flex';
         console.log ('Move#',move, '-----> Add:',lastmove ,'@ box:', targetCell, );
-
         if (move >= 9) {
-            return;
+            document.getElementById('redo').style.display = 'none';
+            return move = 9;
         }           
         else {
             move += 1;
