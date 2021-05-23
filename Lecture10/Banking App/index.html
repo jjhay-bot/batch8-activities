@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <!-- Background and logo-->
+    <div id="backgrounds">
+        <div id="background1"></div>
+        <div id="background2"></div>
+        <div id="backgroundgrid"></div>
+    </div>
+
+    <fieldset id="contaner-logo">
+        <legend>
+            <h1>DigiBank<h1>
+        </legend> 
+    </fieldset>
+    <br>
+
+    <!-- login Page -->
+    <div id="welcome" >
+        <div >
+            <h1> Welcome Admin!</h1>
+            <fieldset id="tellerAccLogin" >
+                <legend>Login:</legend>
+                <input class="Admin" id="adminUser" type="text" placeholder="Admin" required><br>
+                <input class="Admin" id="adminPassword" type="password" placeholder="Password" required>
+                <button class="buttonAdmin" type="submit" >Submit</button>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- Nav bar -->
+    <div id="navBar">
+        <h2 onclick="listClient()">Account List</h2>
+        <!-- <h2 onclick="transactionHistory()">Transaction History</h2> -->
+        <h2 onclick="newClient()">Create Account</h2>
+        <input class="search" type="text" placeholder="search..."> <br>    
+        <h2 onclick="welcomePage()" >Log-out</h2>
+    </div>
+
+
+    
+
+    <!-- create account -->
+    <section id="createAccPage">
+        <fieldset id="createAcc">
+            <legend id="createAccText">Create an account</legend>
+                <div class="userData">
+                    <h2>Full Name:</h2>
+                    <input id="firstName" type="text" placeholder="First Name" required autofocus>
+                    <input id="middleName" type="text" placeholder="Middle Name" required>
+                    <input id="lastName" type="text" placeholder="Last Name" required>
+                </div>
+                <form >
+                    <div class="userData2">
+                        <div>
+                            <h2 class="clientInfo">Contact Information:</h2>
+                            <input id="email" class="personalData" type="email" placeholder="Email" required> <br>
+                            <input id="contact" class="personalData" type="number" placeholder="Contact Number" required>    
+                        </div>
+                        <div>
+                            <h2 class="clientInfo">Personal Data:</h2>
+                            <input id="birthDate" class="personalData"  type="number" placeholder="Birthday" required> <br>
+                            <input id="address" class="personalData" type="text" placeholder="Address" required> <br>    
+                        </div>
+                    </div>
+                    <div class="userData">
+                        <h2>Initial deposit Amount:</h2>
+                        <input class="personalData" id="balance" type="number" placeholder="1000" min="1000" required inputmode="numeric"> 
+                    </div>
+                    <button class="buttonAddAccount" type="submit" >Add account</button>
+                    <button class="button" type="reset">clear</button>
+                </form>
+        </fieldset>
+    </section>
+
+    <!-- account list -->
+
+    <section id="clientListPage" >
+        <div id="clientList">
+            <h2>Account#:</h2>
+            <h2>Name:</h2>
+            <h2>Balance:</h2>
+        </div>
+        <!-- <h2>Transaction</h2> -->
+        <ul class="accountNo"></ul>
+        
+    </section>
+
+    <section id="transHistory">
+        <fieldset id="transHistoryText">
+            <legend>Transaction History:</legend>
+                <div class="transList">
+                    <h2>Account#:</h2>
+                    <h2>Name:</h2>
+                    <h2>Transaction:</h2>
+                    <h2>Date:</h2>
+                    <h2>Time:</h2>
+                </div>
+                <divclass class="transList">
+                    <h2 class="accountNo">Account#</h2>
+                    <h2 class="accountName">Name</h2>
+                    <h2 class="accountTrans">Transaction</h2>
+                    <h2 class="transDate">Date</h2>
+                    <h2 class="transTime">Time</h2>
+                </divclass>
+        </fieldset>
+    </section>
+
+    <div id="profileOf">
+        <div id="dashBoard">
+            <div id="profileDetails">
+                <div id="exitDashboard">
+                    <span >✖</span>
+                </div>
+                <h1 id="client-profile">Client Profile</h1>
+                <h1>
+                    <span>Account Number :  1000 -</span>
+                    <span id="profileAccNumber"></span>
+                </h1>
+                <h1 id="profileName">Name :</h1>
+                <h1 id="profileBalance">Balance : ₱ </h1>
+            </div>
+
+            <div id="addTransactionContainer">
+                <div id="addTransaction">Add Transaction</div>
+                <div class="historyIcon2" >
+                    <img src="images/historyIcon.jpg" alt="history" id="historyIcon" onclick="shownHistoryAll()">
+                </div>
+            </div>
+
+            <div id="dashboardButton"> 
+                <div id="deposit-dashboard" class="dashboardButtons" onclick="depositClick()">deposit</div>
+                <div id="withdraw-dashboard" class="dashboardButtons" onclick="withdrawClick()">withdraw</div>
+                <div id="transfer-dashboard" class="dashboardButtons" onclick="transferClick()">transfer</div>
+                <!-- <div id="withdraw-dashboard">history</div> -->
+            </div>
+
+            <!-- deposit -->
+            <div id="depositDashboard">
+                <div >Amount:</div>
+                <div class="amount">
+                    <span >₱ </span>
+                    <div id="inputAmountdeposit">
+                        <input autofocu id="getAmountdeposit" type="number" placeholder="10000"></input>
+                        <span class="underline"></span>
+                    </div>
+                </div>
+                <button class="submitAmountdeposit" onclick="getDeposit()">Submit </button>
+            </div>
+
+            <!-- withdraw -->
+            <div id="withdrawDashboard">
+                <div >Amount:</div>
+                <div class="amount">
+                    <span >₱ </span>
+                    <div id="inputAmountWithdraw">
+                        <input id="getAmountWithdraw" type="number" placeholder="10000"></input>
+                        <span class="underline"></span>
+                    </div>
+                </div>
+                <button class="submitAmountWithdraw" onclick="getWithdraw()">Submit </button>
+            </div>
+
+            <!-- optional logo -->
+            <fieldset id="contaner-logoSmall">
+                <legend>
+                    <h1>DigiBank</h1>
+                    <h1>  </h1>
+                </legend>
+            </fieldset>
+            
+            <!-- transfer -->
+            <div id="transferDashboardPage">
+                <div id="transferDashboard">
+                    <div id="exitReceiverDashboard">
+                        <span >✖</span>
+                    </div>
+                    <span>Receiver's Details</span>
+                    <input id="receiverAccountNumber" type="number" placeholder="Account Number" max="8" oninput="getReceiver()"></input>
+                    <input id="receiverName" type="text" placeholder="Receiver Name"></input>
+                    <div class="amountTransferContainer">
+                        <button id="amountTransferText" onclick="getTransfer()" >Send:</button>
+                        <div id="amountTransferContainer2" >
+                            <span >₱ </span>
+                            <div id="inputTransfer" >
+                                <input id="getAmountTransfer" type="number" placeholder="10000"></input>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- history -->
+            <div id="historyDashboardPage">
+
+                <div id="historyDashboard">
+                    <div id="exitDashboardHistory" onclick="exitHistoryTransaction()">
+                        <span >✖</span>
+                    </div>
+                    <u><h1>Transaction History</h1></u>
+                    <div id="historyButtons">
+                        <span id="historyButtonsDeposit" onclick="shownHistoryDeposite()">Deposit</span>
+                        <span id="historyButtonsWithdraw" onclick="shownHistoryWithdraw()">Withdraw</span>
+                        <span id="historyButtonsAll" onclick="shownHistoryAll()">All Transaction</span>
+                    </div>
+                    <div id="historyDetailContainer">
+                        <div class="historyListDiv">Date</div>
+                        <div class="historyListDiv">Time</div>
+                        <div class="historyListDiv">Type</div>
+                        <div class="historyListDiv">Amount</div>
+                    </div>
+                    <ul id="historyListSection"></ul>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
