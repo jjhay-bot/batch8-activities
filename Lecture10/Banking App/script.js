@@ -48,8 +48,8 @@ class transactionEveryProfile {
         localStorage.setItem('TransactionWithdrawStorage', JSON.stringify(TransactionWithdrawStorage));
     };
 }
-//------------------------------------------------- Classes  ----------------------------------------
 
+//------------------------------------------------- Classes  ----------------------------------------
 // Blue print (generic client profile)
 class ClientProfile {
     constructor (firstName,middleName,lastName,email,contact,birthDate,address,balance,accNumber) {
@@ -143,6 +143,8 @@ welcomePage = () => {
     transHistory.style.display = 'none';
     console.log('Admin log-out');
 }
+welcomePage()
+
 listClient = () => {
     clientList.style.display = 'grid';
     createAcc.style.display = 'none';
@@ -173,27 +175,42 @@ clearInput = () => {
 
 //-------------------------------Button function to ADD ACCOUNT -----------------------------------------
 add = () => {
-    if (firstName.value === '' || middleName.value === '' || lastName.value === '' || email.value === '' || contact.value === '' || birthDate.value === '' || address.value === '' || balance.value === "") {
+    if (firstName.value === '' || middleName.value === '' || lastName.value === '' || email.value === '' || contact.value === '' || birthDate.value === '' || address.value == '' || balance.value === "") {
         return alert ('please fill out the form and submit again');
     }
-    else {
-        for (let i = 0; i < clientProfileStorage.length; i++) {
-            if (clientProfileStorage[i].firstName === firstName.value && clientProfileStorage[i].middleName === middleName.value) {                
-                return console.log('Account Name already exit');
-            }
-            else {
-                if (balance.value < 5000) {
-                    return alert ('minimum initial deposite of ₱5000 is required');
-                }
-                else {
-                    ClientProfileNew = new ClientProfile (firstName.value, middleName.value, lastName.value, email.value, contact.value, birthDate.value, address.value, balance.value, lastClientNumber);                                      //add new client
-                    ClientProfileNew.addClientProfile();                                                                  // call method
-                    clearInput();
-                }
-            }
-        }
+    if (balance.value < 5000) {
+        return alert ('minimum initial deposite of ₱5000 is required');
     }
+    ClientProfileNew = new ClientProfile (firstName.value, middleName.value, lastName.value, email.value, contact.value, birthDate.value, address.value, balance.value, lastClientNumber);                                      //add new client
+    ClientProfileNew.addClientProfile();                                                                  // call method
+    clearInput();
 }
+
+//-------------------------------Button function to ADD ACCOUNT -----------------------------------------
+//                                  GOT PROBLEM ON VALIDATION  :((((
+// add = () => {
+//     if (firstName.value === '' || middleName.value === '' || lastName.value === '' || email.value === '' || contact.value === '' || birthDate.value === '' || address.value == '' || balance.value === "") {
+//         alert ('please fill out the form and submit again');
+//     }
+//     else {
+//         for (let i = 0; i < clientProfileStorage.length; i++) {
+//             if (clientProfileStorage[i].firstName === firstName.value && clientProfileStorage[i].middleName === middleName.value) {                
+//                 return console.log('Account Name already exit');
+//             }
+//             else {
+//                 if (balance.value < 5000) {
+//                     return alert ('minimum initial deposite of ₱5000 is required');
+//                 }
+//                 else {
+//                     ClientProfileNew = new ClientProfile (firstName.value, middleName.value, lastName.value, email.value, contact.value, birthDate.value, address.value, balance.value, lastClientNumber);                                      //add new client
+//                     ClientProfileNew.addClientProfile();                                                                  // call method
+//                     clearInput();
+//                 }
+//             }
+//         }
+//     }
+// }
+
 buttonAddAccount.addEventListener('click', add);
 
 //----------------------------------- FUNCTIONS-----------------------------------------------//
@@ -378,6 +395,7 @@ transactionHistory = () => {
                                                 <div class="transListDiv"> 1000-${TransactionStorage[i].accountNumber} </div>
                                                 <div class="transListDiv"> ${TransactionStorage[i].accNameTransact} </div>
                                                 <div class="transListDiv"> ${TransactionStorage[i].typeTransact}</div>
+                                                <div class="transListDiv"> ₱ ${TransactionStorage[i].amountTransact} </div>
                                                 <div class="transListDiv"> ₱ ${TransactionStorage[i].dateTransact} </div>
                                                 <div class="transListDiv"> ${TransactionStorage[i].timeTransact} </div>
                                             </li>`;

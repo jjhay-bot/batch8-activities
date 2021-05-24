@@ -63,7 +63,7 @@
                         </div>
                         <div>
                             <h2 class="clientInfo">Personal Data:</h2>
-                            <input id="birthDate" class="personalData"  type="number" placeholder="Birthday" required> <br>
+                            <input id="birthDate" class="personalData"  type="text" placeholder="Birthday" required> <br>
                             <input id="address" class="personalData" type="text" placeholder="Address" required> <br>    
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                         <input class="personalData" id="balance" type="number" placeholder="1000" min="1000" required inputmode="numeric"> 
                     </div>
                     <div class="buttonAddclient">
-                        <span class="buttonAddAccount" type="submit" >Add account</span>
+                        <span class="buttonAddAccount" type="submit" onclick="add()" >Add account</span>
                         <span class="buttonAddAccount" onclick="clearInput()">clear</span>
                     </div>
                 </form>
@@ -80,7 +80,6 @@
     </section>
 
     <!-- account list -->
-
     <section id="clientListPage" >
         <div id="clientList">
             <h2>Account#:</h2>
@@ -101,23 +100,13 @@
                         <div>Account#:</div>
                         <div>Name:</div>
                         <div>Transaction:</div>
+                        <div>Balance:</div>
                         <div>Date:</div>
                         <div>Time:</div>
                     </div>
 
                 </h2>
                 <div class="transList2">
-                    <!-- <h2 >Account#</h2>
-                    <h2 >Name</h2>
-                    <h2 >Transaction</h2>
-                    <h2 >Date</h2>
-                    <h2 >Time</h2> -->
-
-                    <!-- <h2 class="accountNo">Account#</h2>
-                    <h2 class="accountName">Name</h2>
-                    <h2 class="accountTrans">Transaction</h2>
-                    <h2 class="transDate">Date</h2>
-                    <h2 class="transTime">Time</h2> -->
                 </div>
         </fieldset>
     </section>
@@ -214,7 +203,7 @@
             </div>
 
             <!-- history -->
-            <div id="historyDashboardPage">
+            <div id="historyDashboardPage" class="exitMe">
 
                 <div id="historyDashboard">
                     <div id="exitDashboardHistory" onclick="exitHistoryTransaction()">

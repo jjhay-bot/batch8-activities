@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     color: white;
-    /* color: gold; */
     font-family: 'Orbitron', sans-serif;
     font-size: 20px;
     line-height: 30px;
@@ -31,7 +30,6 @@
     right: 0;
     top: 200px;
     bottom: -200px;
-    /* mix-blend-mode:luminosity; */
     opacity:50%;
 }
 
@@ -59,7 +57,6 @@
 }
 
 section {
-    /* width: 100vw; */
     height: 9.25;
     padding-top: 7.5vh;
     margin: 0;
@@ -67,7 +64,6 @@ section {
 
 /* --------------------------------------Welcome Page------------------------------------------- */
 #welcome {
-    /* width: 100vw; */
     height: 90vh;
     display: flex;
     align-items: center;
@@ -75,7 +71,6 @@ section {
     flex-direction: column;
     text-align: center;
     display: none; 
-                                                                                                                        /* deleted later*/
 }
 
 #welcome h1 {
@@ -101,7 +96,6 @@ section {
     padding: 10px 0;
     border: lawngreen 2.5px double;
     border-radius: 5%;
-
 }
 
 #tellerAccLogin legend {
@@ -142,7 +136,6 @@ section {
     justify-content: flex-end ;
     width: 100%;
     text-align: flex-end;
-    /* margin-right: 500px; */
 }
 
 #navBar h2 {
@@ -166,7 +159,6 @@ section {
 /* --------------------------------------Create an account------------------------------------------- */
 #createAccPage {
     display: none;                                                                                                                 /* deleted later*/
-    /* display: block;                                                                                                                 deleted later */
 }
 
 #createAcc {
@@ -266,7 +258,6 @@ section {
     background-color: blueviolet;
     border-radius: 2.5%;
     padding: 5px 0;
-
 }
 
 .accountNo {
@@ -290,51 +281,32 @@ section {
     width: 90vw;
     padding: 5px 0;
     background-color: #3f485fb0;
-    /* width: 500px; */
     text-transform:capitalize ;
+}
+
+.main div {
+    text-transform: capitalize;
 }
 
 /* --------------------------------------Transaction history------------------------------------------- */
 #transHistory {
     display: none;
     justify-content: center;
-    
 }
 
 #transHistoryText {
     margin: 0 15px;
     padding: 0 15px;
     padding-bottom:15px;
-
 }
 
 .transList {
-    /* width: 90vw; */
-    /* margin-left: 15px ; */
     margin-top: 15px ;
     display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     flex-direction: column;
     justify-content: center;
     width: 90vw;
 }
-/* 
-.transList div {
-    display: flex;
-    width: 30vw;
-} */
-
-/* .transList2 {
-    margin-left: 15px ;
-    margin-top: 15px ;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-
-    flex-direction: row;
-    justify-content: center;
-    /* width: 90vw; 
-} */
-
 
 .transListDiv {
     display: block;
@@ -345,7 +317,7 @@ section {
     width: 90vw;
     height: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.25fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     padding: 5px 0;
@@ -353,7 +325,6 @@ section {
     background-color: #3f485fb0;
     text-align: center;
 }
-
 
 #clientList1 {
     display: flex;
@@ -388,14 +359,12 @@ section {
 #profileDetails {
     height: 190px;
     font-size: xx-large;
-    /* border: red 2px solid; */
     text-align: left;
     padding-left: 25px ;
     text-transform: capitalize;
 }
 
 #dashboardButton {
-    /* margin: 7.5px 0; */
     display: flex;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.25);
@@ -550,7 +519,6 @@ section {
 
 #deposit-dashboard, #withdraw-dashboard, #transfer-dashboard {
     box-shadow: red ;
-    /* background-color: rgba(127, 255, 212, 0.6); */
     width: 250px;
     padding: 5px;
     text-transform: uppercase;
@@ -562,7 +530,6 @@ section {
 
 #deposit-dashboard {
     background-color: blueviolet;
-    /* border-radius: 2.5% 2.5% 0% 0%/ 25% 25% 25% 0%;  */
     border-radius: 5% / 50%;
 }
 
@@ -581,7 +548,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     display: flex;
     justify-content: center;
     align-items: center;
-        /* margin-top: 5vh; */
     padding-top: 115px;
     flex-direction: column;
     display: none;
@@ -599,7 +565,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 #transferDashboard span {
-    /* margin: 10px; */
     margin: 25px 25px 15px 25px;
     font-size: 30px;
     width: max-content;
@@ -610,9 +575,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 #transferDashboard input {
-    /* margin: 10px; */
     margin: 2.5px 25px;
-    /* width: max-content; */
     border-radius: 5%;
     padding-left: 7.5px;
     text-align: left;
@@ -651,7 +614,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 #amountTransferText {
-    /* margin-top: 10px; */
     background-color: rgba(255, 255, 255, 0.25);
     padding: 5px;
     border-radius: 5% / 15%;
@@ -697,8 +659,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     text-align: center;
     margin: 0;
     padding-right: 10px;
-
-
 }
 
 #inputTransfer {
@@ -707,7 +667,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     margin: 0;
     padding: 0;
     display: flex;
-    /* justify-content: center; */
     align-content: center;
     width: 230px;
 }
@@ -796,11 +755,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     border: 1px solid rgb(129, 129, 129);
     background-color: #3f485fb0;
 }
-/* 
-.historyListDiv {
-    width: 200px;
-} */
-
 
 #exitDashboardHistory span{
     position:absolute ;
@@ -815,5 +769,3 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     margin: 10px;
     border: grey 2px solid;
 }
-
-
