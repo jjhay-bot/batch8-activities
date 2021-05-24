@@ -165,7 +165,7 @@ section {
 
 /* --------------------------------------Create an account------------------------------------------- */
 #createAccPage {
-    display: block;                                                                                                                 /* deleted later*/
+    display: none;                                                                                                                 /* deleted later*/
     /* display: block;                                                                                                                 deleted later */
 }
 
@@ -220,16 +220,23 @@ section {
 
 .buttonAddAccount, .buttonAdmin {
     color: black;
-    border-radius: 5%;
+    border-radius: 2.5% / 5%;
     text-transform: capitalize;
     padding: 2.5px;
     width: 187px;
     margin: 15px 20px 15px 15px;
+    background-color: white;
 }
 
 .buttonAddAccount:hover, .buttonAdmin:hover {
     background-color: springgreen;
 }
+
+.buttonAddclient {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
 
 #backgroundgrid:hover {
     color: rgb(223, 226, 208);                                               /* make this blink  (add animation)*/
@@ -237,7 +244,7 @@ section {
 
 /* --------------------------------------client list------------------------------------------- */
 #clientListPage {
-    display: none;
+    display: grid;
 }
 
 #clientList {
@@ -290,21 +297,63 @@ section {
 /* --------------------------------------Transaction history------------------------------------------- */
 #transHistory {
     display: none;
+    justify-content: center;
+    
 }
 
 #transHistoryText {
     margin: 0 15px;
     padding: 0 15px;
+    padding-bottom:15px;
+
 }
 
 .transList {
-    margin-left: 15px ;
+    /* width: 90vw; */
+    /* margin-left: 15px ; */
     margin-top: 15px ;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    flex-direction: column;
+    justify-content: center;
     width: 90vw;
 }
+/* 
+.transList div {
+    display: flex;
+    width: 30vw;
+} */
+
+/* .transList2 {
+    margin-left: 15px ;
+    margin-top: 15px ;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    flex-direction: row;
+    justify-content: center;
+    /* width: 90vw; 
+} */
+
+
+.transListDiv {
+    display: block;
+    text-transform: capitalize;
+}
+
+.transListContainer {
+    width: 90vw;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border: 1px solid rgb(129, 129, 129);
+    background-color: #3f485fb0;
+    text-align: center;
+}
+
 
 #clientList1 {
     display: flex;
@@ -663,7 +712,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     width: 230px;
 }
 
-
 #historyDashboardPage {
     width: 100vw;
     height: 100vh;
@@ -676,6 +724,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     align-items: center;
     flex-direction: column;
     z-index: +1;
+    display: none;
 }
 
 #historyDashboard {

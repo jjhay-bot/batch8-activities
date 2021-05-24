@@ -38,15 +38,12 @@
     <!-- Nav bar -->
     <div id="navBar">
         <h2 onclick="listClient()">Account List</h2>
-        <!-- <h2 onclick="transactionHistory()">Transaction History</h2> -->
+        <h2 onclick="transactionHistory()">Transaction History</h2>
         <h2 onclick="newClient()">Create Account</h2>
-        <input class="search" type="text" placeholder="search..."> <br>    
+        <input class="search" type="text" placeholder="search..." oninput="searchAccount()"> <br>    
         <h2 onclick="welcomePage()" >Log-out</h2>
     </div>
-
-
-    
-
+  
     <!-- create account -->
     <section id="createAccPage">
         <fieldset id="createAcc">
@@ -74,8 +71,10 @@
                         <h2>Initial deposit Amount:</h2>
                         <input class="personalData" id="balance" type="number" placeholder="1000" min="1000" required inputmode="numeric"> 
                     </div>
-                    <button class="buttonAddAccount" type="submit" >Add account</button>
-                    <button class="button" type="reset">clear</button>
+                    <div class="buttonAddclient">
+                        <span class="buttonAddAccount" type="submit" >Add account</span>
+                        <span class="buttonAddAccount" onclick="clearInput()">clear</span>
+                    </div>
                 </form>
         </fieldset>
     </section>
@@ -90,29 +89,40 @@
         </div>
         <!-- <h2>Transaction</h2> -->
         <ul class="accountNo"></ul>
-        
     </section>
 
+    <!-- transaction History All -->
     <section id="transHistory">
         <fieldset id="transHistoryText">
             <legend>Transaction History:</legend>
-                <div class="transList">
-                    <h2>Account#:</h2>
-                    <h2>Name:</h2>
-                    <h2>Transaction:</h2>
-                    <h2>Date:</h2>
-                    <h2>Time:</h2>
-                </div>
-                <divclass class="transList">
-                    <h2 class="accountNo">Account#</h2>
+
+                <h2 class="transList">
+                    <div class="transListContainer">
+                        <div>Account#:</div>
+                        <div>Name:</div>
+                        <div>Transaction:</div>
+                        <div>Date:</div>
+                        <div>Time:</div>
+                    </div>
+
+                </h2>
+                <div class="transList2">
+                    <!-- <h2 >Account#</h2>
+                    <h2 >Name</h2>
+                    <h2 >Transaction</h2>
+                    <h2 >Date</h2>
+                    <h2 >Time</h2> -->
+
+                    <!-- <h2 class="accountNo">Account#</h2>
                     <h2 class="accountName">Name</h2>
                     <h2 class="accountTrans">Transaction</h2>
                     <h2 class="transDate">Date</h2>
-                    <h2 class="transTime">Time</h2>
-                </divclass>
+                    <h2 class="transTime">Time</h2> -->
+                </div>
         </fieldset>
     </section>
 
+    <!-- client profile -->
     <div id="profileOf">
         <div id="dashBoard">
             <div id="profileDetails">
@@ -124,8 +134,14 @@
                     <span>Account Number :  1000 -</span>
                     <span id="profileAccNumber"></span>
                 </h1>
-                <h1 id="profileName">Name :</h1>
-                <h1 id="profileBalance">Balance : ₱ </h1>
+                <h1 >
+                    <span>Name : </span>
+                    <span id="profileName"></span>
+                </h1>
+                <h1>
+                    <span>Name : </span>
+                    <span id="profileBalance"></span>
+                </h1>
             </div>
 
             <div id="addTransactionContainer">
@@ -220,12 +236,6 @@
 
                 </div>
             </div>
-
-
-
-
-
-
         </div>
     </div>
     <script src="script.js" defer></script>
