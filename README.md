@@ -25,7 +25,5 @@ Task list:
 10. [Bank App](https://jjhay-bot.github.io/batch8-activities/Lecture10/Banking%20App/index.html)
 
 
-
-
 Test Project (Jhay)
 * [Test 1 Project](https://jjhay-bot.github.io/Jhay-test/test1)
