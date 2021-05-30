@@ -466,7 +466,6 @@ searchAccount = () => {
 
 
 }
-accListShown();
 
 function changeToUser () {
     document.querySelector('body').style.height = '640px';  
@@ -489,3 +488,5 @@ function changeToAdmin () {
     document.getElementById('backgrounds').style.borderRadius = '1.5% / 1.5%';  
 }
 
+accListShown();
+changeToUser();
