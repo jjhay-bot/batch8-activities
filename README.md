@@ -24,7 +24,7 @@ Task list:
 8. [Momentum app](/Lecture7/index.html)
 9. [Tic Tac Toe app](/Lecture9/index.html)
 10. [Bank App](Lecture10/Banking%20App/index.html)
-11. [Budget + Bank App updated] (Lecture11/Banking%20App%20+%20Budget%20App/)
+11.  [Budget + Bank App updated] (Lecture11/Banking%20App%20+%20Budget%20App/)
 
 
 Test Project (Jhay)
