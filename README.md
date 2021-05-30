@@ -3,6 +3,7 @@
 
 
 ## Welcome to my landing page!
+Kindly visit mo Github web server here @ (https://jjhay-bot.github.io/batch8-activities/)
 
 Reach me out!
 
@@ -22,7 +23,8 @@ Task list:
 7. [Product Landing Page](/Lecture%206/index.html)
 8. [Momentum app](/Lecture7/index.html)
 9. [Tic Tac Toe app](/Lecture9/index.html)
-10. [Bank App](https://jjhay-bot.github.io/batch8-activities/Lecture10/Banking%20App/index.html)
+10. [Bank App](Lecture10/Banking%20App/index.html)
+11. [Budget + Bank App updated] (Lecture11/Banking%20App%20+%20Budget%20App/)
 
 
 Test Project (Jhay)
