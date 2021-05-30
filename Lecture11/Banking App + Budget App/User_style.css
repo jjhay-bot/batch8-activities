@@ -1,0 +1,678 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       USER DASHBOARD      <<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* ACCOUNT PAGE */
+#userDashBoard {
+    display: none;
+    width: 360px;
+    height: 640px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    display: none; 
+    position: fixed;
+    top: 0;
+}
+
+#UserSignUpPage {
+    display: none;
+}
+
+#userDashBoard input {
+    color: black;
+}
+
+#welcomeUser {
+    width: 360px;
+    height: 640px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+}
+
+#welcomeUser h1 {
+    font-size: 17.5px;
+    text-align: center;
+    padding-bottom: 12.5px; 
+}
+
+.user {
+    width: 195px;
+    background-color:white;
+    padding: 2.5px 0;
+    display: flex;
+    align-items: center;
+    margin: 5px 15px;
+}
+
+#userIcon, #passwordIcon {
+    background-image: url(images/userLogo.png);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-left: 7.5px;
+}
+
+.buttonUser {
+    width: 100px;
+    font-size: 15px;
+}
+
+#passwordIcon {
+    background-image: url(images/lockKey.png);
+}
+
+#userUser, #userPassword {
+    width: 150px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+#signUp {
+    font-size: 15px;
+    color: springgreen;
+}
+
+#userAccLogin {
+    width: 200px;
+    padding: 2.5px 0;
+    border: lawngreen 2.5px double;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+#userAccLogin input {
+    font-size: 15px;
+}
+
+#userAccLogin button:hover {
+    background-color: lawngreen;
+}
+#userAccLogin legend {
+    color: lawngreen;
+    font-size: 17.5px;
+}
+
+#contaner-logoUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: max-content;
+    padding: 0 10px;
+    border: lawngreen 2.5px solid;
+    box-shadow: red ;
+    border-radius: 5% 0 5% 0 / 50% 0% 50% 0%;
+    position: fixed;
+    margin-left: 15px ;
+    margin-top: 15px ;
+    top: 0;
+    left: 0;
+}
+
+#contaner-logoUser h1 {
+    color: rgba(126, 252, 0);
+    font-size: 17.5px;
+    text-shadow: white 1px 1px;
+    font-weight:300 ;
+    padding: 0 2.5px;
+}
+
+#createAccUser span, #createAccUser div, #createAccUser h2, #createAccUser input{
+    font-size: 15px;
+}
+
+#createAccTextUser {
+    font-size: 15px;
+    margin: 7.5px;
+    text-align: start;
+}
+
+#createAccUser {
+    margin: 0 5px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 55px;
+    left: 7.5px;
+}
+
+#AccCardNumber {
+    width: 50px;
+    text-align: center;
+    padding: 0;
+    background-color: transparent;
+    border: transparent;
+    color: black;
+}
+
+#AccCardNumberContainer {
+    background-color: white;
+    /* width: 120px; */
+    text-align: center;
+    width: 125px;
+    margin-left: 110px;
+}
+
+#AccCardNumberContainer span {
+    color: black;
+}
+
+#passwordUser, #rePasswordUser {
+    width: 125px;
+    margin-left: 110px;
+    text-align: center;
+}
+
+#userName, #bdayUser, #emailUser {
+    margin-left: 95px;
+    text-align: center;
+    width: 150px;
+}
+
+#contactNumberUser {
+    margin-left: 80px;
+    width: 175px;
+    margin-bottom:15px ;
+    text-align: center;
+}
+
+.buttonUserSignUp {
+    width: fit-content;
+    align-self: center;
+    color: black;
+    padding: 0 5px;
+    font-size: 15px;
+    margin: 0 7.5px;
+    margin-bottom:15px;
+}
+
+button:hover {
+    background-color: springgreen;
+}
+
+.backUserMainPage {
+    width: 30px;
+    height: 30px;
+
+    /* background-color: white; */
+    z-index: +1;
+}
+
+#backIcon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    border-radius: 5%;
+}
+
+#backContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#budgetMainPage {
+    width: 320px;
+    height: 200px;
+    background-color: blueviolet;
+    border-radius: 2.5% / 5%;
+    margin-bottom: 75px;
+    flex-direction: column;
+    display: none;
+
+}
+
+#budgetNav {
+    width: 340px;
+    position: fixed;
+    top: 570px;
+    display: none;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-left: -5px;
+}
+
+#budgetNav div , #budgetNav button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70px;
+    margin: -2.5px 2.5px;
+}
+
+#accountIcon , #overviewIcon , #transactionIcon , #catergoryIcon {
+    width: 60px;
+    height: 45px;
+    background-image: url(images/accountIcon.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position-y: center;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% /15%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.accountIconText {
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+}
+
+#overviewIcon {
+    background-size:60% ;
+    background-image: url(images/pie.jpg);
+}
+
+#transactionIcon {
+    background-size:contain ;
+    background-image: url(images/list_filled1600.png);
+}
+
+#catergoryIcon {
+    background-size:60% ;
+    background-image: url(images/categoryIcon.png);
+}
+
+#virtualText {
+    width: 320px;
+    height: 40px;
+    background-color: white;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17.5px;
+}
+
+.lining, .lining2 {
+    width: 320px;
+    height: 5px;
+    background-color: rgb(187, 173, 173);
+    background: rgb(216,217,215);
+    background: linear-gradient(-25deg, rgb(228, 225, 209) 25%, rgb(221, 195, 195) 50%);
+}
+
+.lining {
+    margin-top: 25px;
+}
+
+#cardNumber {
+    margin: 10px;
+}
+
+.cardDetail {
+    font-size: 12px;
+    margin-top: -12.5px;
+    margin-left: 20px;
+    padding: 0;
+    text-align: start;
+}
+
+#cardDetailContainer {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+#masterCardIcon {
+    background-image: url(images/mastercard_vrt_pos_92px_2x.png);
+    width: 90px;
+    height: 70px;
+    position: fixed;
+    top: 315px;
+    left: 230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* TRANSACTION PAGE */
+#transactPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#addTransactButton {
+    position: fixed;
+    top: 500px;
+    left: 300px;
+    background-color: transparent;
+    outline: transparent;
+    border: transparent;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    width: 27.5px;
+    height: 27.5px;
+    padding-bottom: 7.5px;
+    text-align: center;
+    z-index: +1;
+}
+
+#userTransactionList , #userCategoryList {
+    height: 475px;
+    width: 320px;
+    background-color: #3f485fb0;
+    position: fixed;
+    top: 65px;
+    border-radius: 2.5% / 1.5%;
+}
+
+.transactionDiv {
+    margin: 7.5px 0;
+}
+.transactionDiv span {
+    font-size: 17.5px;
+}
+
+#transactionUserList {
+    width: 300px;
+    background-color: blue;
+    margin: 1.25px 10px;
+    font-size: 12.5px;
+
+}
+
+.payeeContainer, #payeeContainerList , #payeeCategoryContainer, #payeeCategoryContainer1{
+    display: flex;
+    background-color: blueviolet;
+    width: 300px;
+    margin-left: 10px;
+}
+#payeeCategoryContainer1 {
+    background-color: springgreen;
+}
+
+.payee1 {
+    background-color: blueviolet;
+    font-size: 15px;
+    width: 200px;
+    text-align: start;
+    padding-left: 15px;
+    text-transform: capitalize;
+}
+.payeeAmount1 {
+    font-size: 15px;
+    width: 100px;
+    background-color: blueviolet;
+}
+.payee {
+    font-size: 15px;
+    width: 200px;
+    text-align: start;
+    padding-left: 15px;
+    text-transform: capitalize;
+    background-color: #3f485fb0;    
+}
+.payeeAmount , #payeeAmountCategory, #payeeCategory1 {
+    font-size: 15px;
+    width: 100px;
+    background-color: #3f485fb0;    
+}
+
+#payeeCategoryContainer2 {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 300px;
+    margin-left: 10px;
+}
+#gridContainer2 {
+    display: flex;
+    justify-content: center;
+}
+#payeeCategoryContainer3 {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 100px;
+    margin-right: 10px;
+}
+.payeeAmountCat3 {
+    font-size: 15px;
+    width: 100px;
+    background-color: #3f485fb0;  
+    margin-left: 0;
+}
+.payeeCategoryContainer2Div {
+    display: flex;
+    background-color: transparent;
+}
+.payeeCat2 {
+    font-size: 15px;
+    width: 185px;
+    text-align: start;
+    padding-left: 15px;
+    background-color: #3f485fb0;
+}
+.payeeAmountCat2 {
+    font-size: 15px;
+    width: 100px;
+    background-color: #3f485fb0;
+}
+.payeeCat {
+    font-size: 15px;
+    width: 190px;
+    text-align: start;
+    padding-left: 15px;
+    background-color: #3f485fb0;    
+}
+.payeeAmountCat {
+    font-size: 15px;
+    width: 100px;
+    background-color: #3f485fb0;    
+}
+
+#payBill {
+    display: none;
+    flex-direction: column;
+    z-index: +1;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: 300px;
+    height: 175px;
+    border-radius: 2.5% / 5%;
+}
+#amountToPayee {
+    width: 150px;
+}
+
+/* CATEGORY PAGE */
+#categoryPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90VW;
+    height: 90VH;
+    display: none;
+}
+
+#payeeSelect {
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    padding: 2.5px;
+    margin-bottom: 10px;
+    width: 140px;
+}
+
+#payeeSelect option {
+    color: black;
+    background-color: white;
+    font-size: 12.5px;
+    padding: 0;
+}
+
+#amountToPayee {
+    color: black;
+    background-color: white;
+    font-size: 15px;
+    outline: turquoise;
+    border: transparent;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    width: 148px;
+}
+
+.textAmout {
+    font-size: 15px;  
+}
+
+#sendPayment{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 0 5px;
+    border-radius: 5%;
+
+}
+
+#exitPayeeDashboard {
+    position: relative;
+    top: -140px;
+    right: 0;
+    width: 270px;
+    text-align: end;
+    height: 1px;
+}
+
+#payeeContainerList2{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.payeeRow {
+    display: flex;
+}
+
+/* Overview PAGE */
+#currentBalanceContainer {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    padding: 2.5px;
+}
+
+.currentBalanceText {
+    font-size: 17.55px;
+    width: fit-content;
+    padding-left: 5px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#pieChart {
+    width: 320px;
+    height: 475px;
+    border-radius: 5%;
+    position: relative;
+    top: -25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f485fb0 ;
+}
+
+#container {
+    width: 300px;
+    height: 510px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -20px;
+}
+
+#container tspan {
+    font-size: 15px;
+    margin: -5px 0;
+}
+
+#ac_path_3 {
+    fill: transparent;
+}
+.anychart-credits-text,.anychart-credits-logo {
+    display: none;
+}
+
+#ac_layer_z path{
+    margin: 0;
+}
+
+#ac_layer_6 text {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*temporay Only (for)testing */
+
+/* #adminDashBoard {
+    display: none;
+}
+#userDashBoard {
+    display: flex;
+}
+
+#welcomeUser {
+    display: none;
+}
+#budgetNav {
+    display: flex;
+}
+
+#transactPage {
+    display: flex;
+}
+#changeToUser {
+    display: none;
+} */

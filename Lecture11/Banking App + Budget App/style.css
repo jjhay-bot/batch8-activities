@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#changeToUser {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    position:fixed ;
+    left: 0;
+    bottom:  0;
+    margin: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: .25;
+    z-index: +1;
+}
+
+#changeToAdmin {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    position:relative ;
+    left: 0;
+    top:  555px;
+    margin: 25px;
+    border-radius: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: .25;
+    z-index: +1;
+}
+
+#changeSection:hover {
+    opacity: 1;
+}
+
+#changeSectionImage {
+    /* padding: 25px; */
+    width: 17.5px;
+    height: 17.5px;
+    background-image: url('images/arrowUp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 2.5px;
+    mix-blend-mode: hard-light;
+    color: white;
+}
+
+#changeSectionImage2 {
+    /* padding: 25px; */
+    width: 17.5px;
+    height: 17.5px;
+    background-image: url('images/arrowDown.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
+    mix-blend-mode: hard-light;
+    color: white;
+}
+
+#adminUuserOption {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    left: 20px;
+    top: -50px;
+    text-align: start;
+}
+
+#userDashBoardButton:hover, #userDashBoardButton:hover {
+    color: lawngreen;
+}
+
+/* --------------------------------------Background setting------------------------------------------- */
+#backgrounds {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1b1f2a;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    padding: 0;
+    border-radius: 1.5% / 1.5%;
+}
+
+#background1 {
+    background-image: url('images/center-glow.png');
+    background-repeat:no-repeat ;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 200px;
+    bottom: -200px;
+    opacity:50%;
+}
+
+#background2 {
+    background-image: url('images/red-glow-top-right.png');
+    background-repeat:no-repeat ;
+    background-size: contain;
+    background-position: top left;
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 70%;
+    mix-blend-mode:hard-light;
+}
+
+#backgroundgrid {
+    background-image: url('images/grid_transparent_tile.png');
+    width: 100vw;
+    background-position: center;
+    margin:0;
+    padding: 0;
+    mix-blend-mode:lighten;
+}
+
+section {
+    height: 9.25;
+    padding-top: 7.5vh;
+    margin: 0;
+}
+
+/* --------------------------------------Welcome Page------------------------------------------- */
+#welcome {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: none; 
+    position: fixed;
+    width: 100vw;
+}
+
+#welcome h1 {
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 25px; 
+}
+
+.Admin {
+    color: black;
+    border-radius: 5%;
+    text-transform: capitalize;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+#tellerAccLogin {
+    width: 250px;
+    text-align: center;
+    align-self: center;
+    padding: 10px 0;
+    border: lawngreen 2.5px double;
+    border-radius: 5%;
+}
+
+#tellerAccLogin legend {
+    color: lawngreen;
+
+}
+
+/* --------------------------------------Company Logo/Name------------------------------------------- */
+#contaner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: max-content;
+    padding: 0 25px 5px 20px;
+    border: lawngreen 2.5px solid;
+    box-shadow: red ;
+    border-radius: 5% 0 5% 0 / 50% 0% 50% 0%; 
+    position: fixed;
+    margin-left: 25px ;
+    margin-top: 25px ;
+    top: 0;
+}
+
+#contaner-logo h1 {
+    font-size: 29px;
+    text-shadow: white 1px 1px;
+    font-weight:500 ;
+    color: rgba(126, 252, 0);
+    padding: 0 2.5px;
+}
+
+/* --------------------------------------navigation bar------------------------------------------- */
+#navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+    width: 100%;
+    text-align: flex-end;
+}
+
+#navBar h2 {
+    width: max-content;
+    margin: 0 15px;
+    text-align: center;
+}
+
+#navBar h2:hover {
+    color: lawngreen;
+}
+
+.search {
+    width: 175px;
+    height: 25px;
+    border-radius: 5%;
+    padding-left: 5px;
+    color: black;
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------------Create an account------------------------------------------- */
+#createAccPage {
+    display: none;                                                                                                                 /* deleted later*/
+}
+
+#createAcc {
+    margin-left: 1.5vw;
+    width: 97vw;
+}
+
+#createAccText {
+    margin-left: 15px;
+    padding: 0 5px;
+}
+
+.userData {
+    margin-left: 15px ;
+    margin-top: 15px ;
+}
+
+#firstName, #middleName, #lastName {
+    color: black;
+    border-radius: 5%;
+    text-transform:lowercase ;
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+.userData2 {
+    margin-left: 15px ;
+    margin-top: 15px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.personalData {
+    color: black;
+    border-radius: 5%;
+    text-transform: lowercase;
+    padding: 5px;
+    width: 400px;
+    margin-bottom: 5px;
+}
+#address {
+    text-transform: capitalize;
+
+}
+
+.clientInfo {
+    padding: 5px;
+    padding-right: 250px;
+}
+
+.buttonAddAccount, .buttonAdmin, .buttonUser {
+    color: black;
+    border-radius: 2.5% / 5%;
+    text-transform: capitalize;
+    padding: 2.5px;
+    width: 187px;
+    margin: 15px 20px 15px 15px;
+    background-color: white;
+}
+
+.buttonAddAccount:hover, .buttonAdmin:hover {
+    background-color: springgreen;
+}
+
+.buttonAddclient {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+#backgroundgrid:hover {
+    color: rgb(223, 226, 208);                                               /* make this blink  (add animation)*/
+}
+
+/* --------------------------------------client list------------------------------------------- */
+#clientListPage {
+    display: grid;
+}
+
+#clientList {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    text-align: center;
+    grid-gap: 5px;    
+    width: 90vw;
+    margin-left: 5vw;
+    background-color: #3f485fb0;
+}
+
+#clientList div {
+    display: flex;
+    justify-content: center;
+}
+
+#clientList h2 {
+    background-color: blueviolet;
+    border-radius: 2.5%;
+    padding: 5px 0;
+}
+
+.accountNo {
+    margin-left: 5vw;
+    width: 90vw;
+    display: grid;
+    flex-direction: column;
+    grid-column: 1fr 2fr 1fr;
+    text-align: center;
+    line-height: 25px;
+    gap: 5px;
+}
+
+.accountNo {
+    background-color: #3f485fb0;
+    padding-top: 5px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 90vw;
+    padding: 5px 0;
+    background-color: #3f485fb0;
+    text-transform:capitalize ;
+}
+
+.main div {
+    text-transform: capitalize;
+}
+
+/* --------------------------------------Transaction history------------------------------------------- */
+#transHistory {
+    display: none;
+    justify-content: center;
+}
+
+#transHistoryText {
+    margin: 0 15px;
+    padding: 0 15px;
+    padding-bottom:15px;
+}
+
+.transList {
+    margin-top: 15px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+}
+
+.transListDiv {
+    display: block;
+    text-transform: capitalize;
+}
+
+.transListContainer {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border: 1px solid rgb(129, 129, 129);
+    background-color: #3f485fb0;
+    text-align: center;
+}
+
+#clientList1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileThis:hover {
+    color: gold;
+}
+
+#profileOf {
+    width: 100vw;
+    height: 100vh;
+    position:fixed ;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+#dashBoard {
+    width: 900px;
+    height: 500px;
+    background-color: blueviolet;
+    border-radius: 2.5% / 5%;
+    border: cornsilk 5px dotted;
+}
+
+#profileDetails {
+    height: 190px;
+    font-size: xx-large;
+    text-align: left;
+    padding-left: 25px ;
+    text-transform: capitalize;
+}
+
+#dashboardButton {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.25);
+} 
+
+#exitDashboard {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#exitDashboard span {
+    position:absolute ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 10px;
+    border: grey 2px solid;
+}
+
+#client-profile {
+    margin: 25px 0 15px 0;
+    font-size: 30px;
+    width: max-content;
+    background-color: rgba(127, 255, 212, 0.6);
+    border-radius: 2.5% / 15%;
+    padding: 7.5px;
+}
+
+#exitDashboard span:hover {
+    text-shadow: rgba(255, 0, 0, 0.5) 2px 2px;
+}
+
+#addTransaction {
+    margin: 0px 0;
+    padding: 5px 0;
+}
+
+#addTransactionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    background-color: rgba(127, 255, 212, 0.6);
+}
+
+.historyIcon2 {
+    height: 30px;
+    width: 900px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#historyIcon {
+    height: 30px;
+    position: absolute;
+    margin-right: 13.5px;
+    border-radius: 50%;
+}
+
+#historyIcon:hover {
+    border: lawngreen solid 1.5px;
+}
+
+#depositDashboard {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#withdrawDashboard {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    font-size: 175%;
+    background-color: rgba(127, 255, 212, 0.6);
+    border-radius: 5% / 10%;
+    padding: 15px;
+    border: white 5px solid;
+}
+
+.amount span{
+    font-size: 200%;
+    display: flex;
+    align-items: center;
+}
+
+.amount input{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    font-size: 50px;
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
+}
+
+#inputAmountdeposit , #inputAmountWithdraw {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.underline {
+    background-color: white;
+    width: 230px;
+    height: 5px;
+}
+
+.submitAmountdeposit, .submitAmountWithdraw {
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 0.5px 10px;
+    border-radius: 5% / 10%;
+}
+#contaner-logoSmall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    width: max-content;
+    padding: 0 15px 0px 15px;
+    border: lawngreen 2.5px solid;
+    box-shadow: red ;
+    border-radius: 5% 0 5% 0 / 50% 0% 50% 0%; 
+    position:relative ;
+    margin-left: 725px ;
+    top: -75px;
+}
+
+#contaner-logoSmall h1 {
+    color: lawngreen;
+    font-size: 22.5px;
+}
+
+#deposit-dashboard, #withdraw-dashboard, #transfer-dashboard {
+    box-shadow: red ;
+    width: 250px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+#deposit-dashboard:hover, #withdraw-dashboard:hover, #transfer-dashboard:hover {
+    color: lawngreen;
+}
+
+#deposit-dashboard {
+    background-color: blueviolet;
+    border-radius: 5% / 50%;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#transferDashboardPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(126, 252, 0, 0.021);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 115px;
+    flex-direction: column;
+    display: none;
+}
+
+#transferDashboard {
+    width: 900px;
+    height: 270px;
+    background-color: blueviolet;
+    border-radius: 2.5% / 5%;
+    position: relative;
+    border: cornsilk 5px dotted;
+    display: flex;
+    flex-direction: column;
+}
+
+#transferDashboard span {
+    margin: 25px 25px 15px 25px;
+    font-size: 30px;
+    width: max-content;
+    background-color: rgba(127, 255, 212, 0.6);
+    border-radius: 2.5% / 15%;
+    padding: 7.5px;
+    text-align: left;
+}
+
+#transferDashboard input {
+    margin: 2.5px 25px;
+    border-radius: 5%;
+    padding-left: 7.5px;
+    text-align: left;
+}
+
+#exitReceiverDashboard, #exitDashboardHistory {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#exitReceiverDashboard span{
+    position:absolute ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 10px;
+    border: grey 2px solid;
+}
+
+#receiverAccountNumber, #receiverName {
+    color: black;
+    text-transform: capitalize;
+}
+
+.amountTransferContainer {
+    height: 85px ;
+    margin: 8px 25px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+}
+
+#amountTransferText {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 5px;
+    border-radius: 5% / 15%;
+    height: 40px;
+}
+
+#amountTransferText:hover {
+    background-color: lawngreen;
+}
+
+#amountTransferContainer2 {
+    background-color: #83aad9;
+    margin-left: 20px;
+    width: 300px;
+    border-radius: 5% / 10%;
+    border: cornsilk 3.5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#amountTransferContainer2 span{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: white;
+
+}
+
+#getAmountTransfer {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    font-size: 50px;
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
+    margin: 0;
+    padding-right: 10px;
+}
+
+#inputTransfer {
+    height: 85px;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    width: 230px;
+}
+
+#historyDashboardPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(126, 252, 0, 0.021);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: +1;
+    display: none;
+}
+
+#historyDashboard {
+    background-color: blueviolet;
+    width: 900px;
+    height: 310px;
+    border-radius: 2.5% / 5%;
+    position: relative;
+    border: cornsilk 5px dotted;
+    display: flex;
+    flex-direction: column;
+    top: 95px;
+}
+
+#historyDashboard u {
+    margin:  10px 0;
+}
+
+#historyButtons {
+    display: grid;
+    width: 800px;
+    padding-left: 50px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#historyButtons span {
+    width: 255px;
+    text-align: center;
+    margin:  5px 0;
+    padding: 2.5px 0;
+}
+
+#historyButtons span:hover {
+    background-color: rgb(127 255 212 / 60%);
+    border-radius: 5% / 25% ;
+    border: cornsilk solid 4.5px;
+}
+
+#historyButtonsAll {
+    background-color: rgb(127 255 212 / 60%);
+    border-radius: 5% / 25% ;
+    border: cornsilk solid 4.5px;
+}
+
+#historyDetailContainer {
+    margin-left: 50px;
+    width: 800px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border: 1px solid rgb(129, 129, 129);
+    background-color: #3f485fb0;
+}
+
+.historyList {
+    width: 800px;
+    margin-left: 50px;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    border: 1px solid rgb(129, 129, 129);
+    background-color: #3f485fb0;
+}
+
+#exitDashboardHistory span{
+    position:absolute ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 10px;
+    border: grey 2px solid;
+}
+
+
+
+
+
+
+
+
+
