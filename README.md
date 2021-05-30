@@ -3,7 +3,7 @@
 
 
 ## Welcome to my landing page!
-Kindly visit mo Github web server here @ (https://jjhay-bot.github.io/batch8-activities/)
+Kindly visit my Github live server here @ (https://jjhay-bot.github.io/batch8-activities/)
 
 Reach me out!
 
