@@ -9,6 +9,10 @@
     line-height: 30px;
 }
 
+#adminDashBoard {
+    display: flex;
+    flex-direction: column;
+}
 #changeToUser {
     width: 35px;
     height: 35px;

@@ -490,3 +490,4 @@ function changeToAdmin () {
 
 accListShown();
 sample();
+changeToUser();
