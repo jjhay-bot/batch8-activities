@@ -41,6 +41,7 @@
     text-align: center;
     opacity: .25;
     z-index: +1;
+
 }
 
 #changeSection:hover {
@@ -852,9 +853,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     margin: 10px;
     border: grey 2px solid;
 }
-
-
-
 
 
 

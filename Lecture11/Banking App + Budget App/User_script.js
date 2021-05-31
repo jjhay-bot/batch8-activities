@@ -25,7 +25,7 @@ signUpPageShown = () => {
 returnUserMainPage = () => {
     document.getElementById('UserSignUpPage').style.display = 'none';
     document.getElementById('welcomeUser').style.display = 'flex';
-    document.getElementById('changeToAdmin').style.display = 'flex';    
+    document.getElementById('changeToAdmin').style.display = 'flex';  
 };
 
 class addUserProfile {
