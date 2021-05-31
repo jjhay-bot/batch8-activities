@@ -5,7 +5,7 @@ const peso = new Intl.NumberFormat('fil-PH', { style: 'currency', currency: 'PHP
 logoutUser = () => {
     console.log('test')
     document.getElementById('welcomeUser').style.display = 'flex';
-    document.getElementById('changeToUser').style.display = 'flex';    
+    document.getElementById('changeToAdmin').style.display = 'flex';    
     document.getElementById('budgetMainPage').style.display = 'none';
     document.getElementById('pieChart').style.display = 'none';
     document.getElementById('transactPage').style.display = 'none';
