@@ -25,7 +25,7 @@ signUpPageShown = () => {
 returnUserMainPage = () => {
     document.getElementById('UserSignUpPage').style.display = 'none';
     document.getElementById('welcomeUser').style.display = 'flex';
-    document.getElementById('changeToUser').style.display = 'flex';    
+    document.getElementById('changeToAdmin').style.display = 'flex';    
 };
 
 class addUserProfile {
@@ -78,7 +78,7 @@ function submitUser () {
         if (filterTarget.length === 1) {
             document.getElementById('UserSignUpPage').style.display = 'none';
             document.getElementById('welcomeUser').style.display = 'flex';
-            document.getElementById('changeToUser').style.display = 'flex';
+            document.getElementById('changeToAdmin').style.display = 'flex';
             addToUserStorage();
             clearUserForm();
             return alert ('registraion successful');
