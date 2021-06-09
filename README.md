@@ -25,6 +25,7 @@ Task list:
 9. [Tic Tac Toe app](/Lecture9/index.html)
 10. [Bank App](Lecture10/Banking%20App/index.html)
 11. [Budget + Bank App updated](Lecture11/Banking%20App%20+%20Budget%20App/)
+12. [API Project (Sportify)](https://jjhay-bot.github.io/batch8-activities/Final%20Project/)
 
 
 Test Project (Jhay)
