@@ -1,5 +1,5 @@
 let toggleButton = document.getElementsByClassName('toggle-button');
-let clickCategory = document.querySelectorAll('groupDiv');
+let clickCategory = document.querySelectorAll('.groupDiv');
 
 
 toggleButton = () => {
@@ -35,29 +35,25 @@ groupSports = () => {
         console.log(data)
 
         for (let i = 0; i < target.length; i++) {
-            let targetSample = target[i].relationships.sports.data[0].id;
-
-            fetch(`https://sports.api.decathlon.com/sports/${targetSample}`,{
-                
-            })
+            let targetSample = target[i].relationships.sports.data[(target[i].relationships.sports.data.length - 1)].id;
+            console.log()
+            fetch(`https://sports.api.decathlon.com/sports/${targetSample}`)
             .then(Response=>Response.json())
             .then(data => {
-                // image =  data.relationships.images.data.thumbnail.url;
-                // console.log(data.data.relationships.images.data[0].variants[0].thumbnail.url)
+                let image = data.data.relationships.images.data[0].variants[0].thumbnail.url;
                 groups.innerHTML += `<div>
-                                        <div class="groupDiv" class="${target [i].attributes.name}" onclick="getArray()" >${target [i].attributes.name}</div>
-                                        <img class="thumbnail" src="${data.data.relationships.images.data[0].variants[0].thumbnail.url}"/>
+                                        <div class="groupDiv" onclick="getArray()" >${target [i].attributes.name}</div>
+                                        <img class="thumbnail" src="${image}"/>
                                     </div>`
             })
-            .catch(Error => console.log('ERROR'))
-
-
-
-
-
-
+            .catch(Error => {
+                console.log(`no image, ${target [i].attributes.slug}`)
+                groups.innerHTML += `<div>
+                                        <div class="groupDiv" onclick="getArray()" >${target [i].attributes.name}</div>
+                                        <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/96/thumbnail_handball.jpg"/>
+                                    </div>`
+            })
         }
-
     })
     .catch(Error => console.log('ERROR'));
 }
@@ -69,14 +65,11 @@ groupSports();
 
 
 
+function getArray() {
+    clickCategory.onclick = function() {
+    // console.log(e.target);
+    console.log('test');
 
-
-
-function getArray(e) {
-    
-
-    document.getElementsByClassName(e.this).onclick = function() {
-        console.log(this.innerHTML);
     }
 
     // https://sports.api.decathlon.com/sports/
