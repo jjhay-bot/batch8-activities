@@ -36,22 +36,22 @@ groupSports = () => {
 
         for (let i = 0; i < target.length; i++) {
             let targetSample = target[i].relationships.sports.data[(target[i].relationships.sports.data.length - 1)].id;
-            console.log()
             fetch(`https://sports.api.decathlon.com/sports/${targetSample}`)
             .then(Response=>Response.json())
             .then(data => {
                 let image = data.data.relationships.images.data[0].variants[0].thumbnail.url;
-                groups.innerHTML += `<div>
+                console.log(`${target[i].id}  ${target[i].attributes.slug}`)
+                groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/${target[i].id}.html">
                                         <div class="groupDiv" onclick="getArray()" >${target [i].attributes.name}</div>
                                         <img class="thumbnail" src="${image}"/>
-                                    </div>`
+                                    </a>`
             })
             .catch(Error => {
-                console.log(`no image, ${target [i].attributes.slug}`)
-                groups.innerHTML += `<div>
-                                        <div class="groupDiv" onclick="getArray()" >${target [i].attributes.name}</div>
+                console.log(`${target[i].id}  ${target[i].attributes.slug}`)
+                groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/${target[i].id}.html">
+                                        <div class="groupDiv" onclick="getArray()">${target [i].attributes.name}</div>
                                         <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/96/thumbnail_handball.jpg"/>
-                                    </div>`
+                                    </a>`
             })
         }
     })

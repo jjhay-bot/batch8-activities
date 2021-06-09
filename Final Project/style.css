@@ -109,8 +109,15 @@ body {
     z-index: -1;
     background-color: lightcoral;
     opacity: .9;
-
+    margin-top: -107px;
+    margin-left: 10px;
+    border: 1.5px solid rgba(255, 0, 0, 0.15);
 }
+
+.thisLink {
+    text-decoration: none;
+}
+
 
 
 
@@ -187,19 +194,21 @@ body {
     height: 100px; 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 0 5px;
 }
+
 #groups div {
-    width: 170px;
-    margin: 5px;
+    width: 150px;
+    margin: 12.5px;
 }
 
 .groupDiv {
     width: 50px;
     height: 100px;
     display: block;
-    border: 2px solid rgba(255, 0, 0, 0.2) ;
+    /* border: 2px solid rgba(255, 0, 0, 0.2) ; */
     font-size: 20px;
 }
 
