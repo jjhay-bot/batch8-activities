@@ -1,5 +1,5 @@
 groupCollection = () => {
-    fetch(`https://sports.api.decathlon.com/groups/water-aerobics`)
+    fetch(`https://sports.api.decathlon.com/groups/skiing-sports`)
     .then(Response=>Response.json())
     .then(data => {
         targetData = data.data.relationships.sports.data;

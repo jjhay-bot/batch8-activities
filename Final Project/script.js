@@ -19,12 +19,14 @@ toggleButton = () => {
 // }
 // sports();
 
+let count = 0;
 
 // storaged = [];
 groupSports = () => {
     fetch(`https://sports.api.decathlon.com/groups`)
     .then(Response=>Response.json())
     .then(data => {
+        count =+ 1;
         targetData = data.data;
         target = targetData.filter( ({ type }) => type == "group");
         console.log(data)
@@ -42,7 +44,7 @@ groupSports = () => {
                                     </a>`
             })
             .catch(Error => {
-                console.log(`${target[i].id}  ${target[i].attributes.slug}`)
+                console.log(`${target[i].id}  ${target[i].attributes.slug} ERROR`)
                 groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/${target[i].id}.html">
                                         <div class="groupDiv" onclick="getArray()">${target [i].attributes.name}</div>
                                         <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/96/thumbnail_handball.jpg"/>
@@ -50,7 +52,14 @@ groupSports = () => {
             })
         }
     })
-    .catch(Error => console.log('ERROR'));
+    .catch(Error => {
+        console.log('ERROR')
+            groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/6.html">
+                                    <div class="groupDiv" onclick="getArray()">Aerial Activity</div>
+                                    <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/933/thumbnail_hanggliding.jpg"/>
+                                </a>`
+    });
+    
 }
 groupSports();
 

@@ -205,15 +205,18 @@ a {
 #groups div {
     /* width: 170px; */
     width: 90%;
-    padding: 5%;
+    padding: 0 5%;
     display: flex;
     justify-content: center;
+
 }
 
 .groupDiv {
     width: 50px;
     display: block;
     font-size: 20px;
+    margin-top: -75px;
+    margin-bottom: 30px;
 }
 
 .thumbnail {
