@@ -81,6 +81,7 @@ body {
     margin: 0;
     margin: 15px 0;
     height: 100vh;
+    justify-content: center;
 }
 
 #groups {
@@ -117,9 +118,6 @@ body {
 .thisLink {
     text-decoration: none;
 }
-
-
-
 
 .groupDiv {
     /* width: 300px;
@@ -216,6 +214,7 @@ body {
 .thumbnail {
     width: 155px;
     height: 100px;
+    
 }
 
 

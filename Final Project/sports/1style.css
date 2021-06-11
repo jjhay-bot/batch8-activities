@@ -6,6 +6,8 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    position: relative;
+    top: 0;
 }
 
 #navContainer {
@@ -19,6 +21,9 @@ body {
     justify-content: space-between;
     align-items: center;
     font-weight:600 ;
+    position:fixed ;
+    top: 0;
+    z-index: +1;
 }
 
 #navContainer div {
@@ -73,14 +78,14 @@ body {
     border-radius: 5% / 10%;
 }
 
-
-
 #groupContainer {
-    /* background-color: aquamarine; */
     display: flex;
     margin: 0;
-    margin: 15px 0;
+    margin: 0;
     height: 100vh;
+    justify-content: center;
+    position: initial;
+    top: 80px;
 }
 
 #groups {
@@ -88,6 +93,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 #groups div {
     width: 100%;
     display: flex;
@@ -95,43 +101,38 @@ body {
     align-items: center;
     text-align: center;
     padding: 0;
-    font-family:-webkit-pictograph ;
-    font-size: 19px;
-    font-weight:600 ;
-    color: ghostwhite;
-    text-shadow: 1.75px 1.25px red;
 }
 
 .thumbnail {
-    width: 125px;
-    height: 110px;
-    position: absolute;
+    width: 250px;
+    height: 200px;
     z-index: -1;
     background-color: lightcoral;
-    opacity: .9;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgba(255, 0, 0, 0.15);
 }
 
-
-
 .groupDiv {
-    /* width: 300px;
-    height: 200px; */
     display: flex;
-    /* border: 2px solid red ; */
     font-size: 20px;
+    font-family: emoji;
+    font-size: 25px;
+    font-weight:600 ;
+    color: #333;
+    text-shadow: 1.5px 1px rgba(128, 128, 128, 0.527);
+    margin-top: 100px;
+    margin-bottom: -5px;
 }
 
 .groupText {
-    /* width: 300px;
-    height: 200px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .toggle-button {
-    /* display: flex; */
     flex-direction: column;
     justify-content: space-evenly;
     width: 40px;
@@ -151,9 +152,19 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;    
+}
 
-
-
+.thisLink {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
 
 
 
@@ -190,39 +201,31 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #groups div {
-    width: 170px;
-    margin: 5px;
+    /* width: 170px; */
+    width: 90%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .groupDiv {
     width: 50px;
-    height: 100px;
     display: block;
-    border: 2px solid rgba(255, 0, 0, 0.2) ;
     font-size: 20px;
 }
 
-
 .thumbnail {
-    width: 155px;
-    height: 100px;
+    width: 250px;
+    height: 175px;
+    margin-top: 15px;
 }
 
 
-}
 
-
-@media (max-width: 348px) {
-
-#groups div {
-    width: 200px;
-}
-    
-.thumbnail {
-    width: 185px;
-    display: flex;
-}
 
 
 }
+
+

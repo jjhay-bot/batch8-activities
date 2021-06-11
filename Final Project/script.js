@@ -27,11 +27,6 @@ groupSports = () => {
     .then(data => {
         targetData = data.data;
         target = targetData.filter( ({ type }) => type == "group");
-
-        // for (let index = 0; index < target.length; index++) {
-        //     const element = target[index].attributes.name;
-        //     groups.innerHTML = JSON.stringify(element);
-        // }
         console.log(data)
 
         for (let i = 0; i < target.length; i++) {
