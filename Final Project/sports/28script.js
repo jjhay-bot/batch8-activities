@@ -8,7 +8,7 @@ groupCollection = () => {
         console.log(target)
         
         // for (let i = 0; i < target.length-1; i++) {
-        for (let i = 0; i < target.length-1; i++) {
+        for (let i = 0; i < target.length; i++) {
             let targetSample = target[i].id;
             fetch(`https://sports.api.decathlon.com/sports/${targetSample}`)
             .then(Response=>Response.json())

@@ -14,57 +14,48 @@ groupCollection = () => {
             .then(Response=>Response.json())
             .then(data => {
                 let image = data.data.relationships.images.data[0].variants[0].thumbnail.url;
-                    if(targetSample == 228) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${data.data.attributes.name}</div>
-                                                <div class="description">Synchronised Swimming used to be known as "water ballet". This is because the routines are essentially a series of athletic movements choreographed to a piece of chosen music. Not unlike staged ballet, except that it is performed in the water. </div>
-                                                <img class="thumbnail" src="${image}"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 506) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua jogging, aka deep water running, is a form of cardiovascular exercise that mimics the motion of jogging while submerged in water. You can do aqua jogging by running laps in the pool or wearing a flotation device around your trunk and running in place.
-                                                            <br><br>
-                                                            A flotation device or running belt keeps your body suspended, allowing your arms and legs to move freely while keeping your head above the surface of the water. </div>
-                                                        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDMoSOkGVrM1wJJGmUAzfK6GAG8pTdw_q6Q&usqp=CAU"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 505) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua aerobics (also called water aerobics and aquafit) is a form of exercise which provides cardiovascular conditioning, increasing your pulse and your breathing rate. The term "aerobic" actually means "with oxygen". This means that your breathing controls the amount of oxygen that reaches your muscles to help them move and burn stored fuel. Aqua aerobics is similar to a normal aerobics class, but since it's done in the water, it places less strain on your joints.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 406) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                            <div class="description" onclick="getArray()"> Open water swimming is one of the five aquatic sports governed by Federation Internationale de Natation de Amateur (FINA). Swimming, water polo, synchronized swimming, and diving are the others within FINA's mandate. Open water swimming is defined by FINA as any competition that takes place in rivers, lakes, or oceans. Open water swimming is also an important part of both the Olympic triathlon (swim/cycle/run segments, with the swim 0.9 mile (1.5 km) in length) and the longer version, the Iron-man, which has a 2.4 mile (4 km) open water swim.
-                                                        </div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 331) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" onclick="getArray()"> Aquatic Fitness is defined as activities performed in the water that promote and enhance physical and mental fitness. Aquatic Fitness is typically performed in a vertical position in shallow and/or deep water. There are numerous applications to appeal to a wide variety of participants.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 504) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${data.data.attributes.name}</div>
-                                                <div class="description"> </div>
-                                                <img class="thumbnail" src="${image}"/>
-                                            </div>`
-                    }
-
+                if(targetSample == 464) {
+                    return groups.innerHTML += `<div class="thisLink" href="">
+                                            <div class="groupDiv">${data.data.attributes.name}</div>
+                                            <div class="description">Shooting sports is a collective group of competitive and recreational sporting activities involving proficiency tests of accuracy, precision and speed in shooting — the art of using various types of ranged firearms, mainly referring to man-portable guns (firearms and airguns, in forms such as handguns, rifles and shotguns) and bows/crossbows. </div>
+                                            <img class="thumbnail" src="${image}"/>
+                                        </div>`
+                }
+                if(targetSample == 877) {
+                    return groups.innerHTML += `<div class="thisLink" href="">
+                                            <div class="groupDiv">${data.data.attributes.name}</div>
+                                            <div class="description">Archery, sport involving shooting arrows with a bow, either at an inanimate target or in hunting. </div>
+                                            <img class="thumbnail" src="${image}"/>
+                                        </div>`
+                }
+                if(targetSample == 885) {
+                    return groups.innerHTML += `<div class="thisLink" href="">
+                                            <div class="groupDiv">${data.data.attributes.name}</div>
+                                            <div class="description">Field-Shooting or Terrain-Shooting refer to a set of pistol and rifle shooting disciplines that usually are shot from temporary shooting ranges in the outdoor terrain at varying (and sometimes unknown) distances, rather than at permanent shooting ranges at fixed distances. </div>
+                                            <img class="thumbnail" src="${image}"/>
+                                        </div>`
+                }
+                if(targetSample == 891) {
+                    return groups.innerHTML += `<div class="thisLink" href="">
+                                            <div class="groupDiv">${data.data.attributes.name}</div>
+                                            <div class="description">Practical shooting, also known as action shooting or dynamic shooting, is a generic term applicable to shooting sports where speed is of equal importance as precision. Many of the disciplines involve movement, and when using handguns they are often drawn from a holster. </div>
+                                            <img class="thumbnail" src="${image}"/>
+                                        </div>`
+                }
+                if(targetSample == 36) {
+                    return groups.innerHTML += `<div class="thisLink" href="">
+                                            <div class="groupDiv">${data.data.attributes.name}</div>
+                                            <div class="description">Clay pigeon shooting, also known as clay target shooting, is a shooting sport involving shooting a firearm at special flying targets known as clay pigeons, or clay targets.</div>
+                                            <img class="thumbnail" src="${image}"/>
+                                        </div>`
+                }
+                if(targetSample == 876) {
+                    return groups.innerHTML += `<div class="thisLink" href="">
+                                            <div class="groupDiv">${data.data.attributes.name}</div>
+                                            <div class="description">Run archery is a shooting discipline connecting archery with running. It is similar to the sport of biathlon. </div>
+                                            <img class="thumbnail" src="${image}"/>
+                                        </div>`
+                }
                     else {
                         // console.log(data.data.attributes)
                         groups.innerHTML += `<div class="thisLink" href="">
@@ -84,44 +75,18 @@ groupCollection = () => {
                 .then(data => {
                     let name = data.data.attributes.name;
                     console.log(name, targetSample)
-                    if (targetSample == 221){
+                    if (targetSample == 873){
                     groups.innerHTML += `<div class="thisLink" href="">
                                             <div class="groupDiv">${name}</div>
-                                            <div class="description">Aqua cycling (or water cycling) is an aerobic activity conducted in a pool of water on a purpose-built, hydro-spin bike.  The aqua cycling routine facilitates an intense cycling workout which incorporates various arm, chest and core exercises. </div>
-                                            <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Aqua_spinning_class_aboard_a_cruise_ship.jpg/375px-Aqua_spinning_class_aboard_a_cruise_ship.jpg"/>
+                                            <div class="description">A crossbow is a ranged weapon using an elastic launching device consisting of a bow-like assembly called a prod, mounted horizontally on a main frame called a tiller, which is hand-held in a similar fashion to the stock of a long firearm. Crossbows shoot arrow-like projectiles called bolts or quarrels. </div>
+                                            <img class="thumbnail" src="https://static.wikia.nocookie.net/residentevil/images/7/73/CrossBow_RE6.jpeg/revision/latest?cb=20130107220243"/>
                                         </div>`
                     }
-                    if(targetSample == 501) {
+                    if (targetSample == 881){
                         groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${name}</div>
-                                                <div class="description">Paralympic swimming is an adaptation of the sport of swimming for athletes with disabilities. Paralympic swimmers compete at the Summer Paralympic Games and at other sports competitions throughout the world. The sport is governed by the International Paralympic Committee. Both men and women compete in Paralympic swimming, racing against competitors of their own gender. Swimming has been a part of the Paralympic program since the 1960 Summer Olympics in Rome, Italy. </div>
-                                                <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVXDrcxSJus6-8Jzz1So0E3VTSm9etE5r6A&usqp=CAU"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 500) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description" >Marathon swimming is a class of open water swimming defined by long distances (at least 10 kilometers) and traditional rules based in English Channel swimming. Unlike marathon foot-races which have a specifically defined distance, marathon swims vary in distance. However, one commonly used minimum definition is 10 kilometers, the distance of the marathon swimming event at the Olympic Games. </div>
-                                                <img class="thumbnail" src="https://i0.wp.com/www.swimmingworldmagazine.com/news/wp-content/uploads/2020/07/marathon-odaiba-marine-park-tokyo2020.jpeg?fit=930%2C560&ssl=1"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 502) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">The flipper is the name of a particular bowling delivery used in cricket, generally by a leg spin bowler. In essence it is a back spin ball. Squeezed out of the front of the hand with the thumb and first and second fingers, it keeps deceptively low after pitching and can accordingly be very difficult to play. </div>
-                                                <img class="thumbnail" src="https://hw-media.herworld.com/public/Flippa%20Ball.png"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 503) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">Surf polo was originally played by Duke Kahanamoku in Hawaii on flat days with his brothers in the early 1900s.  Louis Kahanamoku is credited to be the first to add surfboards to water polo.  In 2013, nearly 100 years after its inception, Jeff Brooks and Jacob Kelly Quinlan brought the spirit of Surf Polo to the indoor pool environment to keep the river surf community going while rivers were frozen over for the winter.  
-                                                    <br><br>
-                                                    The river surfers were quick to appreciate the mental and physical benefits of paddling a surfboard in the pool for 60 minutes and often meet up after the game building relationships with each other. </div>
-                                                <img class="thumbnail" src="https://thumbs.dreamstime.com/b/surfboard-polo-event-duke-kahanamoku-oceanfest-surf-location-queen-s-beach-waikiki-island-o-ahu-hawai-i-usa-viii-subject-43849137.jpg"/>
+                                                <div class="description">Woodsball (also known as woods paintball, hillball or bushball) is a format of paintball gaming, in which players compete in a natural outdoors area or a recreation of a town called urban fields. ... The term "woodsball" is sometimes used to describe non-milsim airsoft games, which take place in a forest. </div>
+                                                <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/en/7/7a/Woodsball_marksman_06.JPG"/>
                                             </div>`
                     }
                 })

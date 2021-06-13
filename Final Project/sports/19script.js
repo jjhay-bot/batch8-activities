@@ -14,53 +14,53 @@ groupCollection = () => {
             .then(Response=>Response.json())
             .then(data => {
                 let image = data.data.relationships.images.data[0].variants[0].thumbnail.url;
-                    if(targetSample == 228) {
+                    if(targetSample == 348) {
                         return groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${data.data.attributes.name}</div>
-                                                <div class="description">Synchronised Swimming used to be known as "water ballet". This is because the routines are essentially a series of athletic movements choreographed to a piece of chosen music. Not unlike staged ballet, except that it is performed in the water. </div>
+                                                <div class="description">Floorball is a type of indoor hockey that doesn't require any bulky equipment. All you need is a stick and a ball! ... While floorball is similar to ball or floor hockey, it is faster and safer because of the unique rules and the lightweight equipment. The emphasis is on speed and skill rather than strength. </div>
                                                 <img class="thumbnail" src="${image}"/>
                                             </div>`
                     }
 
-                    if(targetSample == 506) {
+                    if(targetSample == 175) {
                         return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua jogging, aka deep water running, is a form of cardiovascular exercise that mimics the motion of jogging while submerged in water. You can do aqua jogging by running laps in the pool or wearing a flotation device around your trunk and running in place.
-                                                            <br><br>
-                                                            A flotation device or running belt keeps your body suspended, allowing your arms and legs to move freely while keeping your head above the surface of the water. </div>
-                                                        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDMoSOkGVrM1wJJGmUAzfK6GAG8pTdw_q6Q&usqp=CAU"/>
-                                                    </div>`
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Ice hockey, also known as "hockey", is a team sport that is played on a specially ice rink surface. The aim of each team is to send the puck (a disk made of vulcanized rubber) and to score into the opponent's goal. A match lasts three periods of 20 minutes each. the clock running only when the puck is in play. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
                     }
-
-                    if(targetSample == 505) {
+                    if(targetSample == 368) {
                         return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua aerobics (also called water aerobics and aquafit) is a form of exercise which provides cardiovascular conditioning, increasing your pulse and your breathing rate. The term "aerobic" actually means "with oxygen". This means that your breathing controls the amount of oxygen that reaches your muscles to help them move and burn stored fuel. Aqua aerobics is similar to a normal aerobics class, but since it's done in the water, it places less strain on your joints.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">a game similar to ice hockey, but played on foot on a hard surface without ice, using a hard plastic ball instead of a puck. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
                     }
-
-                    if(targetSample == 406) {
+                    if(targetSample == 98) {
                         return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                            <div class="description" onclick="getArray()"> Open water swimming is one of the five aquatic sports governed by Federation Internationale de Natation de Amateur (FINA). Swimming, water polo, synchronized swimming, and diving are the others within FINA's mandate. Open water swimming is defined by FINA as any competition that takes place in rivers, lakes, or oceans. Open water swimming is also an important part of both the Olympic triathlon (swim/cycle/run segments, with the swim 0.9 mile (1.5 km) in length) and the longer version, the Iron-man, which has a 2.4 mile (4 km) open water swim.
-                                                        </div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Field hockey, also called hockey, outdoor game played by two opposing teams of 11 players each who use sticks curved at the striking end to hit a small, hard ball into their opponent's goal. It is called field hockey to distinguish it from the similar game played on ice. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
                     }
-
-                    if(targetSample == 331) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" onclick="getArray()"> Aquatic Fitness is defined as activities performed in the water that promote and enhance physical and mental fitness. Aquatic Fitness is typically performed in a vertical position in shallow and/or deep water. There are numerous applications to appeal to a wide variety of participants.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
                     if(targetSample == 504) {
-                        groups.innerHTML += `<div class="thisLink" href="">
+                        return groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${data.data.attributes.name}</div>
                                                 <div class="description"> </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 504) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description"> </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 177) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Roller inline hockey, or inline hockey is a variant of hockey played on a hard, smooth surface, with players using inline skates to move and hockey sticks to shoot a hard, plastic puck into their opponent's goal to score points. ... Inline hockey is a very fast-paced and free-flowing game. </div>
                                                 <img class="thumbnail" src="${image}"/>
                                             </div>`
                     }
@@ -84,44 +84,18 @@ groupCollection = () => {
                 .then(data => {
                     let name = data.data.attributes.name;
                     console.log(name, targetSample)
-                    if (targetSample == 221){
-                    groups.innerHTML += `<div class="thisLink" href="">
-                                            <div class="groupDiv">${name}</div>
-                                            <div class="description">Aqua cycling (or water cycling) is an aerobic activity conducted in a pool of water on a purpose-built, hydro-spin bike.  The aqua cycling routine facilitates an intense cycling workout which incorporates various arm, chest and core exercises. </div>
-                                            <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Aqua_spinning_class_aboard_a_cruise_ship.jpg/375px-Aqua_spinning_class_aboard_a_cruise_ship.jpg"/>
-                                        </div>`
-                    }
-                    if(targetSample == 501) {
+                    if(targetSample == 407) {
                         groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${name}</div>
-                                                <div class="description">Paralympic swimming is an adaptation of the sport of swimming for athletes with disabilities. Paralympic swimmers compete at the Summer Paralympic Games and at other sports competitions throughout the world. The sport is governed by the International Paralympic Committee. Both men and women compete in Paralympic swimming, racing against competitors of their own gender. Swimming has been a part of the Paralympic program since the 1960 Summer Olympics in Rome, Italy. </div>
-                                                <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVXDrcxSJus6-8Jzz1So0E3VTSm9etE5r6A&usqp=CAU"/>
+                                                <div class="description">Street hockey (also known as shinny, dek hockey, ball hockey, road hockey) is a variation of the sport of ice hockey where the game is played outdoors on foot, or with inline or roller skates using a ball or puck. Both ball and puck are typically designed to be played on non-ice surfaces. </div>
+                                                <img class="thumbnail" src="https://www.gazettenet.com/getattachment/b1a2941c-3f34-4e53-b8be-4ec66de60769/Bundy-Cup-reaches-30th-year"/>
                                             </div>`
                     }
-
-                    if(targetSample == 500) {
+                    if(targetSample == 762) {
                         groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${name}</div>
-                                                <div class="description" >Marathon swimming is a class of open water swimming defined by long distances (at least 10 kilometers) and traditional rules based in English Channel swimming. Unlike marathon foot-races which have a specifically defined distance, marathon swims vary in distance. However, one commonly used minimum definition is 10 kilometers, the distance of the marathon swimming event at the Olympic Games. </div>
-                                                <img class="thumbnail" src="https://i0.wp.com/www.swimmingworldmagazine.com/news/wp-content/uploads/2020/07/marathon-odaiba-marine-park-tokyo2020.jpeg?fit=930%2C560&ssl=1"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 502) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">The flipper is the name of a particular bowling delivery used in cricket, generally by a leg spin bowler. In essence it is a back spin ball. Squeezed out of the front of the hand with the thumb and first and second fingers, it keeps deceptively low after pitching and can accordingly be very difficult to play. </div>
-                                                <img class="thumbnail" src="https://hw-media.herworld.com/public/Flippa%20Ball.png"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 503) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">Surf polo was originally played by Duke Kahanamoku in Hawaii on flat days with his brothers in the early 1900s.  Louis Kahanamoku is credited to be the first to add surfboards to water polo.  In 2013, nearly 100 years after its inception, Jeff Brooks and Jacob Kelly Quinlan brought the spirit of Surf Polo to the indoor pool environment to keep the river surf community going while rivers were frozen over for the winter.  
-                                                    <br><br>
-                                                    The river surfers were quick to appreciate the mental and physical benefits of paddling a surfboard in the pool for 60 minutes and often meet up after the game building relationships with each other. </div>
-                                                <img class="thumbnail" src="https://thumbs.dreamstime.com/b/surfboard-polo-event-duke-kahanamoku-oceanfest-surf-location-queen-s-beach-waikiki-island-o-ahu-hawai-i-usa-viii-subject-43849137.jpg"/>
+                                                <div class="description">Unicycle hockey is a team sport, similar to rink hockey where players try to hit the ball with their sticks into the other team's goal, except that each player must be mounted on a unicycle to play the ball. ... The goals are also set back from the end walls so that players can go behind them, similarly to ice hockey. </div>
+                                                <img class="thumbnail" src="https://lh3.googleusercontent.com/proxy/4cYHkneiIbRkTISM0FBbzJF-Fr8dXd68nShXJVu7C4U4BF-76uP4eeQiBTbN-WIclQOxyPRQhgCPanATdF9PMFt_jzhaRRFlsut61pi76PLiQZt1sQ"/>
                                             </div>`
                     }
                 })

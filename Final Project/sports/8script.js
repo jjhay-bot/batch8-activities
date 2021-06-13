@@ -14,57 +14,104 @@ groupCollection = () => {
             .then(Response=>Response.json())
             .then(data => {
                 let image = data.data.relationships.images.data[0].variants[0].thumbnail.url;
-                    if(targetSample == 228) {
+                    if(targetSample == 128) {
                         return groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${data.data.attributes.name}</div>
-                                                <div class="description">Synchronised Swimming used to be known as "water ballet". This is because the routines are essentially a series of athletic movements choreographed to a piece of chosen music. Not unlike staged ballet, except that it is performed in the water. </div>
+                                                <div class="description">Savate (French pronunciation: ​[saˈvat]), also known as boxe française, savate boxing, French boxing or French footfighting, is a French kickboxing combat sport that uses the hands and feet as weapons combining elements of English boxing with graceful kicking techniques. </div>
                                                 <img class="thumbnail" src="${image}"/>
                                             </div>`
                     }
-
-                    if(targetSample == 506) {
+                    if(targetSample == 300) {
                         return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua jogging, aka deep water running, is a form of cardiovascular exercise that mimics the motion of jogging while submerged in water. You can do aqua jogging by running laps in the pool or wearing a flotation device around your trunk and running in place.
-                                                            <br><br>
-                                                            A flotation device or running belt keeps your body suspended, allowing your arms and legs to move freely while keeping your head above the surface of the water. </div>
-                                                        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDMoSOkGVrM1wJJGmUAzfK6GAG8pTdw_q6Q&usqp=CAU"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 505) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua aerobics (also called water aerobics and aquafit) is a form of exercise which provides cardiovascular conditioning, increasing your pulse and your breathing rate. The term "aerobic" actually means "with oxygen". This means that your breathing controls the amount of oxygen that reaches your muscles to help them move and burn stored fuel. Aqua aerobics is similar to a normal aerobics class, but since it's done in the water, it places less strain on your joints.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 406) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                            <div class="description" onclick="getArray()"> Open water swimming is one of the five aquatic sports governed by Federation Internationale de Natation de Amateur (FINA). Swimming, water polo, synchronized swimming, and diving are the others within FINA's mandate. Open water swimming is defined by FINA as any competition that takes place in rivers, lakes, or oceans. Open water swimming is also an important part of both the Olympic triathlon (swim/cycle/run segments, with the swim 0.9 mile (1.5 km) in length) and the longer version, the Iron-man, which has a 2.4 mile (4 km) open water swim.
-                                                        </div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 331) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" onclick="getArray()"> Aquatic Fitness is defined as activities performed in the water that promote and enhance physical and mental fitness. Aquatic Fitness is typically performed in a vertical position in shallow and/or deep water. There are numerous applications to appeal to a wide variety of participants.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 504) {
-                        groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${data.data.attributes.name}</div>
-                                                <div class="description"> </div>
+                                                <div class="description">Taekwondo is one of the most systematic and scientific Korean traditional martial arts, that teaches more than physical fighting skills. ... Thus Taekwondo means "the right way of using all parts of the body to stop fights and help to build a better and more peaceful world." </div>
                                                 <img class="thumbnail" src="${image}"/>
                                             </div>`
                     }
-
+                    if(targetSample == 303) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Wrestling is a combat sport involving grappling-type techniques such as clinch fighting, throws and takedowns, joint locks, pins and other grappling holds. ... A wrestling bout is a physical competition, between two (occasionally more) competitors or sparring partners, who attempt to gain and maintain a superior position. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 293) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Jujutsu (Japanese: 柔術 jūjutsu. listen (help. · info)), also known as jiu-jitsu and ju-jitsu, is a family of Japanese martial arts and a system of close combat (unarmed or with a minor weapon) that can be used in a defensive or offensive manner to kill or subdue one or more weaponless or armed and armored opponents. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 594) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Fencing is a modern and exciting competitive sport involving the skilled use of the three sport weapons – foil, épée and sabre. These sport weapons are lightweight, flexible and without sharp points or edges. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 595) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Foil, a sword with a light, flexible blade of rectangular cross section tapering to a blunt point. It was designed as a practice weapon for the smallsword fashionable in the 17th century and is now used primarily in the sport of fencing. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 596) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">The sabre weapon is for thrusting and cutting with both the cutting edge and the back of the blade (unlike other modern fencing weapons, the épée and foil, where the methods of making a hit are scored using the point of the blade). </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 296) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Tai chi is a series of gentle physical exercises and stretches. Each posture flows into the next without pause, ensuring that your body is in constant motion. Tai chi is sometimes described as meditation in motion because it promotes serenity through gentle movements — connecting the mind and body. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 301) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Karate is a Japanese martial art whose physical aspects seek the development of defensive and counterattacking body movements. The themes of traditional karate training are fighting and self-defense, though its mental and moral aspects target the overall improvement of the individual. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 297) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Kung fu, (Chinese [Wade-Giles romanization]: “skill” ) , Pinyin gongfu, a martial art, both a form of exercise with a spiritual dimension stemming from concentration and self-discipline and a primarily unarmed mode of personal combat often equated with karate or tae kwon do. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 294) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Aikido, Japanese aikidō (“way of harmonizing energy”), martial art and self-defense system that resembles the fighting methods jujitsu and judo in its use of twisting and throwing techniques and in its aim of turning an attacker's strength and momentum against himself. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 355) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Muay Thai is a stand-up combat sport, where fighters are not allowed to take the fight to the ground. It is fast-paced and combines both boxing and kicking in one swirling melee of a bout. In Thailand, it is known as the art of eight limbs, referring to the eight points of contact that are used to strike the opponent. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 299) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">SAMBO is a martial art and combat sport developed and used by the Soviet Red Army in the early 1920s to improve their hand-to-hand combat abilities. The sport is similar in many ways to judo and jujutsu but also incorporates different types of wrestling and various self-defence systems. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 302) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Judo is a martial art that emphasizes the use of quick movement and leverage to throw an opponent. Its techniques are generally intended to turn an opponent's force to one's own advantage rather than to oppose it directly. ... It became an Olympic sport for men in 1964; women's judo was added in 1992. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
                     else {
                         // console.log(data.data.attributes)
                         groups.innerHTML += `<div class="thisLink" href="">
@@ -84,45 +131,12 @@ groupCollection = () => {
                 .then(data => {
                     let name = data.data.attributes.name;
                     console.log(name, targetSample)
-                    if (targetSample == 221){
+                    if (targetSample == 295){
                     groups.innerHTML += `<div class="thisLink" href="">
                                             <div class="groupDiv">${name}</div>
-                                            <div class="description">Aqua cycling (or water cycling) is an aerobic activity conducted in a pool of water on a purpose-built, hydro-spin bike.  The aqua cycling routine facilitates an intense cycling workout which incorporates various arm, chest and core exercises. </div>
-                                            <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Aqua_spinning_class_aboard_a_cruise_ship.jpg/375px-Aqua_spinning_class_aboard_a_cruise_ship.jpg"/>
+                                            <div class="description">Kendo (剣道, Kendō, lit. 'sword way', 'sword path' or 'way of the sword') is a modern Japanese martial art, descended from swordsmanship (kenjutsu), that uses bamboo swords (shinai) as well as protective armor (bōgu). Today, it is widely practiced within Japan and has spread to many other nations across the world. </div>
+                                            <img class="thumbnail" src="https://web-japan.org/kidsweb/meet/kendo/images/theart/men.jpg"/>
                                         </div>`
-                    }
-                    if(targetSample == 501) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">Paralympic swimming is an adaptation of the sport of swimming for athletes with disabilities. Paralympic swimmers compete at the Summer Paralympic Games and at other sports competitions throughout the world. The sport is governed by the International Paralympic Committee. Both men and women compete in Paralympic swimming, racing against competitors of their own gender. Swimming has been a part of the Paralympic program since the 1960 Summer Olympics in Rome, Italy. </div>
-                                                <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVXDrcxSJus6-8Jzz1So0E3VTSm9etE5r6A&usqp=CAU"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 500) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description" >Marathon swimming is a class of open water swimming defined by long distances (at least 10 kilometers) and traditional rules based in English Channel swimming. Unlike marathon foot-races which have a specifically defined distance, marathon swims vary in distance. However, one commonly used minimum definition is 10 kilometers, the distance of the marathon swimming event at the Olympic Games. </div>
-                                                <img class="thumbnail" src="https://i0.wp.com/www.swimmingworldmagazine.com/news/wp-content/uploads/2020/07/marathon-odaiba-marine-park-tokyo2020.jpeg?fit=930%2C560&ssl=1"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 502) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">The flipper is the name of a particular bowling delivery used in cricket, generally by a leg spin bowler. In essence it is a back spin ball. Squeezed out of the front of the hand with the thumb and first and second fingers, it keeps deceptively low after pitching and can accordingly be very difficult to play. </div>
-                                                <img class="thumbnail" src="https://hw-media.herworld.com/public/Flippa%20Ball.png"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 503) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">Surf polo was originally played by Duke Kahanamoku in Hawaii on flat days with his brothers in the early 1900s.  Louis Kahanamoku is credited to be the first to add surfboards to water polo.  In 2013, nearly 100 years after its inception, Jeff Brooks and Jacob Kelly Quinlan brought the spirit of Surf Polo to the indoor pool environment to keep the river surf community going while rivers were frozen over for the winter.  
-                                                    <br><br>
-                                                    The river surfers were quick to appreciate the mental and physical benefits of paddling a surfboard in the pool for 60 minutes and often meet up after the game building relationships with each other. </div>
-                                                <img class="thumbnail" src="https://thumbs.dreamstime.com/b/surfboard-polo-event-duke-kahanamoku-oceanfest-surf-location-queen-s-beach-waikiki-island-o-ahu-hawai-i-usa-viii-subject-43849137.jpg"/>
-                                            </div>`
                     }
                 })
             })

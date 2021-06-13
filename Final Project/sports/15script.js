@@ -14,53 +14,66 @@ groupCollection = () => {
             .then(Response=>Response.json())
             .then(data => {
                 let image = data.data.relationships.images.data[0].variants[0].thumbnail.url;
-                    if(targetSample == 228) {
+                    if(targetSample == 708) {
                         return groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${data.data.attributes.name}</div>
-                                                <div class="description">Synchronised Swimming used to be known as "water ballet". This is because the routines are essentially a series of athletic movements choreographed to a piece of chosen music. Not unlike staged ballet, except that it is performed in the water. </div>
+                                                <div class="description">A form of high intensity interval training, CrossFit is a strength and conditioning workout that is made up of functional movement performed at a high intensity level. These movements are actions that you perform in your day-to-day life, like squatting, pulling, pushing etc. </div>
                                                 <img class="thumbnail" src="${image}"/>
                                             </div>`
                     }
-
-                    if(targetSample == 506) {
+                    if(targetSample == 112) {
                         return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua jogging, aka deep water running, is a form of cardiovascular exercise that mimics the motion of jogging while submerged in water. You can do aqua jogging by running laps in the pool or wearing a flotation device around your trunk and running in place.
-                                                            <br><br>
-                                                            A flotation device or running belt keeps your body suspended, allowing your arms and legs to move freely while keeping your head above the surface of the water. </div>
-                                                        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDMoSOkGVrM1wJJGmUAzfK6GAG8pTdw_q6Q&usqp=CAU"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 505) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" >Aqua aerobics (also called water aerobics and aquafit) is a form of exercise which provides cardiovascular conditioning, increasing your pulse and your breathing rate. The term "aerobic" actually means "with oxygen". This means that your breathing controls the amount of oxygen that reaches your muscles to help them move and burn stored fuel. Aqua aerobics is similar to a normal aerobics class, but since it's done in the water, it places less strain on your joints.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 406) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                            <div class="description" onclick="getArray()"> Open water swimming is one of the five aquatic sports governed by Federation Internationale de Natation de Amateur (FINA). Swimming, water polo, synchronized swimming, and diving are the others within FINA's mandate. Open water swimming is defined by FINA as any competition that takes place in rivers, lakes, or oceans. Open water swimming is also an important part of both the Olympic triathlon (swim/cycle/run segments, with the swim 0.9 mile (1.5 km) in length) and the longer version, the Iron-man, which has a 2.4 mile (4 km) open water swim.
-                                                        </div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 331) {
-                        return groups.innerHTML += `<div class="thisLink" href="">
-                                                        <div class="groupDiv">${data.data.attributes.name}</div>
-                                                        <div class="description" onclick="getArray()"> Aquatic Fitness is defined as activities performed in the water that promote and enhance physical and mental fitness. Aquatic Fitness is typically performed in a vertical position in shallow and/or deep water. There are numerous applications to appeal to a wide variety of participants.</div>
-                                                        <img class="thumbnail" src="${image}"/>
-                                                    </div>`
-                    }
-
-                    if(targetSample == 504) {
-                        groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${data.data.attributes.name}</div>
-                                                <div class="description"> </div>
+                                                <div class="description">Stretching is a form of physical exercise in which a specific muscle or tendon (or muscle group) is deliberately flexed or stretched in order to improve the muscle's felt elasticity and achieve comfortable muscle tone. The result is a feeling of increased muscle control, flexibility, and range of motion. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 425) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Cross-training is athletic training in sports other than the athlete's usual sport. ... The goal is improving overall performance. It takes advantage of the particular effectiveness of one training method to negate the shortcomings of another. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 703) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">As muscles repair from the workouts your body's metabolism is increased. This means that calories are burned by BodyPump at an increased rate long after you finish your Body Pump class. With increased muscle mass, you'll use more energy, resulting in a greater rate of weight loss. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 111) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Pilates is a method of exercise that consists of low-impact flexibility and muscular strength and endurance movements. Pilates emphasizes proper postural alignment, core strength and muscle balance. Pilates is named for its creator, Joseph Pilates, who developed the exercises in the 1920s. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 397) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Bodybuilding, a regimen of exercises designed to enhance the human body's muscular development and promote general health and fitness. As a competitive activity, bodybuilding aims to display in artistic fashion pronounced muscle mass, symmetry, and definition for overall aesthetic effect. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 706) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Plyometrics is a type of exercise training that uses speed and force of different movements to build muscle power. ... Plyometrics can include different types of exercises, like pushups, throwing, running, jumping, and kicking. Athletes often use plyometrics as part of their training, but anyone can do these workouts. </div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 353) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">Step aerobics is a choreographed routine of stepping up and down on a rectangular, square, or circular platform (or, in the case of BOSU, a domed, flexible apparatus). Many classes combine step aerobics with body sculpting, jumping rope, sliding, or funk aerobics.</div>
+                                                <img class="thumbnail" src="${image}"/>
+                                            </div>`
+                    }
+                    if(targetSample == 701) {
+                        return groups.innerHTML += `<div class="thisLink" href="">
+                                                <div class="groupDiv">${data.data.attributes.name}</div>
+                                                <div class="description">High-intensity interval training (HIIT) is a form of interval training, a cardiovascular exercise strategy alternating short periods of intense anaerobic exercise with less intense recovery periods, until too exhausted to continue. </div>
                                                 <img class="thumbnail" src="${image}"/>
                                             </div>`
                     }
@@ -84,45 +97,26 @@ groupCollection = () => {
                 .then(data => {
                     let name = data.data.attributes.name;
                     console.log(name, targetSample)
-                    if (targetSample == 221){
+                    if (targetSample == 709){
                     groups.innerHTML += `<div class="thisLink" href="">
                                             <div class="groupDiv">${name}</div>
-                                            <div class="description">Aqua cycling (or water cycling) is an aerobic activity conducted in a pool of water on a purpose-built, hydro-spin bike.  The aqua cycling routine facilitates an intense cycling workout which incorporates various arm, chest and core exercises. </div>
-                                            <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Aqua_spinning_class_aboard_a_cruise_ship.jpg/375px-Aqua_spinning_class_aboard_a_cruise_ship.jpg"/>
+                                            <div class="description">Kettlebell Sport lifting (Russian: гиревой спорт, girevoy sport, GS) is a repetitive weight lifting sport performed with kettlebells in a given period of time. </div>
+                                            <img class="thumbnail" src="https://www.topendsports.com/fitness/images/kettlebells-snatch-pixabay.jpg"/>
                                         </div>`
                     }
-                    if(targetSample == 501) {
+                    if (targetSample == 711){
                         groups.innerHTML += `<div class="thisLink" href="">
                                                 <div class="groupDiv">${name}</div>
-                                                <div class="description">Paralympic swimming is an adaptation of the sport of swimming for athletes with disabilities. Paralympic swimmers compete at the Summer Paralympic Games and at other sports competitions throughout the world. The sport is governed by the International Paralympic Committee. Both men and women compete in Paralympic swimming, racing against competitors of their own gender. Swimming has been a part of the Paralympic program since the 1960 Summer Olympics in Rome, Italy. </div>
-                                                <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfVXDrcxSJus6-8Jzz1So0E3VTSm9etE5r6A&usqp=CAU"/>
+                                                <div class="description">Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. As in the sport of Olympic weightlifting, it involves the athlete attempting a maximal weight single lift of a barbell loaded with weight plates. </div>
+                                                <img class="thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/0/05/IPF_World_Champion_Dean_Bowring_performing_the_three_Powerlifting_moves.jpg"/>
                                             </div>`
                     }
-
-                    if(targetSample == 500) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description" >Marathon swimming is a class of open water swimming defined by long distances (at least 10 kilometers) and traditional rules based in English Channel swimming. Unlike marathon foot-races which have a specifically defined distance, marathon swims vary in distance. However, one commonly used minimum definition is 10 kilometers, the distance of the marathon swimming event at the Olympic Games. </div>
-                                                <img class="thumbnail" src="https://i0.wp.com/www.swimmingworldmagazine.com/news/wp-content/uploads/2020/07/marathon-odaiba-marine-park-tokyo2020.jpeg?fit=930%2C560&ssl=1"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 502) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">The flipper is the name of a particular bowling delivery used in cricket, generally by a leg spin bowler. In essence it is a back spin ball. Squeezed out of the front of the hand with the thumb and first and second fingers, it keeps deceptively low after pitching and can accordingly be very difficult to play. </div>
-                                                <img class="thumbnail" src="https://hw-media.herworld.com/public/Flippa%20Ball.png"/>
-                                            </div>`
-                    }
-
-                    if(targetSample == 503) {
-                        groups.innerHTML += `<div class="thisLink" href="">
-                                                <div class="groupDiv">${name}</div>
-                                                <div class="description">Surf polo was originally played by Duke Kahanamoku in Hawaii on flat days with his brothers in the early 1900s.  Louis Kahanamoku is credited to be the first to add surfboards to water polo.  In 2013, nearly 100 years after its inception, Jeff Brooks and Jacob Kelly Quinlan brought the spirit of Surf Polo to the indoor pool environment to keep the river surf community going while rivers were frozen over for the winter.  
-                                                    <br><br>
-                                                    The river surfers were quick to appreciate the mental and physical benefits of paddling a surfboard in the pool for 60 minutes and often meet up after the game building relationships with each other. </div>
-                                                <img class="thumbnail" src="https://thumbs.dreamstime.com/b/surfboard-polo-event-duke-kahanamoku-oceanfest-surf-location-queen-s-beach-waikiki-island-o-ahu-hawai-i-usa-viii-subject-43849137.jpg"/>
-                                            </div>`
+                    if (targetSample == 704){
+                    groups.innerHTML += `<div class="thisLink" href="">
+                                            <div class="groupDiv">${name}</div>
+                                            <div class="description"> The benefits of calisthenics include better long-term health, improved mobility and ease of movement, reduced injury risk, and more calories burned. Some of the best example calisthenics workouts for beginners are push-ups, squats, planks, and jumping exercises.</div>
+                                            <img class="thumbnail" src="https://post.healthline.com/wp-content/uploads/2020/08/732x549_THUMBNAIL_Calisthenics.jpg"/>
+                                        </div>`
                     }
                 })
             })
