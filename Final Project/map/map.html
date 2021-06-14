@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚽ Sportify (API Project)</title>
-    <link rel="stylesheet" href="map.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Geo Map Recommendation</title>
     <link rel="stylesheet" href="style.css">
+    <script src="map.js" defer></script>
+    
 
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div id="navContainer">
-        <div id="title">
-            <img src="images/41f37bf5af30cf4e4a7dea4940e58aac.jpg" id="logo">
-            <div id="titleText">Sportify</div>
+    <section>
+        <!-- Navigation Bar -->
+        <div id="navContainer">
+            <div id="title">
+                <!-- <img src="images/41f37bf5af30cf4e4a7dea4940e58aac.jpg" id="logo"> -->
+                <div id="titleText">Sportify</div>
+            </div>
+            <!-- <div id="navList">
+                <div>Home</div>
+                <div>Category</div>
+                <div>Search</div>
+                <div>Profile</div>
+            </div> -->
+          
+            <a href="#" class="toggle-button" onclick="toggleButton()">
+                <span class="burger"></span>
+                <span class="burger"></span>
+                <span class="burger"></span>
+            </a>
         </div>
-        <div id="navList">
-            <div id="navHome" onclick="showHome()">Home</div>
-            <div id="navCategory" onclick="showCategory()">Category</div>
-            <div id="navSearch">Search</div>
-            <div id="navFavorite"  onclick="showFavorite()">Favorite</div>
-        </div>
-        
-        <a href="#" class="toggle-button" onclick="toggleButton()">
-            <span class="burger"></span>
-            <span class="burger"></span>
-            <span class="burger"></span>
-        </a>
-    </div>
-
-    <div id="groupContainer">
-        <div id="groups"></div>
-    </div>
-
-    <!-- Home Page -->
+    </section>
+    <!-- <select name="select" id="location" class="form-control">
+        <option value="12.75,122.73">East Asia</option>
+        <option value="65,98">North Asia</option>
+        <option value="48,67">Central Asia</option>
+        <option value="6.6,21">Southwest Asia</option>
+        <option value="20,18">South Asia</option>
+        <option value="10,121">Southeast Asia</option>
+    </select> -->
     <div id="maps">
         <div id="containerMap" >
             <img src="asia(all).png" class="asiaAll">
@@ -67,39 +72,18 @@
             </div>
         </div>
     </div>
+
     <div id="listRecommendation">
         <div id="recommendation"></div>
     </div>
 
-    <!-- Caterogy Page -->
     <div id="descriptionRecContainer" onclick="exitDescription()">
         <div id="descriptionRec">
             <h2 id="titleRec">Title</h2>
-            <div id="favButtonContainer">
-                <div onclick="addToFavorite()" id="favoriteButton">⭐</div>
-            </div>
             <span id="descriptionDetails">description</span>
             <div id="imageRec"></div>
         </div>
+
     </div>
-
-    <!-- Favorite Page -->
-    <div id="listFavorite">
-        <div id="favorites"></div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="map.js" defer></script>
-    <script src="script.js" defer></script>
 </body>
 </html>
-
