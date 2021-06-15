@@ -225,7 +225,7 @@ a {
         /* height: 85vh; */
         /* padding: 0 5%; */
         display: flex;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
         
 
     }
@@ -234,8 +234,8 @@ a {
         width: 50px;
         display: block;
         font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
         text-align: center;
     }
 
