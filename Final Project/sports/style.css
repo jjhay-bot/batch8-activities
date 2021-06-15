@@ -222,7 +222,7 @@ a {
     #groups div {
         /* width: 170px; */
         width: 90%;
-        height: 85vh;
+        /* height: 85vh; */
         /* padding: 0 5%; */
         display: flex;
         justify-content: flex-start;
