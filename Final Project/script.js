@@ -52,24 +52,39 @@ function getArray() {
 }
 
 showHome = () => {
-    document.getElementById('maps').style.display = 'flex'
-    document.getElementById('groupContainer').style.display = 'none'
-    document.getElementById('listFavorite').style.display = 'none'
-    document.getElementById('recommendation').style.display = 'none'
+    document.getElementById('maps').style.display = 'flex';
+    document.getElementById('groupContainer').style.display = 'none';
+    document.getElementById('listFavorite').style.display = 'none';
+    document.getElementById('recommendation').style.display = 'none';
+    toggleButton();
+    document.getElementById('navHome').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
+    document.getElementById('navHome').style.borderRadius = '5% / 10%';
+    document.getElementById('navCategory').style.backgroundColor = 'transparent';
+    document.getElementById('navFavorite').style.backgroundColor = 'transparent';
 }
 
 showCategory = () => {
-    document.getElementById('maps').style.display = 'none'
-    document.getElementById('groupContainer').style.display = 'flex'
-    document.getElementById('listFavorite').style.display = 'none'
-    document.getElementById('recommendation').style.display = 'none'
-    // document.getElementById('searchSection').style.display = 'none'    
+    document.getElementById('maps').style.display = 'none';
+    document.getElementById('groupContainer').style.display = 'flex';
+    document.getElementById('listFavorite').style.display = 'none';
+    document.getElementById('recommendation').style.display = 'none';
+    toggleButton();
+    document.getElementById('navCategory').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
+    document.getElementById('navCategory').style.borderRadius = '5% / 10%';
+    document.getElementById('navHome').style.backgroundColor = 'transparent';
+    document.getElementById('navFavorite').style.backgroundColor = 'transparent';
 }
 
 showFavorite = () => {
-    document.getElementById('maps').style.display = 'none'
-    document.getElementById('groupContainer').style.display = 'none'
-    document.getElementById('listFavorite').style.display = 'flex'
-    document.getElementById('recommendation').style.display = 'none'
+    document.getElementById('maps').style.display = 'none';
+    document.getElementById('groupContainer').style.display = 'none';
+    document.getElementById('listFavorite').style.display = 'flex';
+    document.getElementById('recommendation').style.display = 'none';
     favoList();
+    toggleButton();
+    document.getElementById('navFavorite').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
+    document.getElementById('navFavorite').style.borderRadius = '5% / 10%';
+    document.getElementById('navHome').style.backgroundColor = 'transparent';
+    document.getElementById('navCategory').style.backgroundColor = 'transparent';
+
 }
