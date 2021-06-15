@@ -95,7 +95,7 @@ body {
     flex-direction: column;
     margin-top: 100px;
     width: 80vmin;
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 #groups div {
@@ -215,6 +215,8 @@ a {
         /* flex-wrap: wrap; */
         justify-content: start;
         align-items: center;
+        margin-top: 80px;
+
     }
 
     #groups div {
