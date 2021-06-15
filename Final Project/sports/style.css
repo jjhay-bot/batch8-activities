@@ -95,6 +95,7 @@ body {
     flex-direction: column;
     margin-top: 100px;
     width: 80vmin;
+    margin-top: 80px;
 }
 
 #groups div {
@@ -211,17 +212,19 @@ a {
         width: max-content;
         height: 100px; 
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        /* flex-wrap: wrap; */
+        justify-content: start;
         align-items: center;
     }
 
     #groups div {
         /* width: 170px; */
         width: 90%;
-        padding: 0 5%;
+        height: 85vh;
+        /* padding: 0 5%; */
         display: flex;
         justify-content: flex-start;
+        
 
     }
 
@@ -229,7 +232,7 @@ a {
         width: 50px;
         display: block;
         font-size: 20px;
-        margin-top: 100px;
+        margin-top: 10px;
         margin-bottom: 30px;
         text-align: center;
     }
@@ -239,7 +242,9 @@ a {
         height: 175px;
         margin-top: 15px;
     }
-
+    .thisLink {
+        height: 92.5vh;
+    }
 
 
 }
