@@ -21,51 +21,51 @@
     z-index: -1;
 }
 .asiaAll {
-    width: 350px;
+    width: 700px;
     position: absolute;
     z-index: -1;
-    opacity: .8;
+    opacity: .75;
 }
 .asia1 {
-    width: 95px;
+    width: 196px;
     position: absolute;
     z-index: +2;
     opacity: .15;
-    margin-top: 60px;
-    margin-left: -28px;
+    margin-top: 120px;
+    margin-left: -56px;
 }
 
 .asia2 {
-    width: 295px;
+    width: 590px;
     position: absolute;
     z-index: +1;
     opacity: .25;
-    margin-top: -14px;
-    margin-left: -15px;
+    margin-top: -28px;
+    margin-left: -30px;
 } 
 
 .asia3 {
-    width: 145px;
+    width: 290px;
     position: absolute;
     z-index: +2;
     opacity: .25;
-    margin-top: -3px;
-    margin-left: -171px;
+    margin-top: -8px;
+    margin-left: -345px;
 } 
 .asia4 {
-    width: 350px;
+    width: 700px;
     position: absolute;
     opacity: .25;
-    margin-top: -106px;
+    margin-top: -214px;
     /* margin-left: -171px; */
 } 
 .asia1a {
-    width: 145px;
+    width: 290px;
     position: absolute;
     z-index: +1;
     opacity: .25;
-    margin-top: 130px;
-    margin-left: 181px;
+    margin-top: 261px;
+    margin-left: 365px;
 } 
 
 #titleLocation {
@@ -81,8 +81,8 @@
     z-index: -1;
     margin-top: 200px;
     margin-left: -175px;
-    margin-top: 400px;
-    margin-left: -100px;
+    margin-top: 500px;
+    margin-left: -400px;
 } 
 #legend div {
     display: flex;
@@ -171,14 +171,14 @@
     margin-top: 25px;
 }
 #descriptionRec {
-    /* height: 200px; */
+    width: 85vmin;
     width: 95%;
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     background-color:rgb(247 245 245);
-    border-radius: 1.5%;
+    border-radius: 1% / 2.5%;
     border:rgba(70, 63, 63, 0.856) 1px double;
 }
 
@@ -239,7 +239,7 @@
 }
 
 .favDes {
-    width: 95%;
+    width: 85vmin;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,4 +253,70 @@
     display: flex;
     justify-content: center;
     margin: 15px;
+}
+
+
+
+@media (max-width: 560px) {
+    .asiaAll {
+        width: 350px;
+        position: absolute;
+        z-index: -1;
+        opacity: .8;
+    }
+    .asia1 {
+        width: 95px;
+        position: absolute;
+        z-index: +2;
+        opacity: .15;
+        margin-top: 60px;
+        margin-left: -28px;
+    }
+    
+    .asia2 {
+        width: 295px;
+        position: absolute;
+        z-index: +1;
+        opacity: .25;
+        margin-top: -14px;
+        margin-left: -15px;
+    } 
+    
+    .asia3 {
+        width: 145px;
+        position: absolute;
+        z-index: +2;
+        opacity: .25;
+        margin-top: -3px;
+        margin-left: -171px;
+    } 
+    .asia4 {
+        width: 350px;
+        position: absolute;
+        opacity: .25;
+        margin-top: -106px;
+        /* margin-left: -171px; */
+    } 
+    .asia1a {
+        width: 145px;
+        position: absolute;
+        z-index: +1;
+        opacity: .25;
+        margin-top: 130px;
+        margin-left: 181px;
+    } 
+    #legend {
+        position: absolute;
+        z-index: -1;
+        margin-top: 200px;
+        margin-left: -175px;
+        margin-top: 400px;
+        margin-left: -100px;
+    } 
+    .favDes {
+        width: 95%;
+    }
+    #descriptionRec {
+        border-radius: 1.5%;
+    }
 }
