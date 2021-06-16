@@ -179,9 +179,18 @@ a {
     margin-bottom: 25px;
 }
 
+#returnTop {
+    font-size: 30px;
+    position:fixed ;
+    bottom: 15px ;
+    right: 15px;
+    opacity: .05;
+    z-index: +1;
+}
 
-
-
+#returnTop:hover {
+    opacity: .75;
+} 
 
 /* Mobile Size */
 @media (max-width: 560px) {

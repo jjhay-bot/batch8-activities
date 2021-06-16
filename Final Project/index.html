@@ -14,13 +14,13 @@
     <div id="navContainer">
         <div id="title">
             <img src="images/41f37bf5af30cf4e4a7dea4940e58aac.jpg" id="logo">
-            <div id="titleText">Sportify</div>
+            <div id="titleText" onclick="showHome()">Sportify</div>
         </div>
         <div id="navList">
             <div id="navHome" onclick="showHome()">Home</div>
             <div id="navCategory" onclick="showCategory()">Category</div>
             <div id="navFavorite"  onclick="showFavorite()">Favorite</div>
-            <div id="navAbout">About</div>
+            <div id="navAbout" onclick="showAbout()">About</div>
         </div>
         
         <a href="#" class="toggle-button" onclick="toggleButton()">
@@ -87,17 +87,23 @@
     <div id="listFavorite">
         <div id="favorites"></div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
+    <div id="aboutPage">.
+        <div id="aboutContainer">
+            <h2>About this app</h2>
+            <span>Discover new and exciting sports and save your favorite sports activities.</span>
+            <p>With Sportify, you can see list of most popular sports based on your location, sport popularity and  by categories or your favorite sports from all over the world.</p>  
+            <ul>
+                <li>Make and share your own sports list.</li>
+                <li>Explore the most popular sports from different places.</li>
+                <li>Find sports lists for given caterogies and activity.</li>
+            </ul>    
+            <p>  With Sportify, you have access to a world of free sports collection, populatar sport lists, activities, and categories you love. 
+                    Create your own sports lists with the latest sports to suit your mood.</p>
+        </div>
+        <div id="preparedBy">
+            <i>Prepared by: Jhay Jhay D. Alcorcon</i>
+        </div>
+    </div>
     <script src="map.js" defer></script>
     <script src="script.js" defer></script>
 </body>

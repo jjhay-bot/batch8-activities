@@ -56,11 +56,13 @@ showHome = () => {
     document.getElementById('groupContainer').style.display = 'none';
     document.getElementById('listFavorite').style.display = 'none';
     document.getElementById('recommendation').style.display = 'none';
+    document.getElementById('aboutPage').style.display = 'none';  
     toggleButton();
     document.getElementById('navHome').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
     document.getElementById('navHome').style.borderRadius = '5% / 10%';
     document.getElementById('navCategory').style.backgroundColor = 'transparent';
     document.getElementById('navFavorite').style.backgroundColor = 'transparent';
+    document.getElementById('aboutPage').style.backgroundColor = 'transparent';
 }
 
 showCategory = () => {
@@ -68,11 +70,13 @@ showCategory = () => {
     document.getElementById('groupContainer').style.display = 'flex';
     document.getElementById('listFavorite').style.display = 'none';
     document.getElementById('recommendation').style.display = 'none';
+    document.getElementById('aboutPage').style.display = 'none';  
     toggleButton();
     document.getElementById('navCategory').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
     document.getElementById('navCategory').style.borderRadius = '5% / 10%';
     document.getElementById('navHome').style.backgroundColor = 'transparent';
     document.getElementById('navFavorite').style.backgroundColor = 'transparent';
+    document.getElementById('aboutPage').style.backgroundColor = 'transparent';
 }
 
 showFavorite = () => {
@@ -80,11 +84,28 @@ showFavorite = () => {
     document.getElementById('groupContainer').style.display = 'none';
     document.getElementById('listFavorite').style.display = 'flex';
     document.getElementById('recommendation').style.display = 'none';
+    document.getElementById('aboutPage').style.display = 'none';  
     favoList();
     toggleButton();
     document.getElementById('navFavorite').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
     document.getElementById('navFavorite').style.borderRadius = '5% / 10%';
     document.getElementById('navHome').style.backgroundColor = 'transparent';
     document.getElementById('navCategory').style.backgroundColor = 'transparent';
+    document.getElementById('aboutPage').style.backgroundColor = 'transparent';
+
+}
+showAbout = () => {
+    document.getElementById('maps').style.display = 'none';
+    document.getElementById('groupContainer').style.display = 'none';
+    document.getElementById('listFavorite').style.display = 'none';
+    document.getElementById('recommendation').style.display = 'none';
+    document.getElementById('aboutPage').style.display = 'flex';  
+    favoList();
+    toggleButton();
+    document.getElementById('aboutPage').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
+    document.getElementById('aboutPage').style.borderRadius = '5% / 10%';
+    document.getElementById('navHome').style.backgroundColor = 'transparent';
+    document.getElementById('navCategory').style.backgroundColor = 'transparent';
+    document.getElementById('navFavorite').style.backgroundColor = 'transparent';
 
 }
