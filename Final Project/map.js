@@ -1,23 +1,22 @@
-popularList1 = () => {
+// ----------------Map Page / Home Page ---------------
+// Fetch API data per Region (list of popular sports to that area) 
+async function popularList1 () {
     document.getElementById('listRecommendation').style.display = 'flex';
     document.getElementById('maps').style.display = 'none';
-    fetch(`https://sports.api.decathlon.com/sports/recommendations/geolocation?coordinates=30,58`)
-    .then(Response=>Response.json())
-    .then(data => {
+    try {
+        response = await fetch(`https://sports.api.decathlon.com/sports/recommendations/geolocation?coordinates=30,58`);
+        data = await response.json();
         console.log('test');
         targetRec = data.filter( ({ type }) => type == "sports");
         for (let i = 0; i < targetRec.length; i++) {
-            let targetIcon = targetRec[i].attributes.icon;
-            let targetName = targetRec[i].attributes.name;
             recommendation.innerHTML += `<div class="listHere">
-                                            <img class="recomIcon" src="${targetIcon}" alt=" "/>
-                                            <div class="recomName" onclick="descriptionList(this)">${targetName}</div>
+                                            <img class="recomIcon" src="${targetRec[i].attributes.icon}" alt=" "/>
+                                            <div class="recomName" onclick="descriptionList(this)">${targetRec[i].attributes.name}</div>
                                         </div>`
         }
-    })   
-    .catch(Error => {
-        console.log(`ERROR`)
-    })
+    } catch (error) {
+        console.log('ERROR')
+    }
 }
 
 popularList2 = () => {
@@ -104,6 +103,7 @@ popularList5 = () => {
     })
 }
 
+// Give Description and image of sellected sports (this click)
 descriptionList = (e) => {
     console.log('test')
     const thisValue = e.innerHTML;
@@ -193,11 +193,12 @@ descriptionList5 = (e) => {
     }
 }
 
-
+// Exit Description page 
 exitDescription = () => {
     document.getElementById('descriptionRecContainer').style.display = 'none';
 }
 
+// Add new arr  to favoriteStorage 
 class favoriteData {
     constructor (titleFav,descriptionFav,source) {
         this.titleFav = titleFav,
@@ -211,6 +212,7 @@ addToFavorite = () => {
     localStorage.setItem('favoriteStorage', JSON.stringify(favoriteStorage));
 }
 
+// List data from favoriteStorage (Favorite Page)
 favoList = () => {
     favorites.innerHTML = "";
     for (let i = 0; i < favoriteStorage.length; i++) {

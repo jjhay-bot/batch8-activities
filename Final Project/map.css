@@ -6,8 +6,8 @@
     top: -15px;
     height: 100vh;
     width: 100vw;
-    /* z-index: -1; */
 }
+
 #containerMap{
     width: 350px;
     height: 250px;
@@ -20,12 +20,15 @@
     background-position-y: center;
     z-index: -1;
 }
+
+/* MAP Image */
 .asiaAll {
     width: 700px;
     position: absolute;
     z-index: -1;
     opacity: .75;
 }
+
 .asia1 {
     width: 196px;
     position: absolute;
@@ -57,8 +60,8 @@
     position: absolute;
     opacity: .25;
     margin-top: -214px;
-    /* margin-left: -171px; */
 } 
+
 .asia1a {
     width: 290px;
     position: absolute;
@@ -75,7 +78,9 @@
     font-family: ui-monospace;
     font-weight: bolder;
     font-size: 20px;
-}       
+}   
+
+/* LEGEND Details */
 #legend {
     position: absolute;
     z-index: -1;
@@ -84,21 +89,24 @@
     margin-top: 500px;
     margin-left: -400px;
 } 
+
 #legend div {
     display: flex;
     z-index: -1;
-
 }
+
 .asia1:hover , .asia1a:hover , .asia2:hover ,.asia3:hover ,.asia4:hover ,.asia5:hover {
     z-index: +1;
     opacity: 1;
 }
+
 .orange , .maroon , .blue , .green , .yellow  {
     width: 15px;
     height: 15px;
     margin-right: 10px;
     margin-bottom: 5px;
 }
+
 .orange {
     background-color: #ef8015;
 }
@@ -115,13 +123,10 @@
     background-color: #8a2c25;
 }
 
-
+/* popular/recommended List per Area/Location */
 #listRecommendation {
     display: none;
     width: 100vw;
-    /* height: 100vh; */
-    /* border: red 2px solid; */
-    /* position: fixed; */
     top: 0;
     justify-content: center;
     align-items: flex-end;
@@ -129,14 +134,11 @@
 }
 
 #recommendation {
-    /* background-color: bisque; */
     width: 90%;
-    /* border: blue 2px solid; */
     height: 85vh;
     margin-bottom: 17.5px;
     border-radius: 2.5% / 1.5%;
     display: flex;
-    /* justify-content: center; */
     align-items: flex-start;         
     flex-direction: column;      
 }
@@ -144,8 +146,8 @@
 .listHere {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
+
 .recomIcon {
     width: 30px;
     height: 30px;
@@ -153,12 +155,14 @@
     justify-content: center;
     align-items: center;
 }
+
 .recomName {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
 }
+
 #descriptionRecContainer {
     height: 100vh;
     width: 100vw;
@@ -174,7 +178,6 @@
     width: 85vmin;
     width: 95%;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     background-color:rgb(247 245 245);
@@ -201,6 +204,8 @@
     height: 200px;
     margin-bottom: 15px;
 }
+
+/* Favorite List */
 #favButtonContainer {
     width: 95%;
     height: 50px;
@@ -209,6 +214,7 @@
     display: flex;
     justify-content: flex-end;
 }
+
 #favoriteButton {
     width: 34px;
     height: 35px;
@@ -220,10 +226,12 @@
     align-items: center;
     z-index: +1;
 }
+
 #favorites {
     margin-top: 80px;
 
 }
+
 .listFav {
     margin-bottom: 20px;    
     display: flex;
@@ -255,8 +263,7 @@
     margin: 15px;
 }
 
-
-
+/* Media query for width < 560px */
 @media (max-width: 560px) {
     .asiaAll {
         width: 350px;
