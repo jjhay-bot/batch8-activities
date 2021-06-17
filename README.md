@@ -20,7 +20,7 @@ Task list:
 4. [Survey Form Project](/Lecture3/index.html)
 5. [Chessboard Project (Flex)](/Lecture4/index.html)
 6. [Chessboard Project (Grid)](/Lecture5/index.html)
-7. [Product Landing Page](/Lecture%206/index.html)
+7. [Product Landing Page](https://jjhay-bot.github.io/batch8-activities/Lecture%206/index.html)
 8. [Momentum app](/Lecture7/index.html)
 9. [Tic Tac Toe app](/Lecture9/index.html)
 10. [Bank App](Lecture10/Banking%20App/index.html)
