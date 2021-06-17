@@ -34,8 +34,10 @@ async function groupSports () {
                                             <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/96/thumbnail_handball.jpg"/>
                                         </a>`
                 })
+                touchLogo2.style.display = 'flex';
             }  
-        }, 500)   
+        }, 500) 
+  
     } catch (error) {
         console.log('ERROR')
         groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/6.html">
@@ -110,3 +112,10 @@ showAbout = () => {
     document.getElementById('navFavorite').style.backgroundColor = 'transparent';
 }
 
+exitcomment = () => {
+    touchLogo.style.display = 'none';
+}
+
+exitcomment2 = () => {
+    touchLogo2.style.display = 'none';
+}

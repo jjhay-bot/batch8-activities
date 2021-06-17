@@ -280,6 +280,63 @@
     border: double;
 }
 
+#touchLogo , #touchLogo2 , #touchLogo3{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: +3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+#touchLogo2 {
+    display: none;
+}
+
+.touchIcon {
+    width: 50px;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: -70px;
+}
+
+.touchIcon3 {
+    width: 50px;
+    height: 50px;
+    margin-top: -120px;
+    position: fixed;
+    right: 7.5px;
+
+}
+
+.commentContainer {
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commentContainer div {
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+.commentBox {
+    width: 200px;
+}
+
+.commentContainer2 {
+    position: fixed;
+    top: 90px;
+    right: 10px;
+}
+
+
+
 /* Media query for width < 560px */
 @media (max-width: 560px) {
     .asiaAll {
@@ -342,5 +399,9 @@
     }
     #descriptionRec {
         border-radius: 1.5%;
+    }
+    
+    #touchLogo3 {
+        display:none ;
     }
 }

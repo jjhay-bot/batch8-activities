@@ -30,15 +30,24 @@
         </a>
     </div>
 
+    <!-- Caterogy Page -->
     <div id="groupContainer">
         <div id="groups"></div>
         <div class="waitingLogo">
             <img src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif" alt="">
         </div>
+        <div id="touchLogo2" onclick="exitcomment2()">
+            <img src="https://i.giphy.com/media/vXgx62HpTIkmANV8td/200.webp" class="touchIcon">
+            <div class="commentContainer">
+                <img src="images/comment box2.png" class="commentBox">
+                <div>Select Category</div>
+            </div>              
+        </div>
     </div>
 
     <!-- Home Page -->
     <div id="maps">
+
         <div id="containerMap" >
             <img src="asia(all).png" class="asiaAll">
             <img src="asia1a.png" class="asia1a" onclick="popularList5()">
@@ -46,7 +55,14 @@
             <img src="asia2.png" class="asia2" onclick="popularList2()">
             <img src="asia3.png" class="asia3" onclick="popularList3()">
             <img src="asia4.png" class="asia4" onclick="popularList4()">
-            <!-- <div id="titleLocation">Asia</div> -->
+            <div id="touchLogo" onclick="exitcomment()">
+                <img src="https://i.giphy.com/media/vXgx62HpTIkmANV8td/200.webp" class="touchIcon">
+                <div class="commentContainer">
+                    <img src="images/comment box2.png" class="commentBox">
+                    <div>Click target location</div>
+                </div>              
+            </div>
+
             <div id="legend">
                 <div >
                     <div class="blue" ></div>
@@ -74,12 +90,18 @@
         <div id="recommendation"></div>
     </div>
 
-    <!-- Caterogy Page -->
     <div id="descriptionRecContainer" onclick="exitDescription()">
         <div id="descriptionRec">
             <h2 id="titleRec">Title</h2>
             <div id="favButtonContainer">
                 <div onclick="addToFavorite()" id="favoriteButton">⭐</div>
+                <div id="touchLogo3" onclick="exitcomment3()">
+                    <img src="https://i.giphy.com/media/vXgx62HpTIkmANV8td/200.webp" class="touchIcon3">
+                    <div class="commentContainer">
+                        <img src="images/comment box2.png" class="commentBox">
+                        <div>Add to Favorites</div>
+                    </div>              
+                </div>
             </div>
             <span id="descriptionDetails">description</span>
             <div id="imageRec"></div>
@@ -90,10 +112,12 @@
     <div id="listFavorite">
         <div id="favorites"></div>
     </div>
+
+    <!-- About Page -->
     <div id="aboutPage">.
         <div id="aboutContainer">
             <h2>About this app</h2>
-            <span>Discover new and exciting sports and save your favorite sports activities.</span>
+            <span>Discover new & exciting sports to try with Sportify.</span>
             <p>With Sportify,</p>  
             <li>Have access to a world full of diverse collection of sporting activities.</li>
             <li>Browse our wide range list of sports by category or based on local or worldwide popularity.</li>
