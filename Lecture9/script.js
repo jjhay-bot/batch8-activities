@@ -7,7 +7,6 @@ let playerTurnX = document.querySelector('.playerX')
 let playerTurnO = document.querySelector('.playerO')
 
 
-
 //game variables @ game start
 playerTurnX.style.color = 'springgreen';                                                // player X 1st
 move = 0;
@@ -60,7 +59,6 @@ function playerTurn () {
         playerTurnO.style.boxShadow = 'none';
         playerTurnX.style.textDecoration  = 'underline';
         playerTurnO.style.textDecoration  = 'none';
-
     }
 }
 

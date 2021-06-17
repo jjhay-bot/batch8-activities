@@ -167,18 +167,31 @@ transactionShown =  () => {
     }
 }
 
-// --------------------show Category page ------------------
+// --------------------show Category page ------------------ (Present this)
 categoryShown =  () => {
     document.getElementById('budgetMainPage').style.display = 'none';
     document.getElementById('pieChart').style.display = 'none';
     document.getElementById('transactPage').style.display = 'none';
     document.getElementById('categoryPage').style.display = 'flex';
 
+    // this return OBJECT
     let filter = userProfileStorage.find( ({ userName }) => userName == userUser.value );
+        // /console..log(filter) = {AccCardNumber: "1007", passwordUser: "1", rePasswordUser: "1", userName: "juan_02", bdayUser: "02-02-2011", …}
     currentUser = filter.AccCardNumber;
     
     // User payments using (mobile / Budget App)
+    // this return ARRAY
     let listPayee = userBudgetTransStorage.filter( ({ UserAccNumber }) => UserAccNumber == currentUser );
+        //[
+            //console..log(listPayee) = {
+                    //     "userName": "juan_02",
+                    //     "UserAccNumber": "1007",
+                    //     "PayeeAccNumber": "1001",
+                    //     "PayeeAccName": "Savemore",
+                    //     "Amount": "500"
+                    // }
+                    // ]
+
     payeeCategoryContainer2.innerHTML = "";
     payeeCategoryContainer3.innerHTML = "";
 
@@ -189,9 +202,12 @@ categoryShown =  () => {
 
         tempoStoragePayee.push(target);
     }
+        // console.log(tempoStoragePayee) = ["Savemore", "Savemore", "Meralco",]
+
     var mySet = new Set(tempoStoragePayee);
     myArr = [...mySet];
-    
+        // console.log(myArr) = ["Savemore", "Meralco",]
+
     count = 0;
     for (let i = 0; i < myArr.length; i++) {
     payeeCategoryContainer2.innerHTML +=    `<li class="payeeCategoryContainer2Div">

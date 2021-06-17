@@ -68,9 +68,28 @@ class ClientProfile {
         lastClientNumber += 1;
         console.log(this.firstName,`${this.middleName.charAt(0)}.`, this.lastName, 'profile has been added', this.accNumber);
         clientProfileStorage.push(ClientProfileNew);
-        localStorage.setItem(lastClientNumber, JSON.stringify(clientProfileStorage[clientProfileStorage.length -1]))
-        localStorage.setItem('lastClientNumber', lastClientNumber)
+        localStorage.setItem(lastClientNumber, JSON.stringify(clientProfileStorage[clientProfileStorage.length -1]));
+        localStorage.setItem('lastClientNumber', lastClientNumber);
     };
+}
+
+add = () => {
+    ClientProfileNew = new ClientProfile (firstName.value, middleName.value, lastName.value, email.value, contact.value, birthDate.value, address.value, balance.value, lastClientNumber);                                      //add new client
+    ClientProfileNew.addClientProfile();                                                                  // call method
+    clearInput();
+}
+
+// -------------------------------Client Profiles, balance and transaction history----------------------------
+addClientProfile = () => {  
+    // if (this.firstName.value === )
+    lastClientNumber += 1;
+    console.log(this.firstName,`${this.middleName.charAt(0)}.`, this.lastName, 'profile has been added');
+    clientProfileStorage.push(ClientProfileNew);
+    localStorage.setItem(lastClientNumber, JSON.stringify(clientProfileStorage[clientProfileStorage.length -1]))
+    localStorage.setItem('lastClientNumber', lastClientNumber);
+    let saveTransactiondeposit = new transactionEveryProfile (date, time, 1000-lastClientNumber,'deposit', balance.value); 
+    TransactiondepositStorage.push(saveTransactiondeposit);
+    localStorage.setItem('TransactiondepositStorage', JSON.stringify(TransactiondepositStorage));
 }
 
 // -------------------------------Save transactions-----------------------------------------------------------
@@ -87,18 +106,7 @@ saveTransferTransaction = () => {
     saveTransactionWithdraw.getLocalDataHistoryWithdraw();
 }
 
-// -------------------------------Client Profiles, balance and transaction history----------------------------
-addClientProfile = () => {  
-    // if (this.firstName.value === )
-    lastClientNumber += 1;
-    console.log(this.firstName,`${this.middleName.charAt(0)}.`, this.lastName, 'profile has been added');
-    clientProfileStorage.push(ClientProfileNew);
-    localStorage.setItem(lastClientNumber, JSON.stringify(clientProfileStorage[clientProfileStorage.length -1]))
-    localStorage.setItem('lastClientNumber', lastClientNumber);
-    let saveTransactiondeposit = new transactionEveryProfile (date, time, 1000-lastClientNumber,'deposit', balance.value); 
-    TransactiondepositStorage.push(saveTransactiondeposit);
-    localStorage.setItem('TransactiondepositStorage', JSON.stringify(TransactiondepositStorage));
-}
+
 
 //------------------------------- Retrive local storage data -------------------------------
 getLocalData = () => {
@@ -175,12 +183,12 @@ clearInput = () => {
 
 //-------------------------------Button function to ADD ACCOUNT -----------------------------------------
 add = () => {
-    if (firstName.value === '' || middleName.value === '' || lastName.value === '' || email.value === '' || contact.value === '' || birthDate.value === '' || address.value == '' || balance.value === "") {
-        return alert ('please fill out the form and submit again');
-    }
-    if (balance.value < 5000) {
-        return alert ('minimum initial deposite of ₱5000 is required');
-    }
+    // if (firstName.value === '' || middleName.value === '' || lastName.value === '' || email.value === '' || contact.value === '' || birthDate.value === '' || address.value == '' || balance.value === "") {
+    //     return alert ('please fill out the form and submit again');
+    // }
+    // if (balance.value < 5000) {
+    //     return alert ('minimum initial deposite of ₱5000 is required');
+    // }
     ClientProfileNew = new ClientProfile (firstName.value, middleName.value, lastName.value, email.value, contact.value, birthDate.value, address.value, balance.value, lastClientNumber);                                      //add new client
     ClientProfileNew.addClientProfile();                                                                  // call method
     clearInput();

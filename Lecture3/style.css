@@ -54,3 +54,17 @@ body {
     color: red;
     zoom: 125%;
 }
+#rotating-apple {
+    position:relative;
+    height:600px;
+    overflow:hidden;
+    }
+}
+.apple1,.apple2,..apple3, .apple4 {
+    position:absolute;
+    width:100px;
+    height:100px;
+    bottom:-150px;
+    background:#fff;
+    -webkit-animation: mymove2 4s linear infinite;
+}
