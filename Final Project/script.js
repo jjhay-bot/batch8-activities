@@ -23,14 +23,14 @@ async function groupSports () {
                 .then(data => {
                     let image = data.data.relationships.images.data[0].variants[0].thumbnail.url;
                     groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/${target[i].id}.html">
-                                            <div class="groupDiv" onclick="getArray()" >${target [i].attributes.name}</div>
+                                            <div class="groupDiv">${target [i].attributes.name}</div>
                                             <img class="thumbnail" src="${image}"/>
                                         </a>`
                 })
                 .catch(Error => {
                     console.log(`${target[i].id}  ${target[i].attributes.slug} ERROR (handled)`)
                     groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/${target[i].id}.html">
-                                            <div class="groupDiv" onclick="getArray()">${target [i].attributes.name}</div>
+                                            <div class="groupDiv">${target [i].attributes.name}</div>
                                             <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/96/thumbnail_handball.jpg"/>
                                         </a>`
                 })
@@ -39,7 +39,7 @@ async function groupSports () {
     } catch (error) {
         console.log('ERROR')
         groups.innerHTML += `<a class="thisLink" href="https://jjhay-bot.github.io/batch8-activities/Final%20Project/sports/6.html">
-                                <div class="groupDiv" onclick="getArray()">Aerial Activity</div>
+                                <div class="groupDiv" >Aerial Activity</div>
                                 <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/933/thumbnail_hanggliding.jpg"/>
                             </a>`
     }
