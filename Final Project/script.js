@@ -43,14 +43,8 @@ async function groupSports () {
                                 <img class="thumbnail" src="https://sports-api-production.s3.amazonaws.com/uploads/sport/images/933/thumbnail_hanggliding.jpg"/>
                             </a>`
     }
-    // document.getElementsByClassName('waitingLogo').style.display = 'none'
 }
 
-//  get target Event (e) of clickCategory
-// function getArray() {
-//     clickCategory.onclick = function() {
-//     }
-// }
 
 //  go to Home page
 showHome = () => {
@@ -64,7 +58,7 @@ showHome = () => {
     document.getElementById('navHome').style.borderRadius = '5% / 10%';
     document.getElementById('navCategory').style.backgroundColor = 'transparent';
     document.getElementById('navFavorite').style.backgroundColor = 'transparent';
-    document.getElementById('aboutPage').style.backgroundColor = 'transparent';
+    document.getElementById('navAbout').style.backgroundColor = 'transparent';
 }
 
 //  go to Caterogy page
@@ -79,7 +73,7 @@ showCategory = () => {
     document.getElementById('navCategory').style.borderRadius = '5% / 10%';
     document.getElementById('navHome').style.backgroundColor = 'transparent';
     document.getElementById('navFavorite').style.backgroundColor = 'transparent';
-    document.getElementById('aboutPage').style.backgroundColor = 'transparent';
+    document.getElementById('navAbout').style.backgroundColor = 'transparent';
     groupSports();
 }
 
@@ -96,7 +90,8 @@ showFavorite = () => {
     document.getElementById('navFavorite').style.borderRadius = '5% / 10%';
     document.getElementById('navHome').style.backgroundColor = 'transparent';
     document.getElementById('navCategory').style.backgroundColor = 'transparent';
-    document.getElementById('aboutPage').style.backgroundColor = 'transparent';
+    document.getElementById('navAbout').style.backgroundColor = 'transparent';
+
 }
 
 //  go to About page
@@ -108,8 +103,8 @@ showAbout = () => {
     document.getElementById('aboutPage').style.display = 'flex';  
     favoList(); 
     toggleButton();
-    document.getElementById('aboutPage').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
-    document.getElementById('aboutPage').style.borderRadius = '5% / 10%';
+    document.getElementById('navAbout').style.backgroundColor = 'rgba(255, 250, 250, 0.158)';
+    document.getElementById('navAbout').style.borderRadius = '5% / 10%';
     document.getElementById('navHome').style.backgroundColor = 'transparent';
     document.getElementById('navCategory').style.backgroundColor = 'transparent';
     document.getElementById('navFavorite').style.backgroundColor = 'transparent';
