@@ -119,3 +119,9 @@ exitcomment = () => {
 exitcomment2 = () => {
     touchLogo2.style.display = 'none';
 }
+
+exitcomment3 = () => {
+    document.getElementById('descriptionRecContainer').style.display = 'flex';
+    touchLogo3.style.display = 'none';
+
+}
