@@ -286,6 +286,7 @@ body section {
     #preparedBy {
         text-align: center;
         display: contents;
+        margin-top: 40px;
     }    
 }
 
