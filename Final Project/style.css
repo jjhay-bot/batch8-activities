@@ -182,12 +182,10 @@ body section {
     justify-content: center;
     flex-direction: column;
     width: 82vmin;
-    margin-top: 110px;
+    margin-top: 80px;
 }
 
 #preparedBy {
-    position: fixed;
-    bottom: 50px;
     text-align: center;
     justify-content: center;
 }
