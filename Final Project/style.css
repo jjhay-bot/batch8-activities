@@ -191,6 +191,10 @@ body section {
     margin-top: 40px;
 }
 
+#aboutContainer p {
+    margin: 10px 0;
+}
+
 /* waiting/Loading Page */
 .waitingLogo {
     width: 100vw;
