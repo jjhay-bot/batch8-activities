@@ -188,6 +188,7 @@ body section {
 #preparedBy {
     text-align: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
 /* waiting/Loading Page */
