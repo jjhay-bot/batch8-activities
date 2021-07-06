@@ -1,0 +1,51 @@
+CREATE TABLE lessons (
+    id integer PRIMARY KEY,
+    name character varying(255) NOT NULL,
+    description text, 
+    front_end boolean DEFAULT false,
+    back_end boolean DEFAULT false,
+    price numeric(8,2) DEFAULT 0.0,
+    created_at text,
+    updated_at text
+);
+
+INSERT INTO lessons (id, name, description, front_end, back_end, price, created_at, updated_at)
+VALUES
+(1, 'Ruby', 'Ruby is an interpreted', 'FALSE', TRUE, '199.99', 2021-03-10,2021-03-10 ),
+(2, 'Python', 'Python is an interpreted', 'FALSE', TRUE, '199.99', 2021-03-10,2021-03-10 ),
+(3, 'Java', 'Java is an interpreted', 'TRUE', TRUE, '99.99', 2021-03-10,2021-03-10 ),
+(4, 'Rust', 'Python is an interpreted', 'FALSE', TRUE, '199.99', 2021-03-10,2021-03-10 ),
+(5, 'Golang', 'Java is an interpreted', 'TRUE', TRUE, '99.99', 2021-03-10,2021-03-10 );
+
+
+
+CREATE TABLE instructors (
+    id integer PRIMARY KEY,
+    first_name character varying(255) NOT NULL,
+    last_name character varying(255) NOT NULL,
+    lesson_id integer,
+    created_at text,
+    updated_at text
+);
+
+INSERT INTO instructors (id, first_name, last_name, lesson_id, created_at, updated_at)
+VALUES
+(1, 'Adrian', 'Co', '1',2021-03-10, 2021-03-10 ),
+(2, 'Analyn', 'Cajocson', '1',2021-03-10, 2021-03-10 ),
+(3, 'Pau', 'Riosa', '3',2021-03-10, 2021-03-10 ),
+(4, 'Maurus', 'Vitor', '3',2021-03-10, 2021-03-10 ),
+(5, 'John', 'Young', '6',2021-03-10, 2021-03-10 );
+
+
+SELECT l.name, i.first_name, i.last_name FROM lessons l INNER JOIN instructors i ON i.lesson_id = l.id;
+
+SELECT l.name, i.first_name, i.last_name FROM lessons l LEFT JOIN instructors i ON i.lesson_id = l.id;
+
+SELECT l.name, i.first_name, i.last_name FROM lessons l RIGHT JOIN instructors i ON i.lesson_id = l.id;
+
+SELECT l.name, i.first_name, i.last_name FROM lessons l FULL JOIN instructors i ON i.lesson_id = l.id;
+
+
+
+SELECT * FROM instructors INNER JOIN lessons l ON i.lesson_id = l.id;
+
