@@ -29,6 +29,20 @@ unique_in_order('ABBCcAD')
 unique_in_order([1,2,2,3,3]);
 
 #----------------------------------------------------------------------------------------------------------------
+def descending_order(n)
+    n.digits.sort.reverse.join.to_i
+    # n.to_s.chars.map {|n| n}.sort{|a, b| b<=>a }.join.to_i
+end
+end
 
+descending_order(2121)              #2211
 
 #----------------------------------------------------------------------------------------------------------------
+def is_isogram(string)
+    # p string.downcase.chars.uniq == string.downcase.chars
+    p !string.downcase.chars.uniq!
+end
+
+is_isogram("Dermatoglyphics")           # no repeating letters
+is_isogram("aba")
+is_isogram("moOse") 
